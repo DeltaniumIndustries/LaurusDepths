@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<AssemblyName>Mods</AssemblyName>
-		<PackageId>Mods</PackageId>
-		<Authors>lauren</Authors>
+		<AssemblyName>LaurusDepths</AssemblyName>
+		<PackageId>net.LunarLaurus</PackageId>
+		<Authors>LunarLaurus</Authors>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<LangVersion>9</LangVersion>
-		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
 		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
 		<QudLibPath>C:\Program Files (x86)\Steam\steamapps\common\Caves of Qud\CoQ_Data\Managed\</QudLibPath>
 		<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
