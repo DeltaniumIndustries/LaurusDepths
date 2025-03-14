@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<worlds>
+  <world Name="JoppaWorld" Load="Merge">
+
+    <cell Name="DeathlandsCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainDeathlands">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above the deathlands" IndefiniteArticle="the" HasWeather="true" WindSpeed="0-120" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="Sky"></builder>
+      </zone>
+
+      <zone Level="10" x="0-2" y="0-2" Name="deathlands" HasWeather="true" WindSpeed="0-120" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
+        <builder Class="Ruins"></builder>
+        <postbuilder Class="ZoneTemplate:Deathlands"></postbuilder>
+        <!--<encounter Table="Surface Deathlands" Amount="low"></encounter>-->
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+        <builder Class="Music" Track="Overworld1" Chance="10"></builder>
+      </zone>
+
+      <zone Level="11-40" x="0-2" y="0-2" Name="subterranean deathlands">
+        <builder Class="Ruins" Name="Subterranean Ruins"></builder>
+        <postbuilder Class="ZoneTemplate:Deathlands"></postbuilder>
+        <!--<encounter Table="Surface Deathlands" Amount="low"></encounter>-->
+        <builder Class="PossibleCryotube"></builder>
+        <builder Class="FactionEncounters" Population="GenericFactionPopulation"></builder>
+      </zone>
+    </cell>
+
+  </world>
+</worlds>

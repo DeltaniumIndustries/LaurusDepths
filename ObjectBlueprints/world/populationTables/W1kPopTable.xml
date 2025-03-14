@@ -1,0 +1,46 @@
+<populations>
+
+    <population Name="LaurusLairOwnersW1kBasicTiers">
+        <group Name="Options" Style="pickone">
+            <object Weight="50" Blueprint="LaurusBaseWombOfTheThousandT1Squire" />
+            <object Weight="25" Blueprint="LaurusBaseWombOfTheThousandT1BannerHolder" />
+            <object Weight="15" Blueprint="LaurusBaseWombOfTheThousandT1Gunner" />
+            <object Weight="5" Blueprint="LaurusBaseWombOfTheThousandT2Vanguard" />
+            <object Weight="5" Blueprint="LaurusBaseWombOfTheThousandT2FootSoldier" />
+        </group>
+    </population>
+
+    <population Name="LaurusLairOwnersW1kAdvancedTiers">
+        <group Name="Options" Style="pickone">
+            <object Weight="35" Blueprint="LaurusBaseWombOfTheThousandT3Squire" />
+            <object Weight="25" Blueprint="LaurusBaseWombOfTheThousandT3BannerHolder" />
+            <object Weight="20" Blueprint="LaurusBaseWombOfTheThousandT3Gunner" />
+            <object Weight="12" Blueprint="LaurusBaseWombOfTheThousandT4Vanguard" />
+            <object Weight="8" Blueprint="LaurusBaseWombOfTheThousandT4FootSoldier" />
+        </group>
+    </population>
+
+    <population Name="LaurusLairOwnersW1kPrimaryBase">
+        <group Name="Spawn1" Style="pickone">
+            <table Weight="70" Blueprint="LaurusLairOwnersW1kBasicTiers" />
+            <table Weight="30" Blueprint="LaurusLairOwnersW1kAdvancedTiers" />
+        </group>
+        <group Name="Spawn2" Style="pickone">
+            <table Weight="90" Blueprint="LaurusLairOwnersW1kBasicTiers" />
+            <table Weight="10" Blueprint="LaurusLairOwnersW1kAdvancedTiers" />
+        </group>
+        <group Name="SpawnJunk" Style="pickeach">
+            <table Chance="20" Name="Junk 7" />
+            <table Chance="40" Name="Junk 6" />
+            <table Chance="80" Name="Junk 5" />
+            <table Chance="80" Name="Scrap 1" />
+            <table Chance="80" Name="Scrap 2" />
+        </group>
+    </population>
+
+    <population Name="LaurusLairOwnersW1kTallMountains">
+        <table Name="LaurusLairOwnersTallMountains" />
+        <table Name="LaurusLairOwnersW1kBasicTiers" />
+    </population>
+
+</populations>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<factions LoadPriority="5000">
+
+    <faction Name="Tristram" DisplayName="villagers of Tristram" Old="false" FormatWithArticle="true" InitialPlayerReputation="0" PositiveSound="Sounds/Reputation/sfx_reputation_village_positive" NegativeSound="Sounds/Reputation/sfx_reputation_village_negative" EmblemTile="Terrain/tile_fancy.png" EmblemTileColor="Y" EmblemDetailColor="R">
+        <feeling About="*" Value="0" />
+        <feeling About="Beasts" Value="-50" />
+        <feeling About="Girsh" Value="-50" />
+        <feeling About="Joppa" Value="-50" />
+        <feeling About="Wardens" Value="0" />
+        <waterritual Skill="CookingAndGathering" Recipe="MushroomCider" RecipeText="Would you share the favorite dish of Tristram's villagers?" />
+        <interests>
+            <interest Tags="mountains" />
+            <interest Tags="robot,lair" WillBuy="false" WillSell="true" />
+        </interests>
+        <factionworshipattitudes>
+            <factionworshipattitude Name="Girsh" Attitude="-100" />
+            <factionworshipattitude Name="Entropic" Attitude="-100" />
+        </factionworshipattitudes>
+    </faction>
+
+    <faction Name="LaurusFactionWombThousand" Parent="Beasts" DisplayName="Womb of the Thousand" Old="false" FormatWithArticle="true" InitialPlayerReputation="-800" PositiveSound="Sounds/Reputation/sfx_reputation_putusTemplar_positive" NegativeSound="Sounds/Reputation/sfx_reputation_putusTemplar_negative" HistoricalSignificance="3" EmblemTile="creatures/sw_templar.bmp" EmblemTileColor="r" EmblemDetailColor="o">
+        <feeling About="*" Value="-500" />
+        <feeling About="Templar" Value="100" />
+        <waterritual Liquid="cloning" />
+        <interests>
+            <interest Tags="ruins,tech,historic,sultan,cybernetics,sultanTombPropaganda" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="the modern world" />
+            <interest Tags="cybernetics" WillBuy="false" WillSell="true" />
+            <interest Tags="historic" WillBuy="true" WillSell="true" />
+            <interest Tags="tech" WillBuy="true" WillSell="false" />
+            <interest Tags="oddity" WillBuy="true" WillSell="false" />
+            <interest Tags="settlement" WillBuy="true" WillSell="false" />
+            <interest Tags="sultan" WillBuy="false" WillSell="false" />
+            <interest Tags="humanoid,merchant" WillBuy="true" WillSell="false" />
+            <interest Tags="consortium" WillBuy="true" WillSell="false" />
+            <interest Tags="dromad" WillBuy="false" WillSell="true" />
+            <interest Tags="saltdunes" WillBuy="false" WillSell="true" />
+        </interests>
+
+        <factionworshipattitudes Default="-50" ApplyDefaultAfterSpecificFeelings="true">
+            <factionworshipattitude Name="Templar" Attitude="100" />
+            <factionworshipattitude Name="Girsh" Attitude="-200" />
+            <factionworshipattitude Name="Entropic" Attitude="-200" />
+        </factionworshipattitudes>
+    </faction>
+
+    <faction Name="LaurusFactionCorpusCommune" Parent="Beasts" DisplayName="Corpus Commune" Old="false" Plural="true" FormatWithArticle="true" InitialPlayerReputation="-700" PositiveSound="Sounds/Reputation/sfx_reputation_ooze_positive" NegativeSound="Sounds/Reputation/sfx_reputation_ooze_negative" HistoricalSignificance="3" EmblemTile="creatures/sw_cupola.bmp" EmblemTileColor="w" EmblemDetailColor="O">
+        <feeling About="*" Value="-350" />
+        <feeling About="Girsh" Value="-100" />
+        <waterritual Liquid="ooze" />
+        <interests>
+            <interest Tags="underground" />
+            <interest Tags="moonstair" />
+            <interest Tags="lakehinnom" WillBuy="false" WillSell="true" />
+            <interest Tags="palladiumreef" WillBuy="false" WillSell="true" />
+            <interest Tags="humanoid,settlement" />
+        </interests>
+        <factionworshipattitudes Default="-400" ApplyDefaultAfterSpecificFeelings="true">
+        </factionworshipattitudes>
+    </faction>
+
+
+    <faction Name="LaurusFactionMinionsOfDarkness" Parent="Beasts" DisplayName="Dark Beings" InitialPlayerReputation="-775" PositiveSound="Sounds/Reputation/sfx_reputation_robot_positive" NegativeSound="Sounds/Reputation/sfx_reputation_robot_negative" HistoricalSignificance="1" EmblemTile="creatures/sw_scrapbot.bmp" EmblemTileColor="c" EmblemDetailColor="W">
+        <feeling About="*" Value="-500" />
+        <interests>
+            <interest Tags="tech" WillBuy="false" WillSell="true" />
+            <interest Tags="rusty" WillBuy="true" WillSell="false" />
+            <interest Tags="ruins" WillBuy="false" WillSell="true" />
+            <interest Tags="settlement" />
+        </interests>
+        <factionworshipattitudes Default="-50">
+            <factionworshipattitude Name="Girsh" Attitude="-100" />
+            <factionworshipattitude Name="Entropic" Attitude="-100" />
+        </factionworshipattitudes>
+    </faction>
+
+</factions>

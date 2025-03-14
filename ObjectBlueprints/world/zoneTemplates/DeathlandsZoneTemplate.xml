@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<zonetemplates>
+  
+  <zonetemplate Name="Deathlands" RegionSize="200">
+    <global>
+      <population Table="DeathlandsZoneGlobals"></population>
+    </global>
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="DeathlandsPerSector"></population>
+    </eachregion>
+  </zonetemplate>
+  
+</zonetemplates>

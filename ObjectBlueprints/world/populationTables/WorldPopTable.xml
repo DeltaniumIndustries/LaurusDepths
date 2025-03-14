@@ -1,0 +1,21 @@
+<populations>
+
+    <population Name="LaurusLairOwnersFlowerfields">
+        <group Name="Options" Style="pickone">
+            <object Blueprint="Equimax" />
+            <object Blueprint="Qudzu" Hint="LivesOnWalls" />
+            <object Blueprint="Jilted Lover" Hint="LivesOnWalls" />
+            <object Blueprint="Seed-Spitting Vine" />
+            <object Blueprint="Dog" />
+            <object Blueprint="Boar" />
+            <object Blueprint="Horned Chameleon" />
+            <object Blueprint="Two-Headed Boar" />
+            <object Blueprint="IrritableTortoise" />
+            <object Blueprint="Salamander" />
+            <object Blueprint="Salthopper" />
+            <object Blueprint="Glowcrow" />
+            <object Blueprint="GiantDragonfly" />
+        </group>
+    </population>
+
+</populations>

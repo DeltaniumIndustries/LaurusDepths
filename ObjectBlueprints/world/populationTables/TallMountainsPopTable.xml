@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<populations>
+
+    <population Name="LaurusTallMountainGenericFactionPopulation">
+        <group Name="Factions" Style="pickone">
+            <object Blueprint="Bears" Weight="1" />
+            <object Blueprint="Tortoises" Weight="1" />
+            <object Blueprint="Antelopes" Weight="1" />
+            <object Blueprint="Apes" Weight="1" />
+            <object Blueprint="Mechanimists" Weight="1" />
+            <object Blueprint="Seekers" Weight="1" />
+            <object Blueprint="Templar" Weight="1" />
+            <object Blueprint="Pariahs" Weight="1" />
+        </group>
+    </population>
+
+    <population Name="LaurusTallMountainCaveFeatures">
+        <object Chance="75" Number="2d3" Blueprint="Jilted Lover" Hint="LivesOnWalls" />
+        <object Chance="55" Number="1-3" Blueprint="Young Ivory" />
+        <object Chance="55" Number="1-3" Blueprint="Seed-Spitting Vine" Hint="AlongWall" />
+        <object Chance="5" Number="1" Blueprint="Prickler" Hint="LivesOnWalls" />
+        <object Chance="100" Number="1-2" Blueprint="SmallBoulder" />
+        <object Chance="25" Number="1-4" Blueprint="SaltyWaterPuddle" />
+        <object Chance="25" Number="1-2" Blueprint="BrackishWaterPuddle" />
+        <object Chance="5" Number="1" Blueprint="FreshWaterPuddle" />
+        <object Chance="10" Number="1-4" Blueprint="LargeBoulder" />
+        <object Chance="25" Number="1" Blueprint="Beetlebum" />
+        <object Chance="1" Number="1-6" Blueprint="Bones" />
+        <object Chance="1" Blueprint="WaterloggedBuilder" />
+        <object Chance="1" Blueprint="SlimePoolsBuilder" />
+    </population>
+
+    <population Name="LaurusGenericCaveCritters1">
+        <object Chance="95" Number="1-3" Blueprint="Bat" />
+        <object Chance="85" Number="1-3" Blueprint="Dog" />
+        <object Chance="5" Number="1" Blueprint="Bear" />
+        <object Chance="4" Number="1" Blueprint="Horned Chameleon" />
+        <object Chance="3" Number="1" Blueprint="Electrofuge" />
+        <object Chance="2" Number="1" Blueprint="Slumberling" />
+        <object Chance="5" Number="1-4" Blueprint="GiantDragonfly" />
+        <object Chance="2" Number="1" Blueprint="Scrap-clad Hermit" />
+        <object Chance="2" Number="1-2" Blueprint="Ray Cat" />
+        <table Chance="1" Name="Shale Cave Critters 2" />
+    </population>
+
+    <population Name="LaurusTallMountainCavePopulation">
+        <!--Random stuff-->
+        <group Name="Encounters" Style="pickone">
+            <table Name="Nothing" Weight="95" />
+            <table Name="CaveOddEncounters" Weight="5" />
+        </group>
+
+        <group Name="Contents" Style="pickone">
+            <table Name="Nothing" Weight="25" />
+
+            <!-- Creatures -->
+            <group Name="Creatures" Style="pickone" Weight="25">
+                <table Name="Tier2CaveCreatures" />
+                <table Name="MountainCreatures" />
+            </group>
+
+            <!-- Merge tables -->
+            <group Name="Populations" Style="pickone" Weight="6">
+                <table Name="Tier3CavePopulation" />
+            </group>
+
+            <!--Lairs-->
+            <group Name="Lairs" Style="pickone" Weight="5">
+                <table Weight="20" Name="SpiderLairs1" />
+                <table Weight="20" Name="OozeLairs1" />
+            </group>
+        </group>
+    </population>
+
+    <population Name="LaurusTallMountainsZoneGlobals">
+        <table Name="StandardSurfaceGlobals" />
+        <object Blueprint="Rocky" />
+        <object Chance="1" Blueprint="SultanShrine" />
+        <object Number="6d6" Blueprint="OilPuddle" />
+        <object Chance="40" Number="2d6" Blueprint="Rubble" />
+        <object Chance="40" Number="2d6" Blueprint="Rubble Grey" />
+        <object Chance="40" Number="2d6" Blueprint="Rubble Grey" />
+        <object Chance="15" Number="1-2" Blueprint="Table" />
+        <object Chance="40" Number="1" Blueprint="Chest2" />
+        <object Chance="40" Number="1" Blueprint="Chest4" />
+        <object Chance="50" Blueprint="StairsDownBuilder" />
+
+        <group Name="Options" Number="1d4" Style="pickeach">
+            <table Weight="5" Name="Tier5RuinsCreatures" />
+            <table Weight="10" Name="Tier5RuinsRobots" />
+            <table Weight="10" Name="Tier5RuinsCreatures" />
+        </group>
+
+        <!-- Do better than throwing junk on the ground when we do sector encounters -->
+        <group Name="Junk" Chance="35" Number="1d2" Style="pickone">
+            <table Name="Junk 4" />
+            <table Name="Junk 5" />
+        </group>
+    </population>
+
+    <population Name="LaurusTallMountainsUndergroundZoneGlobals">
+        <table Name="LaurusTallMountainsZoneGlobals" />
+        <object Chance="100" Number="10d5" Blueprint="Qudzu" Hint="LivesOnWalls" />
+        <object Chance="100" Number="4d3" Blueprint="Dreadroot" Hint="InsideCorner,AlongWall" />
+        <object Chance="50" Number="4d3" Blueprint="Cave Spider" />
+        <object Chance="10" Number="1d6" Blueprint="Spark Tick" />
+
+        <group Name="Trash" Chance="80" Number="1" Style="pickeach">
+            <object Blueprint="Garbage" Number="20-33" />
+            <table Chance="100,50,25" Name="Junk 2" />
+            <table Chance="50,25,10" Name="Junk 3" />
+        </group>
+        <group Name="MacroDungeonFeatures" Chance="80" Number="2" Style="pickone">
+            <table Weight="200" Name="LaurusTallMountainCaveFeatures" />
+            <table Weight="100" Name="LaurusGenericCaveCritters1" />
+        </group>
+        <group Name="Types" Style="pickone">
+            <group Name="Salty" Weight="10">
+                <object Weight="5" Number="1d2+45" Blueprint="BrackishWaterPuddle" Hint="Adjacent" />
+                <object Number="1d4+15" Blueprint="SaltyWaterPuddle" Hint="Adjacent" />
+            </group>
+            <group Name="Dirty" Weight="1">
+                <object Blueprint="Dirty" Number="1" />
+                <object Weight="5" Number="1d2+45" Blueprint="BrackishWaterPuddle" Hint="Adjacent" />
+                <object Number="1d4+15" Blueprint="SaltyWaterPuddle" Hint="Adjacent" />
+            </group>
+            <group Name="Wet" Weight="3">
+                <object Number="1d1+15" Blueprint="BrackishWaterPuddle" Hint="Adjacent" />
+                <object Number="2d3" Blueprint="Glowfish" Hint="Aquatic" />
+                <object Number="1d2" Blueprint="Glowpad" Hint="Aquatic" />
+            </group>
+        </group>
+
+    </population>
+
+    <population Name="LaurusTallMountainsPerSector">
+        <group Name="SpecialEncounters" Style="pickone">
+        </group>
+        <group Name="Creatures" Style="pickone">
+            <table Weight="10000" Name="Nothing" />
+        </group>
+    </population>
+
+    <population Name="LaurusLairOwnersTallMountains">
+        <group Name="Options" Style="pickone">
+            <object Blueprint="Glowmoth" />
+            <object Blueprint="Quillipede" />
+            <object Blueprint="Waydroid" />
+            <object Blueprint="Spitting Slug" />
+            <object Blueprint="Electric Snail" />
+            <object Blueprint="ChaingunTurret" />
+        </group>
+    </population>
+
+</populations>

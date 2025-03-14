@@ -1,0 +1,88 @@
+
+Add new Deathland subtypes
+Spiders Lair
+Golgotha Type shit
+Templar fort
+
+Add Cybernetically enhanced snapjaws
+
+
+Giant Nests ¬ Done Nests
+
+Gamma Moth extensions
+
+
+
+
+
+
+The Womb of the Thousand (Late-Game, High-Tier Faction)
+
+"A thousand born, a thousand die, and one walks the path to perfection."
+Overview
+
+The Womb of the Thousand is an endgame-level faction, an Uman-led rogue experiment where thousands of clones are bred, tested, and discarded in pursuit of genetic perfection. Unlike typical mutants, their genetic mutations are not random but strictly controlled iterations, each generation slightly better than the last. They exist in an underground hatchery-lab, where failed clones are either repurposed or tossed into the Pit of Flesh, an abyssal biomass of discarded lives.
+Base of Operations: The Infinite Hatchery
+
+    A labyrinthine gene-forge, lined with bio-pods pulsing with embryonic light.
+    Organic machinery weaves and unweaves flesh, crafting new iterations.
+    The Pit of Flesh, a roiling mass of failed clones, constantly shifting and birthing horrors.
+    Guarded by Warden Broodmothers, towering figures who cull the weak and enhance the worthy.
+
+Enemies
+
+✅ Batchborn Soldiers – Early clones, disposable and unnervingly identical. Die easily, but appear in endless waves.
+✅ Gene-Touched Warriors – Middle-tier elites, each with controlled mutations like enhanced limbs, extra eyes, or rapid regeneration.
+✅ Warden Broodmothers – Mid-bosses, overseeing gene-growth. Buff and modify enemies mid-fight, sacrificing lesser clones to empower others.
+✅ Iterant Champions – Mini-boss tier, rare perfected specimens with carefully tuned mutations, each one completely unique.
+✅ The Prime Clone (Final Boss) – The culmination of thousands of generations, a towering, perfectly designed Uman mutant wielding both psionic and biological supremacy.
+Unique Loot & Mechanics
+
+    Clone Seed Implant – Creates a weaker clone of you upon death to fight in your stead.
+    Gene-Tuned Weaponry – Weapon damage is randomized and improves based on your mutations.
+    Bioplastic Carapace – Adaptive armor that grows stronger the longer you survive in combat.
+    Womb-Touched Flesh – A consumable that rewrites a mutation into a stronger version, but may add a random defect.
+    Flesh-Iterant Rebirth – An experimental artifact allowing a full mutation respec, but with a chance of permanent stat loss.
+
+Themes & Gameplay Feel
+
+    The constant refinement of life, where death is merely a discarded iteration.
+    Overwhelming numbers, forcing the player into prolonged endurance fights.
+    Late-game challenge, rewarding players with powerful gear and mutation upgrades.
+    Uncanny horror, where the player realizes their enemies are all versions of the same person, endlessly reborn.
+
+The Corpus Commune (Scaling Mid-to-High Tier Faction)
+
+"One mind. One purpose. One evolution."
+Overview
+
+The Corpus Commune is a genetic hivemind composed of mutants, failed experiments, and mind-linked Umans. Unlike the Womb of the Thousand, which focuses on perfection, the Corpus Commune believes in continuous fluid evolution, constantly merging, splitting, and recombining its members in real-time.
+
+The Corpus scales with player level, meaning early encounters will feature lesser mutants, while late-game versions will see horrifying flesh-behemoths with highly unpredictable abilities.
+Base of Operations: The Gestalt Pools
+
+    A massive, organic sprawl, filled with oozing biomass, pulsating flesh-walls, and twitching, half-conscious entities.
+    The Gene-Vats, where weaker members dissolve into a fluid state before re-emerging improved.
+    The Mindflesh Core, the central brain-mass that guides the Commune, housed within a colossal mutant.
+
+Enemies
+
+✅ Gestalt Thralls – Mutant soldiers, physically linked, attacking in eerie synchronization.
+✅ Recombinant Horrors – Mutants that merge mid-fight, gaining new attacks and increased strength.
+✅ Corpus Melders – Psychic mutants who forcibly link players to their network, causing status effects or temporary mind control.
+✅ Fleshbound Colossi – Late-game huge enemies that incorporate smaller mutants into their form mid-battle.
+✅ Mindflesh Titans – The leaders, beings so mentally fused with the hivemind that their thoughts manifest as psionic attacks.
+Unique Loot & Mechanics
+
+    Symbiotic Veil – Grants heightened perception, but causes occasional bursts of lost control.
+    Neuromorphic Serum – Briefly allows control of weak enemies, but erodes intelligence over time.
+    Recombinant Gauntlets – Mutating melee weapons that shift form based on combat style.
+    Hivebone Spines – Armor that causes attackers to take damage, but occasionally fuses with the wearer.
+    Corpus Rebirth Serum – If the player dies while carrying this, they revive, but with a random mutation from the Commune's pool.
+
+Themes & Gameplay Feel
+
+    Ever-changing, where enemies adapt to the player, making each fight feel different.
+    Scaling with progression, so early encounters feel manageable, but late-game encounters become nightmarish.
+    Eldritch horror, where the player risks losing their own identity if they interact with the Commune too much.
+    Invasive and viral, enemies merge into new, unpredictable forms mid-battle, forcing the player to constantly rethink their approach.

@@ -1,0 +1,346 @@
+<objects>
+
+    <!--
+    *******************
+       Natural walls
+    *******************
+  -->
+    <object Name="LaurusWallBaseIgneousRock" Inherits="BaseWallRock">
+        <part Name="Render" DisplayName="[rock wall]" RenderString="177" ColorString="&amp;K^r" TileColor="&amp;K" DetailColor="r" Occluding="true" />
+        <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="3000" Takeable="false" Solid="true" />
+        <stat Name="AV" Value="15" />
+        <stat Name="Hitpoints" Value="1000" />
+        <tag Name="PaintedWall" Value="wall_rock" />
+        <tag Name="NoSparkingQuest" />
+        <tag Name="VaporObject" Value="LavaPuddle" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="BaseObject" Value="*noinherit" />
+        <tag Name="Tier" Value="0" />
+        <stag Name="Geological" />
+    </object>
+
+    <!-- Sedimentary -->
+    <object Name="LaurusWallConglomerate" Inherits="BaseSedimentaryRock">
+        <part Name="Render" DisplayName="conglomerate" ColorString="&amp;Y^k" TileColor="&amp;Y" DetailColor="k" Occluding="true" />
+        <stat Name="AV" Value="12" />
+        <stat Name="Hitpoints" Value="600" />
+        <part Name="Description" Short="A jumbled clutch of stone and gravel, bound by ages of pressure. The bones of smaller rocks form its sinew." />
+        <xtagGrammar massNoun="true" />
+    </object>
+    <object Name="LaurusWallDolostone" Inherits="BaseSedimentaryRock">
+        <part Name="Render" DisplayName="dolostone" ColorString="&amp;w^K" TileColor="&amp;w" DetailColor="K" Occluding="true" />
+        <stat Name="AV" Value="18" />
+        <stat Name="Hitpoints" Value="1200" />
+        <part Name="Description" Short="Born of limestone and transfigured by mineral ghosts, its surface is pallid and cold, veined with time." />
+        <xtagGrammar massNoun="true" />
+    </object>
+    <object Name="LaurusWallChert" Inherits="BaseSedimentaryRock">
+        <part Name="Render" DisplayName="chert" ColorString="&amp;w^k" TileColor="&amp;w" DetailColor="k" Occluding="true" />
+        <stat Name="AV" Value="10" />
+        <stat Name="Hitpoints" Value="700" />
+        <part Name="Description" Short="A dense, cryptic rock that sparks against steel. Striated fossils of primeval creatures hide within." />
+        <xtagGrammar massNoun="true" />
+    </object>
+
+    <!-- Metamorphic -->
+    <object Name="LaurusWallGneiss" Inherits="BaseMetamorphicRock">
+        <part Name="Render" DisplayName="gneiss" ColorString="&amp;k^W" TileColor="&amp;k" DetailColor="W" Occluding="true" />
+        <stat Name="AV" Value="28" />
+        <stat Name="Hitpoints" Value="3500" />
+        <part Name="Description" Short="Bent and banded under titanic pressure, its wavy grains are the fossilized wrinkles of a reshaped world." />
+        <xtagGrammar massNoun="true" />
+    </object>
+    <object Name="LaurusWallEclogite" Inherits="BaseMetamorphicRock">
+        <part Name="Render" DisplayName="eclogite" ColorString="&amp;R^r" TileColor="&amp;R" DetailColor="r" Occluding="true" />
+        <stat Name="AV" Value="30" />
+        <stat Name="Hitpoints" Value="4000" />
+        <part Name="Description" Short="Dark, high-pressure rock with crimson garnet flecks. The blood of deep Earth solidified." />
+        <xtagGrammar massNoun="true" />
+    </object>
+
+    <!-- Igneous -->
+    <object Name="LaurusWallObsidian" Inherits="LaurusWallBaseIgneousRock">
+        <part Name="Render" DisplayName="obsidian" ColorString="&amp;K^r" TileColor="&amp;K" DetailColor="r" Occluding="true" />
+        <stat Name="AV" Value="35" />
+        <stat Name="Hitpoints" Value="5000" />
+        <part Name="Description" Short="Black glass birthed in volcanic crucibles. Fragile, yet its edges can split atoms and flesh alike." />
+        <xtagGrammar massNoun="true" />
+        <tag Name="PaintedWall" Value="wall_obsidian" />
+    </object>
+    <object Name="LaurusWallDiorite" Inherits="LaurusWallBaseIgneousRock">
+        <part Name="Render" DisplayName="diorite" ColorString="&amp;w^K" TileColor="&amp;w" DetailColor="K" Occluding="true" />
+        <stat Name="AV" Value="22" />
+        <stat Name="Hitpoints" Value="2500" />
+        <part Name="Description" Short="Neither dark nor light, it sits at the crossroads of fire and stone. Mottled grey-white, a monument to balance." />
+        <xtagGrammar massNoun="true" />
+    </object>
+    <object Name="LaurusWallPegmatite" Inherits="LaurusWallBaseIgneousRock">
+        <part Name="Render" DisplayName="pegmatite" ColorString="&amp;W^Y" TileColor="&amp;W" DetailColor="Y" Occluding="true" />
+        <stat Name="AV" Value="15" />
+        <stat Name="Hitpoints" Value="1600" />
+        <part Name="Description" Short="A glittering matrix of oversized crystals, the last exhalation of a cooling world." />
+        <xtagGrammar massNoun="true" />
+    </object>
+    <object Name="LaurusWallScoria" Inherits="LaurusWallBaseIgneousRock">
+        <part Name="Render" DisplayName="scoria" ColorString="&amp;R^k" TileColor="&amp;R" DetailColor="k" Occluding="true" />
+        <stat Name="AV" Value="12" />
+        <stat Name="Hitpoints" Value="1000" />
+        <part Name="Description" Short="Pocked and blistered, this crimson-black stone is lighter than it should be, as though it carries a memory of fire." />
+        <xtagGrammar massNoun="true" />
+    </object>
+
+
+    <!--
+    ***********************
+       Constructed walls
+    ***********************
+  -->
+    <object Name="LaurusWallConcrete" Inherits="Wall">
+        <part Name="Render" DisplayName="concrete wall" RenderString="178" ColorString="&amp;y^c" TileColor="&amp;y" DetailColor="c" Occluding="true" />
+        <part Name="Physics" Weight="12000" FlameTemperature="24000" VaporTemperature="57000" Takeable="false" Solid="true" />
+        <part Name="Description" Short="Smooth grey stone hides its bonded pebbly innards and cement blood-paste. It's streaked with dirt." />
+        <stat Name="AV" Value="30" />
+        <stat Name="Hitpoints" Value="100" />
+        <stat Name="HeatResistance" Value="75" />
+        <stat Name="ColdResistance" Value="75" />
+        <tag Name="PaintedWall" Value="wall_mud" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Mods" Value="TechWallMods" />
+        <tag Name="Tier" Value="3" />
+        <part Name="Graffitied" ChanceOneIn="300" />
+    </object>
+    <object Name="LaurusWallWoodWall" Inherits="Wall">
+        <part Name="Render" DisplayName="brinestalk wall" Tile="assets_content_textures_tiles_tile-1-18.png" RenderString="215" ColorString="&amp;w^y" TileColor="&amp;w" DetailColor="y" Occluding="true" />
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="true" Organic="true" />
+        <part Name="Description" Short="Here are several stripped trunks of sallow brinestalk bonded with mud." />
+        <stat Name="AV" Value="5" />
+        <stat Name="Hitpoints" Value="100" />
+        <tag Name="BodyType" Value="WoodWall" />
+        <tag Name="PaintedWall" Value="wall_wood" />
+        <tag Name="PaintedWallExtension" Value=".bmp" />
+        <tag Name="PaintWith" Value="WoodWalls" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Category_Settlement" />
+        <tag Name="Tier" Value="0" />
+        <part Name="Graffitied" ChanceOneIn="300" />
+        <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitWood"></tag>
+        <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_manufacturedWood" />
+        <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_manufacturedWood" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    </object>
+    <object Name="LaurusWallBrickWall" Inherits="BaseWallBrick">
+        <part Name="Render" DisplayName="brick" RenderString="177" Occluding="true" ColorString="&amp;r^w" TileColor="&amp;r" DetailColor="w" />
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="true" />
+        <part Name="Description" Short="Burnt clay ingots are laid crosswise, and a barrier is made. Each brick is marred by the variegated cuts of time, imperfections in the heat balance of the oven it was fired in, and fungi in its birthing mud." />
+        <stat Name="AV" Value="7" />
+        <stat Name="Hitpoints" Value="200" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Category_Settlement" />
+        <xtagGrammar massNoun="true" />
+        <tag Name="Tier" Value="2" />
+        <part Name="Graffitied" ChanceOneIn="300" />
+    </object>
+    <!--
+    ***********************
+       Constructed walls
+    ***********************
+  -->
+
+    <!-- Rusted Sheet Metal -->
+    <object Name="LaurusWallRustedMetal" Inherits="Wall">
+        <part Name="Render" DisplayName="rusted metal wall" RenderString="178" ColorString="&amp;R^k" TileColor="&amp;R" DetailColor="k" Occluding="true" />
+        <part Name="Physics" Weight="9000" Takeable="false" Solid="true" FlameTemperature="18000" />
+        <part Name="Description" Short="Sheets of oxidized iron, buckled and corroded, clatter in the wind." />
+        <stat Name="AV" Value="15" />
+        <stat Name="Hitpoints" Value="150" />
+        <stat Name="HeatResistance" Value="50" />
+        <stat Name="ColdResistance" Value="30" />
+        <tag Name="PaintedWall" Value="wall_metal" />
+        <tag Name="Mods" Value="TechWallMods" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Tier" Value="2" />
+        <part Name="Graffitied" ChanceOneIn="250" />
+    </object>
+    <!-- Bio-Braced Wall -->
+    <object Name="LaurusWallBioBraced" Inherits="Wall">
+        <part Name="Render" DisplayName="bio-braced wall" RenderString="178" ColorString="&amp;g^y" TileColor="&amp;g" DetailColor="y" Occluding="true" />
+        <part Name="Physics" Weight="7000" Takeable="false" Solid="true" Organic="true" />
+        <part Name="Description" Short="Twisting vines and hardened keratin strands interlace into a rigid structure, subtly pulsing with life." />
+        <stat Name="AV" Value="12" />
+        <stat Name="Hitpoints" Value="200" />
+        <stat Name="HeatResistance" Value="40" />
+        <stat Name="ColdResistance" Value="60" />
+        <tag Name="BodyType" Value="WoodWall" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Tier" Value="3" />
+        <tag Name="RegeneratesHitpoints" Value="true" />
+        <part Name="Graffitied" ChanceOneIn="400" />
+    </object>
+    <!-- Glasscrete Wall -->
+    <object Name="LaurusWallGlasscrete" Inherits="Wall">
+        <part Name="Render" DisplayName="glasscrete wall" RenderString="178" ColorString="&amp;C^w" TileColor="&amp;C" DetailColor="w" Occluding="true" />
+        <part Name="Physics" Weight="15000" Takeable="false" Solid="true" FlameTemperature="25000" VaporTemperature="60000" />
+        <part Name="Description" Short="A translucent monolith of fused silica and concrete, infused with strange luminescence." />
+        <stat Name="AV" Value="35" />
+        <stat Name="Hitpoints" Value="300" />
+        <stat Name="HeatResistance" Value="80" />
+        <stat Name="ColdResistance" Value="80" />
+        <tag Name="PaintedWall" Value="wall_glass" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Tier" Value="4" />
+        <tag Name="ReflectsLasers" Value="true" />
+    </object>
+    <!-- Bone Plating Wall -->
+    <object Name="LaurusWallBonePlating" Inherits="Wall">
+        <part Name="Render" DisplayName="bone plating" RenderString="177" ColorString="&amp;W^y" TileColor="&amp;W" DetailColor="y" Occluding="true" />
+        <part Name="Physics" Weight="12000" Takeable="false" Solid="true" Organic="true" />
+        <part Name="Description" Short="Segmented plates of bleached bone, mortared with hardened marrow and ancient cartilage." />
+        <stat Name="AV" Value="20" />
+        <stat Name="Hitpoints" Value="250" />
+        <stat Name="HeatResistance" Value="20" />
+        <stat Name="ColdResistance" Value="50" />
+        <tag Name="Category_Settlement" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Tier" Value="2" />
+        <tag Name="ResistsPiercing" Value="true" />
+        <part Name="Graffitied" ChanceOneIn="300" />
+    </object>
+    <!-- Nacreous Wall (Pearlescent) -->
+    <object Name="LaurusWallNacreous" Inherits="Wall">
+        <part Name="Render" DisplayName="nacreous wall" RenderString="178" ColorString="&amp;Y^C" TileColor="&amp;Y" DetailColor="C" Occluding="true" />
+        <part Name="Physics" Weight="14000" Takeable="false" Solid="true" />
+        <part Name="Description" Short="A glistening shell-like wall of iridescent nacre, its surface shifting with prismatic hues." />
+        <stat Name="AV" Value="25" />
+        <stat Name="Hitpoints" Value="180" />
+        <stat Name="HeatResistance" Value="65" />
+        <stat Name="ColdResistance" Value="65" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Tier" Value="3" />
+        <tag Name="ReflectsLasers" Value="true" />
+        <tag Name="Soundproof" Value="true" />
+    </object>
+    <!-- Ribbed Tungsten Wall -->
+    <object Name="LaurusWallRibbedTungsten" Inherits="Wall">
+        <part Name="Render" DisplayName="ribbed tungsten wall" RenderString="178" ColorString="&amp;w^K" TileColor="&amp;w" DetailColor="K" Occluding="true" />
+        <part Name="Physics" Weight="20000" Takeable="false" Solid="true" FlameTemperature="40000" VaporTemperature="80000" />
+        <part Name="Description" Short="Hefty striated tungsten slabs form this wall, built to endure untold epochs." />
+        <stat Name="AV" Value="50" />
+        <stat Name="Hitpoints" Value="500" />
+        <stat Name="HeatResistance" Value="100" />
+        <stat Name="ColdResistance" Value="100" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Tier" Value="5" />
+        <tag Name="ReflectsLasers" Value="true" />
+        <tag Name="ResistsPiercing" Value="true" />
+    </object>
+
+
+    <!-- Fences -->
+    <object Name="LaurusWallWoodFence" Inherits="Wall">
+        <part Name="Render" DisplayName="wooden fence" RenderString="216" ColorString="&amp;w" DetailColor="y" Occluding="false" />
+        <part Name="Physics" Weight="100" Takeable="false" Solid="true" Organic="true" />
+        <part Name="Description" Short="Spirals cross the grain on the dogthorn pickets stuck into the ground." />
+        <stat Name="AV" Value="1" />
+        <stat Name="Hitpoints" Value="15" />
+        <tag Name="BodyType" Value="WoodWall" />
+        <tag Name="PaintedFence" Value="fence" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Category_Settlement" />
+        <tag Name="Flyover" />
+        <tag Name="Tier" Value="0" />
+        <intproperty Name="AllowMissiles" Value="1" />
+        <part Name="Graffitied" ChanceOneIn="300" />
+        <tag Name="UsesGate" Value="Brinestalk Gate" />
+        <tag Name="ImpactSound" Value="Sounds/Throw/sfx_throwing_generic_hitWood"></tag>
+        <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_manufacturedWood" />
+        <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_manufacturedWood" />
+        <tag Name="Fence"></tag>
+        <stag Name="Contemporary" />
+    </object>
+
+    <!--
+    ****************************
+       Mutant & Ruin Walls
+    ****************************
+  -->
+    <object Name="LaurusWallChitinousCarapace" Inherits="Wall">
+        <part Name="Render" DisplayName="chitinous carapace" RenderString="177" ColorString="&amp;K^y" TileColor="&amp;K" DetailColor="y" Occluding="true" />
+        <part Name="Physics" Weight="8000" Takeable="false" Solid="true" Organic="true" />
+        <part Name="Description" Short="A massive exoskeletal plating, layered and hardened through centuries of molting." />
+        <stat Name="AV" Value="18" />
+        <stat Name="Hitpoints" Value="220" />
+        <stat Name="HeatResistance" Value="40" />
+        <stat Name="ColdResistance" Value="40" />
+        <tag Name="RegeneratesHitpoints" Value="true" />
+        <tag Name="PaintedWall" Value="wall_chitin" />
+        <tag Name="Tier" Value="2" />
+        <part Name="Graffitied" ChanceOneIn="350" />
+    </object>
+    <object Name="LaurusWallPulsatingFlesh" Inherits="Wall">
+        <part Name="Render" DisplayName="pulsating flesh wall" RenderString="178" ColorString="&amp;R^r" TileColor="&amp;R" DetailColor="r" Occluding="true" />
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="true" Organic="true" />
+        <part Name="Description" Short="Tangled sinew and muscle pulse with unnatural life, stitched together by some malign intelligence." />
+        <stat Name="AV" Value="12" />
+        <stat Name="Hitpoints" Value="250" />
+        <stat Name="HeatResistance" Value="20" />
+        <stat Name="ColdResistance" Value="50" />
+        <tag Name="RegeneratesHitpoints" Value="true" />
+        <tag Name="BleedsOnDamage" Value="true" />
+        <tag Name="EmitsOccasionalSound" Value="wet_squish" />
+        <tag Name="Tier" Value="3" />
+        <part Name="Graffitied" ChanceOneIn="500" />
+    </object>
+    <object Name="LaurusWallNerveBundle" Inherits="Wall">
+        <part Name="Render" DisplayName="nerve-bundled wall" RenderString="178" ColorString="&amp;Y^W" TileColor="&amp;Y" DetailColor="W" Occluding="true" />
+        <part Name="Physics" Weight="7000" Takeable="false" Solid="true" Organic="true" />
+        <part Name="Description" Short="A lattice of thick, undulating nerves braided together. An occasional electric pulse ripples across its surface." />
+        <stat Name="AV" Value="15" />
+        <stat Name="Hitpoints" Value="150" />
+        <stat Name="HeatResistance" Value="30" />
+        <stat Name="ColdResistance" Value="40" />
+        <tag Name="EmitsLight" Value="soft_pulsing_glow" />
+        <tag Name="EmitsOccasionalSound" Value="electric_hum" />
+        <tag Name="Tier" Value="3" />
+        <tag Name="RegeneratesHitpoints" Value="true" />
+    </object>
+    <object Name="LaurusWallFerrofluidic" Inherits="Wall">
+        <part Name="Render" DisplayName="ferrofluidic wall" RenderString="178" ColorString="&amp;B^K" TileColor="&amp;B" DetailColor="K" Occluding="true" />
+        <part Name="Physics" Weight="12000" Takeable="false" Solid="true" />
+        <part Name="Description" Short="Jagged ridges of magnetic ferrofluid shift unpredictably, aligning to unseen forces." />
+        <stat Name="AV" Value="22" />
+        <stat Name="Hitpoints" Value="300" />
+        <stat Name="HeatResistance" Value="75" />
+        <stat Name="ColdResistance" Value="75" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Tier" Value="4" />
+        <tag Name="RepelsProjectiles" Value="true" />
+        <tag Name="ResistsElectricity" Value="true" />
+    </object>
+    <object Name="LaurusWallAlgorithmic" Inherits="Wall">
+        <part Name="Render" DisplayName="algorithmic wall" RenderString="178" ColorString="&amp;C^B" TileColor="&amp;C" DetailColor="B" Occluding="true" />
+        <part Name="Physics" Weight="11000" Takeable="false" Solid="true" />
+        <part Name="Description" Short="Geometric patterns tessellate across its surface, constantly rearranging according to an unseen logic." />
+        <stat Name="AV" Value="30" />
+        <stat Name="Hitpoints" Value="400" />
+        <stat Name="HeatResistance" Value="85" />
+        <stat Name="ColdResistance" Value="85" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Tier" Value="5" />
+        <tag Name="EmitsLight" Value="soft_blue_glow" />
+        <tag Name="OccasionallyShiftsShape" Value="true" />
+        <tag Name="ConfusesOnMelee" Value="true" />
+    </object>
+    <object Name="LaurusWallCrumblingPretech" Inherits="Wall">
+        <part Name="Render" DisplayName="crumbling pretech wall" RenderString="177" ColorString="&amp;w^K" TileColor="&amp;w" DetailColor="K" Occluding="true" />
+        <part Name="Physics" Weight="14000" Takeable="false" Solid="true" />
+        <part Name="Description" Short="Once a masterpiece of forgotten engineering, now eroded and fractured by the long decay of time." />
+        <stat Name="AV" Value="10" />
+        <stat Name="Hitpoints" Value="100" />
+        <stat Name="HeatResistance" Value="40" />
+        <stat Name="ColdResistance" Value="40" />
+        <tag Name="Tier" Value="1" />
+        <tag Name="CrumblesWhenDamaged" Value="true" />
+        <tag Name="EmitsOccasionalSound" Value="grinding_dust" />
+    </object>
+
+</objects>

@@ -1,0 +1,348 @@
+<objects>
+
+    <!-- Arm, Tier 4 -->
+    <object Name="LaurusArmourT4ForceBracelet" Inherits="BaseUtilityBracelet">
+        <part Name="Render" DisplayName="force bracelet" Tile="Items/sw_bracelet_tech.bmp" RenderString="]" ColorString="&amp;C" DetailColor="c" />
+        <part Name="Commerce" Value="125" />
+        <part Name="Description" Short="A small hexagonal switch sits across an unadorned wristcuff of chrome." />
+        <part Name="Physics" Weight="1" />
+        <part Name="ForceEmitter" />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="AIDefensiveEnergyCellReload" />
+        <part Name="AIPassiveEnergyCellReload" />
+        <part Name="Examiner" Complexity="4" />
+        <part Name="TinkerItem" Bits="0034" CanDisassemble="true" CanBuild="true" />
+        <tag Name="Mods" Value="CommonMods,ElectronicsMods" />
+        <tag Name="Tier" Value="4" />
+    </object>
+
+
+    <!-- Back, Tier 6 -->
+    <object Name="LaurusArmourT6Exoskeleton" Inherits="Armor">
+        <part Name="Render" DisplayName="{{W-W-W-W-W-R sequence|powered}} {{K-y-K-K-K-K-K-K-K-K sequence|exoskeleton}}" Tile="Items/sw_exoskeleton.bmp" ColorString="&amp;W" TileColor="&amp;c" DetailColor="W" RenderString="]" />
+        <part Name="Armor" AV="0" DV="-2" WornOn="Back" />
+        <part Name="BootSequence" BootTime="5" VerbOnBootInitialized="whine" VerbOnBootAborted="thunk" VerbOnBootDone="hum" ComputePowerFactor="0" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_whine" SoundOnBootAborted="Sounds/Interact/sfx_interact_artifact_abort_thunk" SoundOnBootDone="Sounds/Interact/sfx_interact_artifact_finish_hum" />
+        <part Name="EquipStatBoost" Boosts="Strength:2" ChargeUse="1" IsEMPSensitive="true" IsBootSensitive="true" IsPowerLoadSensitive="true" NameForStatus="ServoAssist" />
+        <part Name="Commerce" Value="535" />
+        <part Name="Description" Short="Slate tubes assemble to scaffold the human form." />
+        <part Name="Physics" Weight="10" />
+        <stat Name="Hitpoints" Value="60" />
+        <stat Name="AV" Value="6" />
+        <tag Name="Tier" Value="6" />
+        <part Name="Metal" />
+        <part Name="ItemElements" Elements="might::3;;circuitry::3" />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="AIOffensiveEnergyCellReload" />
+        <part Name="AIPassiveEnergyCellReload" />
+        <part Name="Examiner" Unknown="UnknownStrangeTubes" Alternate="UnknownStrangeTubes" Complexity="6" />
+        <part Name="TinkerItem" Bits="006" CanDisassemble="true" CanBuild="true" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_artifact_heavy" />
+        <tag Name="Mods" Value="CommonMods,ElectronicsMods,ExoskeletonMods" />
+    </object>
+    <object Name="LaurusArmourT6RainboweaveCloak" Inherits="BaseCloak">
+        <part Name="Armor" AV="0" DV="2" WornOn="Back" />
+        <part Name="Render" DisplayName="{{rainbow|rainboweave}} cloak" RenderString="]" Tile="items/sw_cloak_fancy.bmp" ColorString="&amp;m" DetailColor="W" />
+        <part Name="Commerce" Value="535" />
+        <part Name="Description" Short="Points of discontiguous matter flock in a crescent to a mock wind. Together they bend light across its full spectrum and blur the wearer's torso to a polychrome mess." />
+        <part Name="RefractLight" Chance="50" RetroVariance="1d241-121" ShowInShortDescription="true" />
+        <part Name="Physics" Weight="1" />
+        <part Name="Springy" Factor="0.8" />
+        <tag Name="Tier" Value="6" />
+        <tag Name="EquipmentFrameColors" Value="RWGB" />
+    </object>
+    <object Name="LaurusArmourT6OgreFurCloak" Inherits="BaseCloak">
+        <part Name="Armor" AV="1" DV="0" Toughness="1" Cold="10" Heat="10" WornOn="Back" />
+        <part Name="Render" DisplayName="{{W|ogre fur}} cloak" ColorString="&amp;w" RenderString="]" Tile="items/sw_cloak.bmp" DetailColor="W" />
+        <part Name="Commerce" Value="300" />
+        <part Name="Description" Short="Coarse fur is cut from the thickset pelt of an ogre ape into a broad-shouldered cloak." />
+        <part Name="Physics" Weight="15" Organic="true" />
+        <part Name="Fur" />
+        <tag Name="Tier" Value="6" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_fur" />
+        <part Name="AddsRep" Faction="Apes" Value="-100" />
+    </object>
+    <object Name="LaurusArmourT0BannerWomb1k" Inherits="BaseCloak">
+        <part Name="Armor" AV="0" DV="1" WornOn="Back" />
+        <part Name="Render" DisplayName="banner of the {{r|Holy Rhombus}}" RenderString="]" Tile="Items/sw_templar_banner.bmp" ColorString="&amp;r" DetailColor="Y" />
+        <part Name="Commerce" Value="20" />
+        <part Name="Description" Short="Air circulates and the sheet-standard breathes; the edges of the red diamond shrink and lengthen. Blood courses through the arteries of time and into the tissue of the new flesh." />
+        <tag Name="Tier" Value="6" />
+        <part Name="Banner" Faction="Templar" Effect="WarTrance" />
+        <part Name="Physics" Weight="15" Organic="true" />
+        <part Name="Springy" Factor="0.9" />
+        <tag Name="UsesSlots" Value="Back,Hand" />
+    </object>
+    <object Name="LaurusArmourT6HelpingHands" Inherits="Armor">
+        <part Name="Armor" AV="0" DV="0" WornOn="Back" />
+        <part Name="Render" DisplayName="&amp;Rh&amp;Yelping&amp;r &amp;Rh&amp;Yands" RenderString="]" Tile="Items/sw_helping_hands.bmp" ColorString="&amp;Y" DetailColor="R" />
+        <part Name="Commerce" Value="900" />
+        <part Name="Physics" Weight="20" />
+        <part Name="Description" Short="Gloved prosthetic hands attach to the ends of articulating rods. The control mechanism is housed in a false spine box." />
+        <part Name="HelpingHands" />
+        <part Name="ItemElements" Elements="circuitry::2" />
+        <part Name="Examiner" Alternate="UnknownBizarreContraption" Complexity="4" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_artifact_light" />
+        <tag Name="Tier" Value="6" />
+        <tag Name="Gender" Value="plural" />
+    </object>
+
+
+    <!-- Body, Tier 6 -->
+    <object Name="LaurusArmourT6RimechromePlatebody" Inherits="BaseArmor">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} shardmail}}" Tile="Items/sw_chest_hightier1.bmp" ColorString="&amp;r" DetailColor="y" RenderString="]" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <part Name="Armor" AV="6" DV="-3" Heat="9" Cold="9" Acid="9" Elec="9" WornOn="Body" />
+        <part Name="Physics" Weight="40" />
+        <part Name="Springy" Factor="0.5" />
+        <part Name="Commerce" Value="1200" />
+        <part Name="Rimechrome" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_glass" />
+        <tag Name="Tier" Value="6" />
+    </object>
+
+    <!-- Body, Tier 7 -->
+    <object Name="LaurusArmourT7AurogelShardmail" Inherits="BaseArmor">
+        <part Name="Render" DisplayName="{{K|{{palladium mesh|aurogel}} shardmail}}" Tile="Items/sw_chest_hightier1.bmp" ColorString="&amp;O" DetailColor="y" RenderString="]" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Armor" AV="7" DV="-3" Heat="9" Cold="9" Acid="9" Elec="9" WornOn="Body" />
+        <part Name="Physics" Weight="40" />
+        <part Name="Springy" Factor="0.5" />
+        <part Name="Commerce" Value="1900" />
+        <part Name="Aurogel" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_glass" />
+        <tag Name="Tier" Value="7" />
+    </object>
+
+    <!-- Body, Tier 8 -->
+    <object Name="LaurusArmourT8HelioniteLune" Inherits="BaseArmor">
+        <part Name="Render" DisplayName="{{metachrome|helionite}} lune" Tile="Items/sw_chest_hightier2.bmp" ColorString="&amp;W" DetailColor="y" RenderString="]" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Armor" AV="8" DV="-2" Heat="11" Cold="11" Acid="11" Elec="11" WornOn="Body" />
+        <part Name="Physics" Weight="35" />
+        <part Name="Commerce" Value="6000" />
+        <part Name="Helionite" />
+        <tag Name="Tier" Value="8" />
+        <tag Name="EquipSound" Value="sfx_equip_metal_quantum" />
+        <tag Name="Role" Value="Rare" />
+        <stag Name="Historical" />
+    </object>
+
+
+    <!-- Face, Tier 3 -->
+    <object Name="LaurusArmourT3NightVisionGoggles" Inherits="BaseEyewear">
+        <part Name="Armor" AV="0" DV="0" WornOn="Face" />
+        <part Name="Render" DisplayName="night-vision goggles" RenderString="]" Tile="Items/sw_goggles.bmp" ColorString="&amp;K" TileColor="&amp;K" DetailColor="G" />
+        <part Name="Commerce" Value="35" />
+        <part Name="Description" Short="Focus-ringed binoculars read the tells of infrared light and produce a textured picture of eye-warm greens." />
+        <part Name="Physics" Weight="6" />
+        <part Name="Examiner" Complexity="3" />
+        <part Name="NightVision" />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="PowerSwitch" EnergyCost="100" FlippableWithoutUnderstanding="true" ActivateSuccessMessage="" ActivateFailureMessage="" DeactivateSuccessMessage="" DeactivateFailureMessage="" />
+        <part Name="Metal" />
+        <part Name="ItemElements" Elements="glass::3" />
+        <tag Name="EquipSound" Value="sfx_equip_material_generic_glass" />
+        <tag Name="Mods" Value="CommonMods,EyewearMods,ElectronicsMods" />
+        <tag Name="Tier" Value="3" />
+        <part Name="TinkerItem" Bits="0003" CanDisassemble="true" CanBuild="true" />
+        <tag Name="Gender" Value="plural" />
+        <xtagGrammar iArticle="a pair of" />
+    </object>
+    <object Name="LaurusArmourT3VinewoodSapMask" Inherits="BaseMask">
+        <part Name="Armor" AV="0" DV="0" WornOn="Face" />
+        <part Name="Render" DisplayName="vinewood sap mask" RenderString="]" DetailColor="w" Tile="Items/sw_gas_mask.bmp" ColorString="&amp;W" />
+        <part Name="Commerce" Value="15" />
+        <part Name="Description" Short="A folded triangle pouch of burlap was impregnated with vinewood sap to absorb noxious vapor." />
+        <part Name="Physics" Weight="3" Organic="true" />
+        <part Name="Springy" Factor="0.1" />
+        <part Name="GasMask" Power="3" />
+        <tag Name="EquipSound" Value="sfx_equip_material_generic_organic" />
+        <tag Name="Tier" Value="3" />
+    </object>
+    <object Name="LaurusArmourT3GasMask" Inherits="BaseMask">
+        <part Name="Armor" AV="0" DV="0" WornOn="Face" />
+        <part Name="Render" DisplayName="gas mask" RenderString="]" ColorString="&amp;O" DetailColor="y" Tile="Items/sw_gas_mask.bmp" />
+        <part Name="Commerce" Value="25" />
+        <part Name="Description" Short="A durable plastic mask has been fitted with a simple filter to protect against noxious gas." />
+        <part Name="Physics" Weight="6" Conductivity="0" />
+        <part Name="GasMask" Power="8" />
+        <part Name="Metal" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
+        <tag Name="Tier" Value="3" />
+    </object>
+
+    <!-- Floating nearby, Tier 4 -->
+    <object Name="LaurusArmourT4FloatingGlowsphere" Inherits="LightSource">
+        <part Name="Armor" WornOn="Floating Nearby" />
+        <part Name="Render" DisplayName="floating {{Y|glowsphere}}" RenderString="*" RenderLayer="5" Tile="Items/sw_glowsphere.bmp" ColorString="&amp;Y" DetailColor="C" />
+        <part Name="GlowsphereProperties" AllowedParts="Hand,Floating Nearby" />
+        <part Name="LightSource" Lit="true" Radius="8" />
+        <part Name="Commerce" Value="200" />
+        <part Name="Description" Short="A phosphorescent opal-like fits in the palm of a hand and glows with the light of auroras absorbed chiliads ago. It floats about preternaturally." />
+        <part Name="AnimatedMaterialGeneric" AnimationLength="200" ColorStringAnimationFrames="0=&amp;Y,50=&amp;y,100=&amp;C,150=&amp;c" DetailColorAnimationFrames="0=C,50=c,100=Y,150=y" />
+        <tag Name="Gift" Value="*noinherit" />
+        <tag Name="Tier" Value="4" />
+        <stag Name="Floating" />
+    </object>
+
+    <!-- Feet, Tier 6 -->
+    <object Name="LaurusArmourT6RimechromeBoots" Inherits="BaseBoot">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} boots}}" ColorString="&amp;r" DetailColor="y" Tile="Items/sw_boots_hightier1.bmp" RenderString="]" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <part Name="Physics" Weight="20" />
+        <part Name="Springy" Factor="0.5" />
+        <part Name="Armor" AV="3" DV="-2" Heat="5" Cold="5" Acid="5" Elec="5" WornOn="Feet" />
+        <part Name="Commerce" Value="400" />
+        <part Name="Rimechrome" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_glass" />
+        <tag Name="Tier" Value="6" />
+    </object>
+
+    <!-- Feet, Tier 7 -->
+    <object Name="LaurusArmourT7AurogelBoots" Inherits="BaseBoot">
+        <part Name="Render" DisplayName="{{K|{{palladium mesh|aurogel}} boots}}" ColorString="&amp;O" DetailColor="y" Tile="Items/sw_boots_hightier1.bmp" RenderString="]" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Physics" Weight="20" />
+        <part Name="Springy" Factor="0.5" />
+        <part Name="Armor" AV="4" DV="-2" Heat="5" Cold="5" Acid="5" Elec="5" WornOn="Feet" />
+        <part Name="Commerce" Value="650" />
+        <part Name="Aurogel" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_glass" />
+        <tag Name="Tier" Value="7" />
+    </object>
+
+    <!-- Feet, Tier 8 -->
+    <object Name="LaurusArmourT8HelionitePumps" Inherits="BaseBoot">
+        <part Name="Render" DisplayName="{{metachrome|helionite}} pumps" ColorString="&amp;W" DetailColor="y" Tile="Items/sw_boots_hightier2.bmp" RenderString="]" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Armor" AV="4" DV="0" Heat="6" Cold="6" Acid="6" Elec="6" WornOn="Feet" />
+        <part Name="Physics" Weight="10" />
+        <part Name="Commerce" Value="1500" />
+        <part Name="Helionite" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_metal_quantum" />
+        <tag Name="Tier" Value="8" />
+        <tag Name="Role" Value="Rare" />
+        <stag Name="Historical" />
+    </object>
+
+    <!-- Hands, Tier 6 -->
+    <object Name="LaurusArmourT6RimechromeGauntlets" Inherits="BaseGauntlet">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} gauntlets}}" RenderString="]" ColorString="&amp;r" DetailColor="y" Tile="Items/sw_gauntlets_hightier1.bmp" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <part Name="Armor" AV="3" DV="-2" Heat="5" Cold="5" Acid="5" Elec="5" WornOn="Hands" />
+        <part Name="Commerce" Value="400" />
+        <part Name="Physics" Weight="15" />
+        <part Name="Springy" Factor="0.5" />
+        <part Name="Rimechrome" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_glass" />
+        <tag Name="Tier" Value="6" />
+    </object>
+
+    <!-- Hands, Tier 7 -->
+    <object Name="LaurusArmourT7AurogelGauntlets" Inherits="BaseGauntlet">
+        <part Name="Render" DisplayName="{{K|{{palladium mesh|aurogel}} gauntlets}}" RenderString="]" ColorString="&amp;O" DetailColor="y" Tile="Items/sw_gauntlets_hightier1.bmp" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Armor" AV="4" DV="-2" Heat="5" Cold="5" Acid="5" Elec="5" WornOn="Hands" />
+        <part Name="Commerce" Value="650" />
+        <part Name="Physics" Weight="15" />
+        <part Name="Springy" Factor="0.5" />
+        <part Name="Aurogel" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_glass" />
+        <tag Name="Tier" Value="7" />
+    </object>
+
+    <!-- Hands, Tier 8 -->
+    <object Name="LaurusArmourT8HelioniteGloves" Inherits="BaseGlove">
+        <part Name="Render" DisplayName="{{metachrome|helionite}} gloves" RenderString="]" ColorString="&amp;W" DetailColor="y" Tile="Items/sw_gauntlets_hightier2.bmp" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Armor" AV="4" DV="0" Heat="6" Cold="6" Acid="6" Elec="6" WornOn="Hands" />
+        <part Name="Physics" Weight="10" />
+        <part Name="Commerce" Value="1500" />
+        <part Name="Helionite" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_metal_quantum" />
+        <tag Name="Tier" Value="8" />
+        <tag Name="Role" Value="Rare" />
+        <stag Name="Historical" />
+    </object>
+
+    <!-- Head, Tier 6 -->
+    <object Name="LaurusArmourT6RimechromeCoronet" Inherits="BaseHelmet">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} coronet}}" ColorString="&amp;r" DetailColor="y" Tile="Items/sw_helm_hightier1.bmp" RenderString="]" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <part Name="Armor" AV="3" DV="-1" Heat="5" Cold="5" Acid="5" Elec="5" WornOn="Head" />
+        <part Name="Commerce" Value="400" />
+        <part Name="Physics" Weight="15" />
+        <part Name="Aurogel" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_glass" />
+        <tag Name="Tier" Value="6" />
+        <tag Name="DynamicObjectsTable:Headwear" />
+    </object>
+
+    <!-- Head, Tier 7 -->
+    <object Name="LaurusArmourT7AurogelCoronet" Inherits="BaseHelmet">
+        <part Name="Render" DisplayName="{{K|{{palladium mesh|aurogel}} coronet}}" ColorString="&amp;O" DetailColor="y" Tile="Items/sw_helm_hightier1.bmp" RenderString="]" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Armor" AV="4" DV="-1" Heat="5" Cold="5" Acid="5" Elec="5" WornOn="Head" />
+        <part Name="Commerce" Value="650" />
+        <part Name="Physics" Weight="15" />
+        <part Name="Aurogel" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_glass" />
+        <tag Name="Tier" Value="7" />
+        <tag Name="DynamicObjectsTable:Headwear" />
+    </object>
+
+    <!-- Head, Tier 8 -->
+    <object Name="LaurusArmourT8HelioniteApex" Inherits="BaseHelmet">
+        <part Name="Render" DisplayName="{{metachrome|helionite}} apex" ColorString="&amp;W" DetailColor="y" Tile="Items/sw_helm_hightier2.bmp" RenderString="]" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Armor" AV="4" DV="0" Heat="6" Cold="6" Acid="6" Elec="6" WornOn="Head" />
+        <part Name="Commerce" Value="1500" />
+        <part Name="Physics" Weight="8" />
+        <part Name="Helionite" />
+        <tag Name="Tier" Value="8" />
+        <tag Name="DynamicObjectsTable:Headwear" />
+        <tag Name="Role" Value="Rare" />
+        <tag Name="EquipSound" Value="sfx_equip_armor_metal_quantum" />
+        <stag Name="Historical" />
+    </object>
+
+    <!-- Shields, Tier 5 -->
+    <object Name="LaurusArmourT5FerricreteShield" Inherits="BaseShield">
+        <part Name="Render" DisplayName="{{K|ferricrete}} aegis" ColorString="&amp;K" TileColor="&amp;y" DetailColor="K" Tile="Items/sw_shield_templar.bmp" />
+        <part Name="Shield" AV="5" DV="-4" WornOn="Hand" />
+        <part Name="Description" Short="The broad and tall aegis is a halved kite of sunbeam and starless dusk, and painted across her sword-nicked plane is the Holy Rhombus of the Temple." />
+        <part Name="Commerce" Value="200" />
+        <part Name="Physics" Weight="20" />
+        <part Name="Ferricrete" />
+        <tag Name="Tier" Value="5" />
+    </object>
+
+    <!-- Shields, Tier 6 -->
+    <object Name="LaurusArmourT6RimechromeShield" Inherits="BaseShield">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} aegis}}" Tile="Items/sw_shield5.bmp" ColorString="&amp;r" DetailColor="y" />
+        <part Name="Shield" AV="6" DV="-2" WornOn="Hand" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <part Name="Commerce" Value="300" />
+        <part Name="Physics" Weight="15" />
+        <part Name="Metal" />
+        <part Name="Rimechrome" />
+        <tag Name="EquipSound" Value="sfx_equip_material_generic_glass" />
+        <tag Name="Tier" Value="6" />
+    </object>
+
+    <!-- Shields, Tier 7 -->
+    <object Name="LaurusArmourT7AurogelShield" Inherits="BaseShield">
+        <part Name="Render" DisplayName="{{K|{{palladium mesh|aurogel}} aegis}}" Tile="Items/sw_shield5.bmp" ColorString="&amp;O" DetailColor="y" />
+        <part Name="Shield" AV="7" DV="-2" WornOn="Hand" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <part Name="Commerce" Value="450" />
+        <part Name="Physics" Weight="15" />
+        <part Name="Metal" />
+        <part Name="Aurogel" />
+        <tag Name="EquipSound" Value="sfx_equip_material_generic_glass" />
+        <tag Name="Tier" Value="7" />
+    </object>
+
+
+
+</objects>

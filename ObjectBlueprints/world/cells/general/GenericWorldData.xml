@@ -1,0 +1,47 @@
+<worlds>
+
+    <world Name="JoppaWorld" Load="Merge">
+
+        <cell Name="LaurusCellTallMountains" Inherits="DefaultJoppaCell" ApplyTo="LaurusTerrainTallMountains">
+            <zone Level="5-9" x="0-2" y="0-2" Name="sky above tall mountains" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_mountains">
+                <builder Class="Sky"></builder>
+            </zone>
+            <zone Level="10" x="0-2" y="0-2" Name="tall mountains" HasWeather="true" WindSpeed="20-100" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_mountains">
+                <builder Class="Hills"></builder>
+                <postbuilder Class="ZoneTemplate:LaurusTallMountains"></postbuilder>
+                <builder Class="FactionEncounters" Population="LaurusTallMountainGenericFactionPopulation"></builder>
+                <music Track="Music/Overworld" />
+            </zone>
+            <zone Level="11-15" x="0-2" y="0-2" Name="subterranean mountains">
+                <builder Class="Strata"></builder>
+                <builder Class="ZoneTemplate:LaurusTallMountainCaves"></builder>
+                <builder Class="FactionEncounters" Population="LaurusTallMountainGenericFactionPopulation"></builder>
+                <music Track="Music/Overworld" />
+            </zone>
+        </cell>
+        
+        <cell Name="LaurusCellW1kSurroundingMountains" Inherits="LaurusCellTallMountains" ApplyTo="LaurusTerrainW1kSurroundingMountains">
+            <zone Level="10" x="0-2" y="0-2" Name="occupied mountains" WindSpeed="40-100" WindDuration="50-3000">
+                <builder Class="Hills"></builder>
+                <postbuilder Class="ZoneTemplate:LaurusW1kTallMountains"></postbuilder>
+                <builder Class="FactionEncounters" Population="LaurusLairOwnersW1kTallMountains"></builder>
+                <music Track="Music/Overworld" />
+            </zone>
+            <zone Level="11-15" x="0-2" y="0-2" Name="subterranean mountains">
+                <builder Class="Strata"></builder>
+                <builder Class="ZoneTemplate:LaurusW1kTallMountainCaves"></builder>
+                <builder Class="FactionEncounters" Population="LaurusLairOwnersW1kTallMountains"></builder>
+                <music Track="Music/Overworld" />
+            </zone>
+            <zone Level="16-40" x="0-2" y="0-2" Name="deep subterranean mountains">
+                <builder Class="Strata"></builder>
+                <builder Class="ZoneTemplate:LaurusW1kTallMountainCaves"></builder>
+                <builder Class="FactionEncounters" Population="LaurusLairOwnersW1kTallMountains"></builder>
+                <builder Class="PossibleCryotube"></builder>
+                <music Track="Music/Overworld" />
+            </zone>
+        </cell>
+
+    </world>
+
+</worlds>

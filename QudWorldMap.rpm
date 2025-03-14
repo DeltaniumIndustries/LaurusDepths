@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Map Width="80" Height="25">
+
+
+  <!-- Debug Cells -->
+  <cell X="3" Y="16">
+    <object Name="LaurusTerrainW1kSurroundingMountains" />
+  </cell>
+  <cell X="4" Y="16">
+    <object Name="TerrainDeathlands" />
+  </cell>
+  <cell X="5" Y="16">
+    <object Name="LaurusTerrainTallMountains" />
+  </cell>
+
+  <!-- Static Cells -->
+  <cell X="2" Y="18">
+    <object Name="LaurusTerrainVillageTristram" />
+  </cell>
+
+  <!-- W1K -->
+  <cell X="40" Y="0">
+    <object Name="LaurusTerrainW1kTrainingGrounds"></object>
+  </cell>
+  <cell X="41" Y="0">
+    <object Name="LaurusTerrainW1kInfiniteHatchery"></object>
+  </cell>
+  <cell X="41" Y="1">
+    <object Name="LaurusTerrainW1kPitOfFlesh"></object>
+  </cell>
+
+  <cell X="39" Y="0">
+    <object Name="LaurusTerrainW1kSurroundingMountains"></object>
+  </cell>
+  <cell X="42" Y="0">
+    <object Name="LaurusTerrainW1kSurroundingMountains"></object>
+  </cell>
+  <cell X="39" Y="1">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+  <cell X="40" Y="1">
+    <object Name="LaurusTerrainW1kSurroundingMountains"></object>
+  </cell>
+  <cell X="42" Y="1">
+    <object Name="LaurusTerrainW1kSurroundingMountains"></object>
+  </cell>
+  <cell X="39" Y="2">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+  <cell X="40" Y="2">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+  <cell X="41" Y="2">
+    <object Name="LaurusTerrainW1kSurroundingMountains"></object>
+  </cell>
+  <cell X="42" Y="2">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+  <cell X="40" Y="3">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+  <cell X="41" Y="3">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+  <cell X="42" Y="3">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+  <cell X="41" Y="4">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+
+  <!-- Corpus Commune -->
+  <cell X="64" Y="0">
+    <object Name="LaurusTerrainCCGeneVats"></object>
+  </cell>
+  <cell X="65" Y="0">
+    <object Name="LaurusTerrainCCMindfleshCore"></object>
+  </cell>
+  <cell X="63" Y="1">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+  <cell X="64" Y="1">
+    <object Name="LaurusTerrainCCGestaltPools"></object>
+  </cell>
+  <cell X="65" Y="1">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+  <cell X="66" Y="1">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+  <cell X="64" Y="2">
+    <object Name="LaurusTerrainTallMountains"></object>
+  </cell>
+
+  <!-- Deathlands -->
+  <cell X="75" Y="17">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="76" Y="17">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="77" Y="17">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="73" Y="18">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="75" Y="18">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="76" Y="18">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="77" Y="18">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="73" Y="19">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="74" Y="19">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="75" Y="19">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="76" Y="19">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="77" Y="19">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="72" Y="20">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="73" Y="20">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="74" Y="20">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="75" Y="20">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="76" Y="20">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="77" Y="20">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="72" Y="21">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="73" Y="21">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="74" Y="21">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="75" Y="21">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="76" Y="21">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="77" Y="21">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="73" Y="22">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="74" Y="22">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="75" Y="22">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+  <cell X="76" Y="22">
+    <object Name="TerrainDeathlands">
+    </object>
+  </cell>
+
+</Map>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<zonetemplates>
+
+    <zonetemplate Name="LaurusTallMountains" RegionSize="200">
+        <global>
+            <population Table="LaurusTallMountainsZoneGlobals" Hint="Any"></population>
+            <cellfilterout Filter="!Reachable">
+                <population Table="LaurusTallMountainsZoneGlobals-Reachable"></population>
+            </cellfilterout>
+        </global>
+        <eachregion>
+            <group Criteria="Connection">
+                <exit/>
+            </group>
+            <group Criteria="!Isolated">
+                <population Table="LaurusTallMountainsPerSector"></population>
+            </group>
+        </eachregion>
+    </zonetemplate>
+
+    <zonetemplate Name="LaurusTallMountainCaves" RegionSize="100">
+        <global>
+            <population Table="LaurusTallMountainsUndergroundZoneGlobals"></population>
+        </global>
+
+        <eachregion>
+            <!-- Fill isolated pockets -->
+            <group Criteria="Isolated" Chance="1">
+                <population Table="TreasureRoom"/>
+                <exit/>
+            </group>
+            <group Criteria="Isolated" Chance="100">
+                <population Table="IsolatedPocketDecoration"/>
+                <exit/>
+            </group>
+            <!-- Place generic region decorations -->
+            <population Table="CaveDecoration"/>
+            <!-- Don't place monsters in regions containing zone connections -->
+            <group Criteria="Connection">
+                <exit/>
+            </group>
+            <group Criteria="Furthest" Chance="20">
+                <population Table="Tier{zonetier}BossEncounter"/>
+                <population Table="Chests {zonetier}"/>
+                <exit/>
+            </group>
+            <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+            <population Table="LaurusTallMountainCavePopulation"></population>
+            <population Chance="20" Table="LaurusTallMountainCavePopulation"></population>
+        </eachregion>
+    </zonetemplate>
+
+</zonetemplates>

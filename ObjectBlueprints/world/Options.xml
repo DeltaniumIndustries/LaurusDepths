@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<options>
+    <option ID="OptionLaurusHarmonyLoggingBPSC" DisplayText="Logging: Blueprint Scroller Controller" Category="LaurusMods-Harmony" Type="Checkbox" Default="Yes" />
+    <option ID="OptionLaurusHarmonyLoggingRender" DisplayText="Logging: Render (Part)" Category="LaurusMods-Harmony" Type="Checkbox" Default="Yes" />
+
+    <option ID="OptionLaurusDepthsTest" DisplayText="Sample Option" Category="LaurusMods" Type="Checkbox" Default="Yes" />
+</options>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+
+    <!-- Base oddities -->
+
+    <object Name="LaurusBaseNest" Inherits="BaseNest">
+        <part Name="Brain" Mobile="false" Hostile="false" Factions="Beasts-100" />
+        <part Name="ConversationScript" ConversationID="LaurusBaseNestChat" />
+        <xtagTextFragments YounglingNoise="*squish*" Activity="incubating children spawn" VillageActivity="incubating children spawn" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="nesting" ArableLand="a moist place" ValuedOre="moisture" />
+        <tag Name="BaseObject" Value="*noinherit" />
+        <tag Name="ExcludeFromVillagePopulations" />
+        <tag Name="Role" Value="Summoner" />
+        <tag Name="NoAskName" />
+        <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_nest_urchin" />
+        <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_die" />
+        <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_hurt"/>
+        <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_idle"/>
+        <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_attack"/>
+    </object>
+
+    <object Name="LaurusBaseItemSpawnEgg" Inherits="Item">
+        <part Name="Render" RenderIfDark="true" Tile="items/sw_egg.bmp" DisplayName="egg" RenderString="233" ColorString="&amp;C" />
+        <part Name="Physics" Weight="35" />
+        <stat Name="Hitpoints" Value="6" />
+        <stat Name="XPValue" Value="55" />
+        <stat Name="Speed" Value="0" />
+        <part Name="Description" Short="An egg with hairline cracks." />
+        <intproperty Name="Slimewalking" Value="1" />
+        <part Name="LaurusSpawnVessel" SpawnBlueprint="Ickslug" ReplaceBlueprint="LaurusBaseItemSpawnEggBroken" SpawnVerb="hatch" SlimesplatterOnSpawn="true" SpawnAmount="5" SpawnTime="18-22" SpawnChance="50" SpawnSound="sfx_creature_appear_eggCrack" />
+        <tag Name="ExcludeFromQuests" />
+    </object>
+
+    <object Name="LaurusBaseItemSpawnEggBroken" Inherits="Item">
+        <part Name="Render" RenderIfDark="true" DisplayName="broken egg" Tile="items/sw_egg_broken.bmp" RenderString="%" ColorString="&amp;C" />
+        <part Name="Physics" Weight="35" />
+        <stat Name="Hitpoints" Value="6" />
+        <stat Name="XPValue" Value="0" />
+        <stat Name="Speed" Value="0" />
+        <part Name="Description" Short="Imploded shell pieces lay in a wrecked soup of mucus." />
+        <intproperty Name="Slimewalking" Value="1" />
+    </object>
+
+    <!-- Implementations -->
+
+
+
+
+
+
+
+</objects>

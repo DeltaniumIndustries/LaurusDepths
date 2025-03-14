@@ -1,0 +1,342 @@
+<objects>
+
+    <!--
+
+    *********************
+       Missile weapons
+    *********************
+
+  -->
+
+    <!-- Projectiles -->
+    <object Name="BaseLeadSlugProjectile" Inherits="TemporaryProjectile">
+        <part Name="Render" DisplayName="lead slug" Tile="items/sw_bullet.bmp" />
+        <part Name="Projectile" ColorString="&amp;y" PassByVerb="whiz" />
+        <tag Name="Slug" />
+        <tag Name="BaseObject" Value="*noinherit" />
+        <tag Name="ImpactSound" Value="sfx_missile_leadSlug_hit" />
+        <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/lead_slug" />
+        <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;slugColor::#FFFFFF;;trailColor::#808080" />
+    </object>
+    <object Name="ProjectileLeadSlug" Inherits="BaseLeadSlugProjectile">
+        <part Name="Projectile" BasePenetration="3" BaseDamage="1d6" />
+    </object>
+    <object Name="BaseShotgunProjectile" Inherits="TemporaryProjectile">
+        <part Name="Render" DisplayName="blast of shot" />
+        <part Name="Projectile" ColorString="&amp;y" PassByVerb="zing" />
+        <tag Name="Slug" />
+        <tag Name="ImpactSound" Value="sfx_missile_leadSlugBurst_hit" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="ProjectileShotgunShell" Inherits="BaseShotgunProjectile">
+        <part Name="Projectile" BasePenetration="4" BaseDamage="1d2" />
+    </object>
+    <object Name="ProjectileCombatShotgunPellet" Inherits="BaseShotgunProjectile">
+        <part Name="Projectile" BasePenetration="4" BaseDamage="1d2" />
+    </object>
+    <object Name="ProjectileShotgunPellet" Inherits="BaseShotgunProjectile">
+        <part Name="Projectile" BasePenetration="4" BaseDamage="1d2" />
+    </object>
+
+
+    <object Name="ProjectileChaingunBullet" Inherits="BaseLeadSlugProjectile">
+        <part Name="Projectile" BasePenetration="4" BaseDamage="1d6" />
+    </object>
+    <object Name="ProjectileSlugThrower" Inherits="BaseLeadSlugProjectile">
+        <part Name="Projectile" BasePenetration="4" BaseDamage="1d6" />
+    </object>
+    <object Name="ProjectileDesertRifleShell" Inherits="BaseLeadSlugProjectile">
+        <part Name="Projectile" BasePenetration="5" BaseDamage="1d8" />
+    </object>
+    <object Name="ProjectileSniperRifleShell" Inherits="BaseLeadSlugProjectile">
+        <part Name="Projectile" BasePenetration="7" BaseDamage="1d8" />
+    </object>
+    <object Name="ProjectileLaserPistol" Inherits="TemporaryEnergyProjectile">
+        <part Name="Render" DisplayName="{{C|laser beam}}" ColorString="&amp;C" />
+        <part Name="Projectile" BasePenetration="5" BaseDamage="1d10" Attributes="Light Laser" ColorString="&amp;C" PassByVerb="streak" />
+        <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!" />
+        <tag Name="Light" />
+        <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/small_laser" />
+        <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;beamColor0::#FF8000" />
+        <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
+    </object>
+    <object Name="ProjectileLaserRifle" Inherits="TemporaryEnergyProjectile">
+        <part Name="Render" DisplayName="{{C|laser beam}}" ColorString="&amp;C" />
+        <part Name="Projectile" BasePenetration="5" BaseDamage="1d12" Attributes="Light Laser" ColorString="&amp;C" PassByVerb="streak" />
+        <part Name="TreatAsSolid" LightBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!" />
+        <tag Name="Light" />
+        <tag Name="ProjectileVFX" Value="MissileWeaponsEffects/medium_laser"></tag>
+        <tag Name="ProjectileVFXConfiguration" Value="duration::0.25;;beamColor0::#FF0000;;beamColor1::#FF8000" />
+        <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
+    </object>
+    <object Name="ProjectileElectroPistol" Inherits="TemporaryEnergyProjectile">
+        <part Name="Render" DisplayName="{{W|ion packet}}" ColorString="&amp;W" />
+        <part Name="Projectile" BasePenetration="0" BaseDamage="0" Attributes="Electric" ColorString="&amp;W" PassByVerb="fly" />
+        <part Name="DischargeOnHit" DamageRange="0" Voltage="0" />
+        <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
+    </object>
+    <object Name="ProjectileSpaserPistol" Inherits="TemporaryEnergyProjectile">
+        <part Name="Render" DisplayName="{{G|plasmon}}" ColorString="&amp;G" />
+        <part Name="Projectile" BasePenetration="10" BaseDamage="1d10" Attributes="Light Laser" ColorString="&amp;G" PassByVerb="streak" />
+        <part Name="EmitGasOnHit" GasBlueprint="Plasma" CellDensity="20" AdjacentDensity="10" />
+        <tag Name="Light" />
+        <tag Name="ImpactSound" Value="Sounds/Missile/Hits/sfx_missile_directEnergy_hit" />
+    </object>
+    <object Name="ProjectileDefoliantGasStream" Inherits="TemporaryProjectile">
+        <part Name="Render" DisplayName="{{defoliant|stream of gas}}" ColorString="&amp;W" />
+        <part Name="Projectile" BasePenetration="0" BaseDamage="0" Quiet="true" Attributes="Defoliant" ColorString="&amp;W" PassByVerb="flicker" />
+        <part Name="GasOnHit" Blueprint="DefoliantGas" Density="8d10" OnWielderHit="true" />
+        <part Name="GasOnEntering" Blueprint="DefoliantGas" Density="4d10" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    </object>
+
+    <!-- Ammo-->
+    <object Name="Lead Slug" Inherits="Projectile">
+        <part Name="Render" DisplayName="lead slug" ColorString="&amp;w" DetailColor="y" Tile="items/sw_bullet.bmp" />
+        <part Name="AmmoSlug" ProjectileObject="ProjectileLeadSlug" />
+        <part Name="Physics" Category="Ammo" />
+        <part Name="Description" Short="Lead is cast to a cylindric lump shaved to a point." />
+        <part Name="TinkerItem" Bits="C" CanBuild="true" CanDisassemble="false" NumberMade="50" />
+        <tag Name="AlwaysStack" Value="Yes" />
+        <tag Name="DynamicObjectsTable:Ammo" />
+        <tag Name="TurretStockExclusive" />
+    </object>
+    <object Name="Shotgun Shell" Inherits="Projectile">
+        <part Name="Render" DisplayName="shotgun shell" ColorString="&amp;W" DetailColor="w" Tile="items/sw_shotgun_shell.bmp" />
+        <part Name="AmmoShotgunShell" ProjectileObject="ProjectileShotgunShell" />
+        <part Name="Physics" Category="Ammo" />
+        <part Name="Description" Short="A handful of pellets are encased in a thick wax-paper and plastic shell." />
+        <part Name="TinkerItem" Bits="C" CanBuild="true" CanDisassemble="false" NumberMade="5" />
+        <tag Name="AlwaysStack" Value="Yes" />
+        <tag Name="DynamicObjectsTable:Ammo" />
+    </object>
+
+    <!-- Rifles -->
+    <object Name="Carbine" Inherits="BaseMagazineRifle">
+        <part Name="Render" DisplayName="carbine" Tile="items/sw_carbine.bmp" />
+        <part Name="Physics" Weight="11" UsesTwoSlots="true" />
+        <part Name="Commerce" Value="100" />
+        <part Name="MissileWeapon" Skill="Rifle" ShotsPerAction="3" AmmoPerAction="3" ShotsPerAnimation="1" WeaponAccuracy="10" />
+        <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileCarbineShell" AmmoPart="AmmoSlug" MaxAmmo="24" />
+        <part Name="Description" Short="Carbon steel gleams on its sawed muzzle. A dented butt stock cuts at right angle to the shoulder." />
+        <part Name="Metal" />
+        <part Name="TinkerItem" Bits="0014" CanDisassemble="true" CanBuild="true" />
+        <tag Name="Tier" Value="3" />
+        <part Name="Examiner" Complexity="1" />
+        <tag Name="DynamicObjectsTable:Guns" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Rifles/sfx_missile_carbine_fire" />
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_automaticGun_reload" />
+    </object>
+    <object Name="Sniper Rifle" Inherits="BaseMagazineRifle">
+        <part Name="Render" Tile="items/sw_sniper_rifle.bmp" DisplayName="sniper rifle" ColorString="&amp;y" DetailColor="K" />
+        <part Name="Physics" UsesTwoSlots="true" Weight="12" />
+        <part Name="Commerce" Value="250" />
+        <part Name="MissileWeapon" Skill="Rifle" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="0" />
+        <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileSniperRifleShell" AmmoPart="AmmoSlug" MaxAmmo="1" />
+        <part Name="Description" Short="Expert rifling grooved its carbon steel barrel to helical precision. Smudges are printed on the scope glass." />
+        <part Name="Metal" />
+        <part Name="TinkerItem" Bits="0014" CanDisassemble="true" CanBuild="true" />
+        <tag Name="Tier" Value="3" />
+        <part Name="Examiner" Complexity="1" />
+        <tag Name="DynamicObjectsTable:Guns" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Rifles/sfx_missile_sniperRifle_fire" />
+    </object>
+    <object Name="Chain Laser" Inherits="BaseRifle">
+        <part Name="Render" DisplayName="chain {{C|laser}}" ColorString="&amp;C" TileColor="&amp;c" DetailColor="C" Tile="Items/sw_chain_laser.bmp" />
+        <part Name="Physics" Weight="40" UsesTwoSlots="true" />
+        <part Name="MissileWeapon" Skill="HeavyWeapons" AmmoChar="&amp;C" ShotsPerAction="3" AmmoPerAction="3" ShotsPerAnimation="1" WeaponAccuracy="5" />
+        <part Name="Commerce" Value="1000" />
+        <part Name="EnergyAmmoLoader" ChargeUse="150" ProjectileObject="ProjectileLaserRifle" />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="Description" Short="Three carbon steel barrels fit together into an arc-edged triangle of luminous ritualism. They pinch the mirror point inside." />
+        <part Name="Examiner" Complexity="5" />
+        <part Name="TinkerItem" Bits="0005" CanDisassemble="true" CanBuild="true" />
+        <part Name="Metal" />
+        <part Name="ItemElements" Elements="stars::3" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Heavy Weapons/sfx_missile_chainLaser_fire" />
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_laser_reload" />
+        <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
+        <tag Name="Tier" Value="5" />
+        <tag Name="DynamicObjectsTable:Guns" />
+        <stag Name="Historical" />
+    </object>
+
+
+
+    <!-- Heavy guns -->
+    <object Name="Chaingun" Inherits="BaseMagazineHeavyWeapon">
+        <part Name="Render" DisplayName="chaingun" Tile="items/sw_chain_gun.bmp" ColorString="&amp;y" DetailColor="c"/>
+        <part Name="Physics" Weight="40" UsesTwoSlots="true" />
+        <part Name="Commerce" Value="250" />
+        <part Name="Examiner" Unknown="UnknownStrangeTubes" Alternate="UnknownStrangeTubes" Complexity="4" />
+        <part Name="MissileWeapon" AnimationDelay="0" Skill="HeavyWeapons" ShotsPerAction="6" AmmoPerAction="6" ShotsPerAnimation="1" WeaponAccuracy="16" RangeIncrement="6" />
+        <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileChaingunBullet" AmmoPart="AmmoSlug" MaxAmmo="42" />
+        <part Name="Description" Short="A chrome chain wraps around a self-winding flywheel and is spotted with grease dew. One long barrel is nicked with steel scarring." />
+        <part Name="Metal" />
+        <part Name="TinkerItem" Bits="004" CanDisassemble="true" CanBuild="true" />
+        <tag Name="Tier" Value="4" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Heavy Weapons/sfx_missile_chaingun_fire" />
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_chaingun_reload" />
+        <tag Name="DynamicObjectsTable:Guns" />
+    </object>
+    <object Name="Defoliant Gas Pump" Inherits="BaseHeavyWeapon">
+        <part Name="Render" Tile="items/sw_pump.bmp" DisplayName="{{defoliant|defoliant}} pump" ColorString="&amp;W" TileColor="&amp;w" DetailColor="W" />
+        <part Name="Physics" UsesTwoSlots="true" />
+        <part Name="MissileWeapon" Skill="HeavyWeapons" ShowShotsPerAction="false" NoWildfire="true" MaxRange="12" AnimationDelay="20" AmmoChar="~" ShotsPerAction="5" AmmoPerAction="3" ShotsPerAnimation="5" WeaponAccuracy="10" />
+        <part Name="Commerce" Value="130" />
+        <part Name="LiquidAmmoLoader" Liquid="acid" ProjectileObject="ProjectileDefoliantGasStream" />
+        <part Name="LiquidVolume" MaxVolume="32" Volume="32" StartVolume="1d32" InitialLiquid="acid-1000" />
+        <part Name="LeakWhenBroken" />
+        <part Name="AIShootCooldown" Cooldown="2d4" />
+        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="AcidGas60" />
+        <part Name="Description" Short="A hand pump slides into a chrome canister with illustrations of wilting plants etched in relief." />
+        <part Name="Examiner" Alternate="UnknownRifle" Complexity="4" />
+        <part Name="TinkerItem" Bits="0024" CanDisassemble="true" CanBuild="true" />
+        <part Name="Metal" />
+        <tag Name="Tier" Value="4" />
+        <tag Name="DynamicObjectsTable:Guns" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Heavy Weapons/sfx_missile_pump_fire" />
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_pump_reload" />
+    </object>
+
+
+
+    <!-- Pistols -->
+    <object Name="Semi-Automatic Pistol" Inherits="BaseMagazinePistol">
+        <part Name="Render" DisplayName="semi-automatic pistol" Tile="items/sw_autopistol.bmp" ColorString="&amp;y" DetailColor="K" />
+        <part Name="Physics" Weight="3" />
+        <part Name="Commerce" Value="100" />
+        <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="12" RangeIncrement="6" />
+        <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileSemiAutoPistol" AmmoPart="AmmoSlug" MaxAmmo="16" />
+        <part Name="Description" Short="Black acrylic grips are run through with hairline cracks from where nervous and sweat-damp hands squeezed the precision out of their shot." />
+        <part Name="Metal" />
+        <part Name="TinkerItem" Bits="0013" CanDisassemble="true" CanBuild="true" />
+        <tag Name="Tier" Value="3" />
+        <part Name="Examiner" Complexity="3" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_smallGun_fire" />
+        <tag Name="DynamicObjectsTable:Guns" />
+    </object>
+    <object Name="Chain Pistol" Inherits="BaseMagazinePistol">
+        <part Name="Render" DisplayName="chain pistol" Tile="Items/sw_chain_pistol.bmp" />
+        <part Name="Physics" Weight="7" />
+        <part Name="Commerce" Value="150" />
+        <part Name="MissileWeapon" AnimationDelay="0" Skill="Pistol" ShotsPerAction="4" AmmoPerAction="4" ShotsPerAnimation="1" WeaponAccuracy="16" RangeIncrement="6" />
+        <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileSlugThrower" AmmoPart="AmmoSlug" MaxAmmo="24" />
+        <part Name="Description" Short="A tin-slender clip hangs off the scratched chrome magazine well." />
+        <part Name="Metal" />
+        <part Name="TinkerItem" Bits="0014" CanDisassemble="true" CanBuild="true" />
+        <tag Name="TurretName" Value="miniature chaingun turret" />
+        <tag Name="Tier" Value="4" />
+        <part Name="Examiner" Complexity="4" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_chainPistol_fire" />
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_chaingun_reload" />
+        <tag Name="DynamicObjectsTable:Guns" />
+    </object>
+    <object Name="Laser Pistol" Inherits="BasePistol">
+        <part Name="Render" DisplayName="{{C|laser}} pistol" ColorString="&amp;C" Tile="Items/sw_techpistol_1.bmp" DetailColor="w" />
+        <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;C" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
+        <part Name="Commerce" Value="400" />
+        <part Name="EnergyAmmoLoader" ChargeUse="100" ProjectileObject="ProjectileLaserPistol" />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="Description" Short="The pistol is engraved with watervine hemp and encircled in saltstone. On the grip is an image of a nomad and knight in saltstone. The knight is striking down the nomad." />
+        <part Name="Examiner" Complexity="5" />
+        <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true" />
+        <part Name="Metal" />
+        <part Name="ItemElements" Elements="stars::3" />
+        <tag Name="TurretName" Value="low-light laser turret" />
+        <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
+        <tag Name="Tier" Value="4" />
+        <part Name="Physics" Weight="4" />
+        <tag Name="DynamicObjectsTable:Guns" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_laserPistol_fire" />
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_laser_reload" />
+        <stag Name="Historical" />
+    </object>
+    <object Name="Arc Winder" Inherits="BasePistol">
+        <part Name="Render" DisplayName="arc winder" ColorString="&amp;W" Tile="Items/sw_techpistol_6.bmp" TileColor="&amp;c" DetailColor="W" />
+        <part Name="Description" Short="A spiral crank closes a chrome-encased circuit and ejects charge through two contact tips. Smoke twirls through their yellow glow." />
+        <part Name="Physics" Weight="4" />
+        <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;W*" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="4" />
+        <part Name="Commerce" Value="750" />
+        <part Name="ElectricalDischargeLoader" ChargeUse="300" ProjectileObject="ProjectileElectroPistol" />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="Examiner" Complexity="5" />
+        <part Name="TinkerItem" Bits="0245" CanDisassemble="true" CanBuild="true" />
+        <part Name="Metal" />
+        <part Name="ItemElements" Elements="circuitry::4" />
+        <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
+        <tag Name="Tier" Value="5" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_arcWinder_fire" />
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_arcWinder_reload" />
+        <tag Name="DynamicObjectsTable:Guns" />
+    </object>
+
+    <object Name="Spaser Pistol" Inherits="BasePistol">
+        <part Name="Render" DisplayName="{{spaser|spaser}} pistol" ColorString="&amp;G" TileColor="&amp;K" DetailColor="G" Tile="Items/sw_techpistol_4.bmp" />
+        <part Name="Description" Short="Hue-vapored crysteel cocoons the gold/water mechanism that pinches light from wavelength to waveshort.  Plasmon slag bubbles on the crest of the barrel like superheated sludge-life." />
+        <part Name="Physics" Weight="8" />
+        <part Name="MissileWeapon" Skill="Pistol" AmmoChar="&amp;G~" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="8" />
+        <part Name="Commerce" Value="1500" />
+        <part Name="EnergyAmmoLoader" ChargeUse="1000" ProjectileObject="ProjectileSpaserPistol" />
+        <part Name="CooldownAmmoLoader" Cooldown="2" Readout="true" />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="Examiner" Complexity="7" />
+        <part Name="TinkerItem" Bits="00007" CanDisassemble="true" CanBuild="true" />
+        <part Name="Metal" />
+        <tag Name="Mods" Value="MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Pistols/sfx_missile_spaserPistol_fire" />
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_spaser_reload" />
+        <tag Name="TurretName" Value="low-vibe spaser turret" />
+        <tag Name="Tier" Value="7" />
+        <tag Name="DynamicObjectsTable:Guns" />
+        <stag Name="Historical" />
+    </object>
+
+    <!-- Shotguns -->
+    <object Name="Pump Shotgun" Inherits="BaseMagazineRifle">
+        <part Name="Render" DisplayName="pump shotgun" Tile="items/sw_shotgun_2.bmp" ColorString="&amp;K" DetailColor="w" />
+        <part Name="Physics" Weight="12" UsesTwoSlots="true" />
+        <part Name="Commerce" Value="50" />
+        <part Name="MissileWeapon" Skill="Rifle" NoWildfire="true" ShotsPerAction="8" AmmoPerAction="1" ShotsPerAnimation="8" WeaponAccuracy="45" RangeIncrement="6" />
+        <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileShotgunPellet" AmmoPart="AmmoShotgunShell" MaxAmmo="1" />
+        <part Name="Description" Short="A nutwood forestock hangs underneath the chrome rib and, when pumped, erupts into ecstatic clicking." />
+        <part Name="Metal" />
+        <part Name="TinkerItem" Bits="003" CanDisassemble="true" CanBuild="true" />
+        <tag Name="Tier" Value="3" />
+        <part Name="Examiner" Complexity="3" />
+        <tag Name="DynamicObjectsTable:Guns" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Rifles/sfx_missile_pumpShotgun_fire" />
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_shotgun_reload" />
+        <stag Name="Contemporary" />
+    </object>
+
+    <object Name="Combat Shotgun" Inherits="BaseMagazineRifle">
+        <part Name="Render" DisplayName="combat shotgun" Tile="Items/sw_shotgun_1.bmp" ColorString="&amp;K" TileColor="&amp;w" DetailColor="K" />
+        <part Name="Physics" UsesTwoSlots="true" Weight="16" />
+        <part Name="Commerce" Value="100" />
+        <part Name="MissileWeapon" Skill="Rifle" NoWildfire="true" ShotsPerAction="8" AmmoPerAction="1" ShotsPerAnimation="8" WeaponAccuracy="35" RangeIncrement="6" />
+        <part Name="MagazineAmmoLoader" ProjectileObject="ProjectileCombatShotgunPellet" AmmoPart="AmmoShotgunShell" MaxAmmo="6" />
+        <part Name="Description" Short="Nutwood stock parts were unscrewed in favor of starless metal. A greased pump slides shot to the chamber with minimal friction." />
+        <part Name="Metal" />
+        <part Name="TinkerItem" Bits="0014" CanDisassemble="true" CanBuild="true" />
+        <tag Name="Tier" Value="3" />
+        <part Name="Examiner" Complexity="3" />
+        <tag Name="DynamicObjectsTable:Guns" />
+        <tag Name="MissileFireSound" Value="Sounds/Missile/Fires/Rifles/sfx_missile_combatShotgun_fire" />
+        <tag Name="ReloadSound" Value="Sounds/Missile/Reloads/sfx_missile_shotgun_reload" />
+        <stag Name="Contemporary" />
+    </object>
+
+    <!-- Grenades -->
+    <object Name="DefoliantGrenade3" Inherits="Grenade">
+        <part Name="Render" DisplayName="{{defoliant|defoliant}} grenade mk III" Tile="Items/sw_grenade_mkiii.bmp" ColorString="&amp;w" />
+        <part Name="GasGrenade" Density="800" GasObject="DefoliantGas" />
+        <part Name="Commerce" Value="40" />
+        <part Name="Description" Short="A thick metal jacket encases the explosive and is clamped to a quick-release lever. It's etched with pictorals of withering plants." />
+        <part Name="MissileStatusColor" Color="W" />
+        <part Name="TinkerItem" Bits="003" />
+        <tag Name="Mark" Value="3" />
+        <tag Name="Tier" Value="5" />
+        <tag Name="ExcludeFromTurretStock" />
+    </object>
+</objects>

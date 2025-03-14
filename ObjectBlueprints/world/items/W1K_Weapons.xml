@@ -1,0 +1,381 @@
+<objects>
+
+    <!--
+
+        *******************
+        Melee weapons
+        *******************
+
+    -->
+
+    <!-- Axes -->
+    <object Name="LaurusWeaponAxeT6Rimechrome" Inherits="BaseAxe">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} battle axe}}" Tile="Items/sw_axe_5.bmp" ColorString="&amp;r" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="1d8+2" />
+        <part Name="Commerce" Value="390" />
+        <part Name="Physics" Weight="5" FlameTemperature="99999" VaporTemperature="9999" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <part Name="Metal" />
+        <part Name="Rimechrome" />
+        <tag Name="Tier" Value="6" />
+        <tag Name="SwingSound" Value="Sounds/Melee/axes/sfx_melee_axe_crysteel_swing" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_glass" />
+    </object>
+    <object Name="LaurusWeaponAxeT6Rimechrome2H" Inherits="BaseAxe">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} halberd}}" Tile="Items/sw_axe_6.bmp" ColorString="&amp;r" DetailColor="y" />
+        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="1d8+4" />
+        <part Name="Commerce" Value="390" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <tag Name="Tier" Value="6" />
+        <part Name="Metal" />
+        <part Name="Rimechrome" />
+        <part Name="Physics" Weight="9" UsesTwoSlots="true" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="SwingSound" Value="Sounds/Melee/axes/sfx_melee_halberd_crysteel_swing" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_glass" />
+    </object>
+    <object Name="LaurusWeaponAxeT7Aurogel" Inherits="BaseAxe">
+        <part Name="Render" DisplayName="{{K|palladium mesh|aurogel} battle axe}}" Tile="Items/sw_axe_5.bmp" ColorString="&amp;O" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d8+3" />
+        <part Name="Commerce" Value="720" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Metal" />
+        <part Name="Aurogel" />
+        <part Name="Physics" Weight="5" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="Tier" Value="7" />
+        <tag Name="SwingSound" Value="Sounds/Melee/axes/sfx_melee_halberd_crysteel_swing" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_glass" />
+    </object>
+    <object Name="LaurusWeaponAxeT7Aurogel2H" Inherits="BaseAxe">
+        <part Name="Render" DisplayName="{{K|palladium mesh|aurogel} halberd}}" Tile="Items/sw_axe_6.bmp" ColorString="&amp;O" DetailColor="y" />
+        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="8" BaseDamage="1d8+5" />
+        <part Name="Commerce" Value="720" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Metal" />
+        <part Name="Aurogel" />
+        <tag Name="Tier" Value="7" />
+        <part Name="Physics" Weight="9" UsesTwoSlots="true" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="SwingSound" Value="Sounds/Melee/axes/sfx_melee_halberd_crysteel_swing" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_glass" />
+    </object>
+    <object Name="LaurusWeaponAxeT8Helionite" Inherits="BaseAxe">
+        <part Name="Render" DisplayName="{{metachrome|helionite}} battle axe" Tile="Items/sw_axe_7.bmp" ColorString="&amp;W" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="1d8+4" />
+        <part Name="Commerce" Value="1500" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Metal" />
+        <part Name="Helionite" />
+        <part Name="Physics" Weight="5" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="Tier" Value="8" />
+        <tag Name="Role" Value="Rare" />
+        <tag Name="SwingSound" Value="Sounds/Melee/axes/sfx_melee_halberd_zetachrome_swing" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_quantum" />
+        <stag Name="Historical" />
+    </object>
+    <object Name="LaurusWeaponAxeT8Helionite2H" Inherits="BaseAxe">
+        <part Name="Render" DisplayName="{{metachrome|helionite}} halberd" Tile="Items/sw_axe_8.bmp" ColorString="&amp;W" DetailColor="y" />
+        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="9" BaseDamage="1d8+6" />
+        <part Name="Commerce" Value="1500" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Metal" />
+        <part Name="Helionite" />
+        <tag Name="Tier" Value="8" />
+        <part Name="Physics" Weight="9" UsesTwoSlots="true" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="Role" Value="Rare" />
+        <tag Name="SwingSound" Value="Sounds/Melee/axes/sfx_melee_halberd_zetachrome_swing" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_axe_quantum" />
+        <stag Name="Historical" />
+    </object>
+
+    <!-- Cudgels -->
+    <object Name="LaurusWeaponCudgelT6Rimechrome" Inherits="BaseCudgel">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} mace}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;r" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="2d6" Skill="Cudgel" Stat="Strength" />
+        <part Name="Commerce" Value="390" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <tag Name="Tier" Value="6" />
+        <part Name="Metal" />
+        <part Name="Rimechrome" />
+        <part Name="Physics" Weight="5" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_oneHanded_crysteel_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass" />
+    </object>
+    <object Name="LaurusWeaponCudgelT6Rimechrome2H" Inherits="BaseCudgel">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} warhammer}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;r" DetailColor="y" />
+        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="3d4+1" Skill="Cudgel" Stat="Strength" />
+        <part Name="Commerce" Value="390" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <part Name="Metal" />
+        <part Name="Rimechrome" />
+        <tag Name="Tier" Value="6" />
+        <part Name="Physics" Weight="9" UsesTwoSlots="true" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_crysteel_swing"></tag>
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass" />
+    </object>
+    <object Name="LaurusWeaponCudgelT7Aurogel" Inherits="BaseCudgel">
+        <part Name="Render" DisplayName="{{K|palladium mesh|aurogel} mace}}" Tile="Items/sw_cudgel_6.bmp" ColorString="&amp;O" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="3d4" Skill="Cudgel" Stat="Strength" />
+        <part Name="Commerce" Value="720" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Metal" />
+        <part Name="Aurogel" />
+        <part Name="Physics" Weight="5" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="Tier" Value="7" />
+        <tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_crysteel_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass" />
+    </object>
+    <object Name="LaurusWeaponCudgelT7Aurogel2H" Inherits="BaseCudgel">
+        <part Name="Render" DisplayName="{{K|palladium mesh|aurogel} warhammer}}" Tile="Items/sw_cudgel_7.bmp" ColorString="&amp;O" DetailColor="y" />
+        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="8" BaseDamage="3d6" Skill="Cudgel" Stat="Strength" />
+        <part Name="Commerce" Value="720" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Metal" />
+        <part Name="Aurogel" />
+
+        <tag Name="Tier" Value="7" />
+        <part Name="Physics" Weight="9" UsesTwoSlots="true" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_crysteel_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_glass" />
+    </object>
+    <object Name="LaurusWeaponCudgelT8Helionite" Inherits="BaseCudgel">
+        <part Name="Render" DisplayName="{{metachrome|helionite}} hammer" Tile="Items/sw_cudgel_8.bmp" ColorString="&amp;W" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="3d4+1" Skill="Cudgel" Stat="Strength" />
+        <part Name="Commerce" Value="1500" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Metal" />
+        <part Name="Helionite" />
+        <part Name="Physics" Weight="5" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="Tier" Value="8" />
+        <tag Name="Role" Value="Rare" />
+        <tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_onehanded_zetachrome_swing" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_quantum" />
+        <stag Name="Historical" />
+    </object>
+    <object Name="LaurusWeaponCudgelT8Helionite2H" Inherits="BaseCudgel">
+        <part Name="Render" DisplayName="{{metachrome|helionite}} warhammer" Tile="Items/sw_cudgel_9.bmp" ColorString="&amp;W" DetailColor="y" />
+        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="9" BaseDamage="4d6" Skill="Cudgel" Stat="Strength" />
+        <part Name="Commerce" Value="1500" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Metal" />
+        <part Name="Helionite" />
+        <tag Name="Tier" Value="8" />
+        <part Name="Physics" Weight="9" UsesTwoSlots="true" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="Role" Value="Rare" />
+        <tag Name="SwingSound" Value="Sounds/Melee/cudgels/sfx_melee_cudgel_onehanded_zetachrome_swing" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_quantum" />
+        <stag Name="Historical" />
+    </object>
+
+    <!-- Daggers -->
+    <object Name="LaurusWeaponDaggerT6Rimechrome" Inherits="BaseDagger">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} dagger}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;r" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="1d12" />
+        <part Name="ThrownWeapon" Penetration="7" Damage="1d12" Attributes="ShortBlades" />
+        <part Name="Commerce" Value="310" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <part Name="Metal" />
+        <part Name="Rimechrome" />
+        <part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/>
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_glass" />
+        <tag Name="NoAIEquipAsThrownWeapon" />
+        <tag Name="HideThrownWeaponPerformance" />
+        <tag Name="Tier" Value="6" />
+    </object>
+    <object Name="LaurusWeaponDaggerT7Aurogel" Inherits="BaseDagger">
+        <part Name="Render" DisplayName="{{K|palladium mesh|aurogel} dagger}}" Tile="Items/sw_shortblade_5.bmp" ColorString="&amp;O" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="1d12+1" />
+        <part Name="ThrownWeapon" Penetration="8" Damage="1d12+1" Attributes="ShortBlades" />
+        <part Name="Commerce" Value="690" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Metal" />
+        <part Name="Aurogel" />
+
+        <part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_crysteel_swing"/>
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_glass" />
+        <tag Name="NoAIEquipAsThrownWeapon" />
+        <tag Name="HideThrownWeaponPerformance" />
+        <tag Name="Tier" Value="7" />
+    </object>
+    <object Name="LaurusWeaponDaggerT8Helionite" Inherits="BaseDagger">
+        <part Name="Render" DisplayName="{{metachrome|helionite}} dagger" Tile="Items/sw_shortblade_6.bmp" ColorString="&amp;W" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="1d12+2" />
+        <part Name="ThrownWeapon" Penetration="9" Damage="1d12+2" Attributes="ShortBlades" />
+        <part Name="Commerce" Value="1390" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Metal" />
+        <part Name="Helionite" />
+        <part Name="Physics" Weight="2" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_dagger_zetachrome_swing"/>
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_quantum" />
+        <tag Name="NoAIEquipAsThrownWeapon" />
+        <tag Name="HideThrownWeaponPerformance" />
+        <tag Name="Tier" Value="8" />
+        <tag Name="Role" Value="Rare" />
+        <stag Name="Historical" />
+    </object>
+    <object Name="LaurusWeaponVibroDagger" Inherits="MeleeWeapon">
+        <part Name="Render" DisplayName="{{c|vibro dagger}}" Tile="Items/sw_shortblade_8.bmp" ColorString="&amp;c" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d4" Skill="ShortBlades" />
+        <part Name="ThrownWeapon" Penetration="0" Damage="1d4" Attributes="ShortBlades" />
+        <part Name="Examiner" Alternate="UnknownKnife" Complexity="4" />
+        <part Name="Commerce" Value="120" />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="AIOffensiveEnergyCellReload" />
+        <part Name="AIPassiveEnergyCellReload" />
+        <part Name="Description" Short="A matte blade of ionic plastifer sits on a finger-rest hilt. When charged it blurs in high-width motion and jostles its material obstacles out of the way." />
+        <part Name="RulesDescription" Text="When charged, this weapon's penetration value is equal to the defender's armor value." />
+        <part Name="TinkerItem" Bits="0004" CanDisassemble="true" CanBuild="true" />
+        <part Name="Metal" />
+        <part Name="VibroWeapon" ChargeUse="100" />
+        <tag Name="SwingSound" Value="Sounds/Melee/shortBlades/sfx_melee_vibroDagger_swing" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_short_artifact" />
+        <tag Name="NoAIEquipAsThrownWeapon" />
+        <tag Name="HideThrownWeaponPerformance" />
+        <tag Name="Mods" Value="BladeMods,WeaponMods,CommonMods,ElectronicsMods" />
+        <tag Name="Tier" Value="4" />
+    </object>
+
+    <!-- Long Blades -->
+    <object Name="LaurusWeaponLongSwordT6Rimechrome" Inherits="BaseLongBlade">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} long sword}}" Tile="items/sw_longblade_5.bmp" ColorString="&amp;r" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="7" BaseDamage="2d6" Skill="LongBlades" />
+        <part Name="Commerce" Value="390" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <part Name="Metal" />
+        <part Name="Rimechrome" />
+        <part Name="Physics" Weight="4" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="Tier" Value="6" />
+        <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_crysteel_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass" />
+    </object>
+    <object Name="LaurusWeaponLongSwordT6Rimechrome2H" Inherits="BaseLongBlade">
+        <part Name="Render" DisplayName="{{K|{{ehalcodon|rimechrome}} great sword}}" Tile="items/sw_longblade_6.bmp" ColorString="&amp;r" DetailColor="y" />
+        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="7" BaseDamage="2d8" Skill="LongBlades" />
+        <part Name="Commerce" Value="390" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+        <tag Name="Tier" Value="6" />
+        <part Name="Metal" />
+        <part Name="Rimechrome" />
+        <part Name="Physics" Weight="8" FlameTemperature="99999" VaporTemperature="9999" UsesTwoSlots="true" />
+        <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_crysteel_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass" />
+    </object>
+    <object Name="LaurusWeaponLongSwordT7Aurogel" Inherits="BaseLongBlade">
+        <part Name="Render" DisplayName="{{K|palladium mesh|aurogel} long sword}}" Tile="items/sw_longblade_5.bmp" ColorString="&amp;O" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="8" BaseDamage="2d6+1" Skill="LongBlades" />
+        <part Name="Commerce" Value="720" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Metal" />
+        <part Name="Aurogel" />
+        <part Name="Physics" Weight="4" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="Tier" Value="7" />
+        <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_crysteel_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass" />
+    </object>
+    <object Name="LaurusWeaponLongSwordT7Aurogel2H" Inherits="BaseLongBlade">
+        <part Name="Render" DisplayName="{{K|palladium mesh|aurogel} great sword}}" Tile="items/sw_longblade_6.bmp" ColorString="&amp;O" DetailColor="y" />
+        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="8" BaseDamage="2d10" Skill="LongBlades" />
+        <part Name="Commerce" Value="720" />
+        <part Name="Description" Short="Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+        <part Name="Metal" />
+        <part Name="Aurogel" />
+        <tag Name="Tier" Value="7" />
+        <part Name="Physics" Weight="8" FlameTemperature="99999" VaporTemperature="9999" UsesTwoSlots="true" />
+        <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_crysteel_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_crysteel_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_glass" />
+    </object>
+    <object Name="LaurusWeaponLongSwordT8Helionite" Inherits="BaseLongBlade">
+        <part Name="Render" DisplayName="{{metachrome|helionite}} long sword" Tile="items/sw_longblade_7.bmp" ColorString="&amp;W" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="9" BaseDamage="2d8" Skill="LongBlades" />
+        <part Name="Commerce" Value="1500" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Metal" />
+        <part Name="Helionite" />
+        <tag Name="Tier" Value="8" />
+        <part Name="Physics" Weight="4" FlameTemperature="99999" VaporTemperature="9999" />
+        <tag Name="Role" Value="Rare" />
+        <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_zetachrome_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_zetachrome_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_quantum" />
+        <stag Name="Historical" />
+    </object>
+    <object Name="LaurusWeaponLongSwordT8Helionite2H" Inherits="BaseLongBlade">
+        <part Name="Render" DisplayName="two-handed {{metachrome|helionite}} long sword" Tile="items/sw_longblade_8.bmp" ColorString="&amp;W" DetailColor="y" />
+        <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="9" BaseDamage="2d12" Skill="LongBlades" />
+        <part Name="Commerce" Value="1500" />
+        <part Name="Description" Short="Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
+        <part Name="Metal" />
+        <part Name="Helionite" />
+        <tag Name="Tier" Value="8" />
+        <part Name="Physics" Weight="8" FlameTemperature="99999" VaporTemperature="9999" UsesTwoSlots="true" />
+        <tag Name="Role" Value="Rare" />
+        <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_zetachrome_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_zetachrome_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_quantum" />
+        <stag Name="Historical" />
+    </object>
+    <object Name="LaurusWeaponVibroBlade" Inherits="BaseLongBlade">
+        <part Name="Render" DisplayName="{{c|vibro blade}}" Tile="Items/sw_longblade_10.bmp" ColorString="&amp;c" DetailColor="y" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d10" Skill="LongBlades" />
+        <part Name="Commerce" Value="300" />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="AIOffensiveEnergyCellReload" />
+        <part Name="AIPassiveEnergyCellReload" />
+        <part Name="Description" Short="A long, matte blade of ionic plastifer sits on a finger-rest hilt. When charged it blurs in high-width motion and jostles its material obstacles out of the way." />
+        <part Name="RulesDescription" Text="When charged, this weapon's penetration value is equal to the defender's armor value." />
+        <part Name="Examiner" Complexity="5" />
+        <part Name="TinkerItem" Bits="0015" CanDisassemble="true" CanBuild="true" />
+        <part Name="Metal" />
+        <part Name="VibroWeapon" ChargeUse="100" WorksWhenThrown="false" />
+        <part Name="Physics" Weight="2" />
+        <tag Name="Mods" Value="LongBladeMods,BladeMods,WeaponMods,CommonMods,ElectronicsMods" />
+        <tag Name="Tier" Value="5" />
+        <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_vibro_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_vibro_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_artifact" />
+    </object>
+    <object Name="LaurusWeaponCeremonialKhopesh" Inherits="LaurusWeaponLongSwordT6Rimechrome">
+        <part Name="Render" DisplayName="ceremonial vibrokhopesh" Tile="items/sw_kopesh.bmp" ColorString="&amp;K" />
+        <part Name="Commerce" Value="255" />
+        <part Name="Description" Short="A ribbon of azzurum runs through the hilt and pilots the outer arc of phantom steel. The blade's edge blurs into the script of a dead stanza." />
+        <part Name="Physics" Weight="5" />
+        <part Name="MeleeWeapon" MaxStrengthBonus="0" BaseDamage="1d10+2" Skill="LongBlades" />
+        <part Name="BootSequence" BootTime="3" VerbOnBootInitialized="buzz" VerbOnBootAborted="clack" VerbOnBootDone="hum" SoundOnBootInitialized="Sounds/Interact/sfx_interact_artifact_start_buzz" SoundOnBootAborted="Sounds/Interact/sfx_interact_artifact_abort_clack" SoundOnBootDone="Sounds/Interact/sfx_interact_artifact_finish_hum" />
+        <part Name="ZeroPointEnergyCollector" ChargeRate="40" World="JoppaWorld,OrbWorld" />
+        <part Name="Circuitry" />
+        <part Name="VibroWeapon" ChargeUse="20" />
+        <tag Name="NoSparkingQuest" />
+        <tag Name="Tier" Value="7" />
+        <tag Name="SwingSound" Value="Sounds/Melee/longBlades/sfx_melee_longBlade_vibro_swing" />
+        <tag Name="BlockedSound" Value="Sounds/Melee/multiUseBlock/sfx_melee_vibro_blocked" />
+        <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_blade_long_artifact" />
+        <stag Name="Historical" />
+    </object>
+
+    <!-- Whips & Chains -->
+    <object Name="LaurusWeaponStunWhip" Inherits="MeleeWeapon">
+        <part Name="Render" DisplayName="{{c|stun whip}}" Tile="Items/sw_whip_1.bmp" ColorString="&amp;c" DetailColor="y" />
+        <part Name="Examiner" Complexity="1" />
+        <part Name="MeleeWeapon" BaseDamage="1" Skill="Chain" />
+        <part Name="Commerce" Value="50" />
+        <part Name="Description" Short="A thong of banded metal jitters with concussive potential. The plastifer handle is slotted on the heel knot with an battery case." />
+        <part Name="EnergyCellSocket" SlotType="EnergyCell" />
+        <part Name="AIOffensiveEnergyCellReload" />
+        <part Name="AIPassiveEnergyCellReload" />
+        <part Name="TinkerItem" Bits="001" CanDisassemble="true" CanBuild="false" />
+        <part Name="Metal" />
+        <tag Name="Mods" Value="WeaponMods,CommonMods,ElectronicsMods" />
+        <tag Name="Tier" Value="1" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    </object>
+
+</objects>

@@ -1,0 +1,241 @@
+<objects>
+
+    <object Name="LaurusBaseWombOfTheThousand" Inherits="BaseHumanoid">
+        <part Name="Render" DisplayName="W1k Base" ColorString="&amp;r" RenderString="w1k" TileColor="&amp;Y" DetailColor="K" />
+        <skill Name="Persuasion_RebukeRobot" />
+        <tag Name="NonMutant" />
+        <tag Name="Genotype" Value="True Kin" />
+        <tag Name="HeroGenotype" Value="True Kin" />
+        <tag Name="BaseObject" Value="*noinherit" />
+        <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Human Corpse" />
+        <part Name="Brain" Hostile="false" Factions="LaurusFactionWombThousand-100" />
+        <part Name="Description" Short="Unrefined and untested, =pronouns.subjective= bear the scars of early growth, still marked by the imperfections of the Womb's designs. =Pronouns.possessive= frame is weak, =pronouns.possessive= armor ill-fitting and rudimentary. =Pronouns.subjective= have yet to prove worth in the Wombs endless cycle of refinement, struggling to meet the expectations set by the perfected templates that precede =pronouns.subjective=" />
+        <tag Name="HeroIntBoost" Value="0" />
+        <tag Name="HeroAgiBoost" Value="0" />
+        <tag Name="SecretAdjectives" Value="w1k" />
+        <tag Name="BaseObject" Value="*noinherit" />
+        <skill Name="LongBlades" />
+        <skill Name="LongBladesProficiency" />
+        <skill Name="Shield" />
+        <skill Name="Shield_Block" />
+        <tag Name="Culture" Value="Templar" />
+        <tag Name="Unenslavable" />
+        <stag Name="Contemporary" />
+    </object>
+
+    <object Name="LaurusBaseWombOfTheThousandT1Squire" Inherits="LaurusBaseWombOfTheThousand">
+        <part Name="Render" DisplayName="Batchborn Initiate" Tile="Creatures/sw_templar_squire.bmp" DetailColor="w" />
+        <part Name="Description" Short="As a fledgling in the Wombs hierarchy, =pronouns.subjective= wears steel with pride, bearing the marks of early experimentation. =Pronouns.possessive= hands are stained with sword grease, and =pronouns.subjective= presence on the battlefield signals the Wombs burgeoning strength. These warriors are bound to a future dictated by the ever-evolving genetics of their creators." />
+        <stat Name="Level" Value="9" />
+        <stat Name="Hitpoints" Value="25" />
+        <stat Name="Strength" Boost="1" />
+        <stat Name="Willpower" Boost="1" />
+        <inventoryobject Blueprint="Long Sword3" Number="1" />
+        <inventoryobject Blueprint="Steel Shield" />
+        <inventoryobject Blueprint="Steel Plate Mail" />
+        <inventoryobject Blueprint="Steel Boots" />
+        <inventoryobject Chance="75" Blueprint="@Explosives 1" Number="1d2" />
+    </object>
+
+    <object Name="LaurusBaseWombOfTheThousandT1BannerHolder" Inherits="LaurusBaseWombOfTheThousand">
+        <part Name="Render" DisplayName="Bannerbearer of the Forge" Tile="Creatures/sw_templar_bearer.bmp" DetailColor="w" />
+        <part Name="Description" Short="Oiled and brushed mail hang across =pronouns.possessive= crooked spine and salient jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= wet lips reflect back light across a sharp sneer. Saddled under the weight of the Holy Symbol, =pronouns.subjective= carries the Wombs banner, a symbol of genetic refinement and unyielding strength, challenging the very fabric of the worlds order." />
+        <stat Name="Level" Value="24" />
+        <stat Name="Hitpoints" Value="90" />
+        <stat Name="Strength" Boost="2" />
+        <stat Name="Toughness" Boost="1" />
+        <stat Name="Willpower" Boost="1" />
+        <stat Name="HeatResistance" Value="25" />
+        <stat Name="ColdResistance" Value="25" />
+        <stat Name="ElectricResistance" Value="25" />
+        <inventoryobject Blueprint="Fullerite Plate Mail" />
+        <inventoryobject Blueprint="Long Sword4" Number="1" />
+        <inventoryobject Blueprint="Banner of the Holy Rhombus" />
+        <inventoryobject Chance="15" Blueprint="Ontological Anchor" Number="1" />
+        <part Name="CyberneticsHasRandomImplants" ImplantChance="25" ImplantTable="Cybernetics4" LicensesAtLeast="6" />
+    </object>
+    <object Name="LaurusBaseWombOfTheThousandT1Gunner" Inherits="LaurusBaseWombOfTheThousand">
+        <part Name="Render" DisplayName="Armament Guardian" Tile="Creatures/sw_templar_gunner.bmp" DetailColor="w" />
+        <part Name="Description" Short="=Pronouns.possessive= crooked spine and sharp jaw, drained of lifes vibrance by =pronouns.possessive= ancestors failures, reflect the stern determinism of the Womb. =Pronouns.possessive= hands stick to the cold barrel of =pronouns.possessive= gun, a tool of the Wombs necessary wars. =Pronouns.subjective= loyalties are unwavering, yet =pronouns.subjective= survival relies on the constant cycle of genetic modification, battling for a place in the ever-evolving hierarchy of creation." />
+        <stat Name="Level" Value="24" />
+        <stat Name="Hitpoints" Value="90" />
+        <stat Name="Strength" Boost="1" />
+        <stat Name="Toughness" Boost="1" />
+        <stat Name="Willpower" Boost="1" />
+        <stat Name="HeatResistance" Value="25" />
+        <stat Name="ColdResistance" Value="25" />
+        <stat Name="ElectricResistance" Value="25" />
+        <inventoryobject Blueprint="Fullerite Flake Armor" />
+        <inventoryobject Blueprint="Long Sword4" Number="1" />
+        <inventoryobject Blueprint="@Templar Grenades" Number="2" />
+        <inventoryobject Chance="15" Blueprint="Ontological Anchor" Number="1" />
+        <inventoryobject Blueprint="@GunnerKnightTemplarGuns" CellChance="100" CellFullChance="80" />
+        <skill Name="Rifles" />
+        <skill Name="Rifle_SteadyHands" />
+        <skill Name="HeavyWeapons_StrappingShoulders" />
+        <skill Name="HeavyWeapons_Tank" />
+        <skill Name="HeavyWeapons_Sweep" />
+        <part Name="CyberneticsHasRandomImplants" ImplantChance="25" ImplantTable="Cybernetics4" LicensesAtLeast="6" />
+    </object>
+
+    <object Name="LaurusBaseWombOfTheThousandT2Vanguard" Inherits="LaurusBaseWombOfTheThousand">
+        <part Name="Render" Tile="Creatures/sw_templar_leader.bmp" DisplayName="Vanguard Batchborn" DetailColor="O" />
+        <part Name="Description" Short="Oiled and brushed mail hangs across =pronouns.possessive= crooked spine, and a sharp sneer rests on =pronouns.possessive= wet, rosy lips. =Pronouns.possessive= chest is expanded upward, mimicking the superior stature of =pronouns.possessive= peers, as a perfected genetic template of the Womb's creators. Every movement is an exercise in controlled elegance, a demonstration of the Wombs relentless quest for perfection, to which =pronouns.subjective= are both the product and the enforcer." />
+        <stat Name="Level" Value="25" />
+        <stat Name="Hitpoints" Value="100" />
+        <stat Name="Strength" Boost="2" />
+        <stat Name="Toughness" Boost="1" />
+        <stat Name="Willpower" Boost="1" />
+        <stat Name="HeatResistance" Value="25" />
+        <stat Name="ColdResistance" Value="25" />
+        <stat Name="ElectricResistance" Value="25" />
+        <inventoryobject Blueprint="Long Sword6" Number="1" />
+        <inventoryobject Blueprint="Fullerite Plate Mail" />
+        <inventoryobject Blueprint="Fullerite Shield" />
+        <tag Name="InventoryPopulationTable" Value="Knight Templar Extra Armor" />
+        <inventoryobject Blueprint="@Templar Grenades" Number="2" />
+        <inventoryobject Chance="35" Blueprint="Ontological Anchor" Number="1" />
+        <inventoryobject Blueprint="CyberneticsCreditWedge3" />
+        <skill Name="Shield_StaggeringBlock" />
+        <skill Name="Shield_DeftBlocking" />
+        <skill Name="Shield_SwiftBlocking" />
+        <skill Name="Shield_Slam" />
+        <skill Name="Persuasion" />
+        <skill Name="Persuasion_InspiringPresence" />
+        <skill Name="Persuasion_MenacingStare" />
+        <skill Name="Persuasion_Berate" />
+        <skill Name="SingleWeaponFighting" />
+        <skill Name="SingleWeaponFighting_WeaponExpertise" />
+        <skill Name="SingleWeaponFighting_PenetratingStrikes" />
+        <part Name="CyberneticsHasRandomImplants" ImplantChance="60" ImplantTable="Cybernetics5" LicensesAtLeast="8" />
+    </object>
+    <object Name="LaurusBaseWombOfTheThousandT2FootSoldier" Inherits="LaurusBaseWombOfTheThousand">
+        <part Name="Render" DisplayName="Batchborn Foot Soldier" Tile="Creatures/sw_templar.bmp" DetailColor="O" />
+        <part Name="Description" Short="Oiled and brushed mail hang across =pronouns.possessive= crooked spine and salient jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= wet rosy lips catch the light and toss it back across a sharp sneer. =pronouns.Subjective==verb:'re:afterpronoun= puffed up in emulation of =pronouns.possessive= peerage and the symbol of =pronouns.possessive= sword." />
+        <stat Name="Level" Value="24" />
+        <stat Name="Hitpoints" Value="120" />
+        <stat Name="Strength" Boost="2" />
+        <stat Name="Toughness" Boost="1" />
+        <stat Name="Willpower" Boost="1" />
+        <stat Name="HeatResistance" Value="25" />
+        <stat Name="ColdResistance" Value="25" />
+        <stat Name="ElectricResistance" Value="25" />
+        <inventoryobject Blueprint="Long Sword5" Number="1" />
+        <inventoryobject Blueprint="Fullerite Plate Mail" />
+        <inventoryobject Blueprint="Fullerite Shield" />
+        <inventoryobject Blueprint="@Templar Grenades" Number="2" />
+        <tag Name="InventoryPopulationTable" Value="Knight Templar Extra Armor" />
+        <inventoryobject Chance="15" Blueprint="Ontological Anchor" Number="1" />
+        <skill Name="Shield_StaggeringBlock" />
+        <skill Name="Shield_DeftBlocking" />
+        <skill Name="Shield_SwiftBlocking" />
+        <skill Name="Shield_Slam" />
+        <skill Name="SingleWeaponFighting" />
+        <skill Name="SingleWeaponFighting_WeaponExpertise" />
+        <part Name="CyberneticsHasRandomImplants" ImplantChance="25" ImplantTable="Cybernetics4" LicensesAtLeast="6" />
+    </object>
+
+
+    <object Name="LaurusBaseWombOfTheThousandT3Squire" Inherits="LaurusBaseWombOfTheThousandT1Squire">
+        <part Name="Render" DisplayName="Wombs Chosen Batchborn" DetailColor="m" />
+        <part Name="Description" Short="Elevated beyond a mere initiate, this squires body has been reshaped by advanced genetic refinement. Wearing superior steel, =pronouns.subjective= pridefully faces the battlefield, a harbinger of the Wombs next era of warriors." />
+        <stat Name="Level" Value="18" />
+        <stat Name="Hitpoints" Value="50" />
+        <stat Name="Strength" Boost="3" />
+        <stat Name="Willpower" Boost="2" />
+        <inventoryobject Blueprint="Long Sword4" Number="1" />
+        <inventoryobject Blueprint="Steel Shield" />
+        <inventoryobject Blueprint="Fullerite Plate Mail" />
+        <inventoryobject Blueprint="Fullerite Boots" />
+        <inventoryobject Chance="85" Blueprint="@Explosives 1" Number="1d3" />
+    </object>
+    <object Name="LaurusBaseWombOfTheThousandT3BannerHolder" Inherits="LaurusBaseWombOfTheThousandT1BannerHolder">
+        <part Name="Render" DisplayName="Gene-Touched Legionnaire" DetailColor="g" />
+        <part Name="Description" Short="A refined warrior clad in elite Fullerite mail, this Bannerbearer exudes the relentless spirit of the Wombs genetic perfection. An unyielding symbol of their creators ideal, carrying the banner of the future." />
+        <stat Name="Level" Value="30" />
+        <stat Name="Hitpoints" Value="150" />
+        <stat Name="Strength" Boost="3" />
+        <stat Name="Toughness" Boost="2" />
+        <stat Name="Willpower" Boost="2" />
+        <stat Name="HeatResistance" Value="35" />
+        <stat Name="ColdResistance" Value="35" />
+        <stat Name="ElectricResistance" Value="35" />
+        <inventoryobject Blueprint="Fullerite Plate Mail" />
+        <inventoryobject Blueprint="Long Sword5" Number="1" />
+        <inventoryobject Blueprint="Banner of the Holy Rhombus" />
+        <inventoryobject Chance="30" Blueprint="Ontological Anchor" Number="1" />
+        <part Name="CyberneticsHasRandomImplants" ImplantChance="50" ImplantTable="Cybernetics5" LicensesAtLeast="7" />
+    </object>
+    <object Name="LaurusBaseWombOfTheThousandT3Gunner" Inherits="LaurusBaseWombOfTheThousandT1Gunner">
+        <part Name="Render" DisplayName="Augmented Reaver" DetailColor="B" />
+        <part Name="Description" Short="Genetically engineered to be the perfect marksman, this Guardian's mastery of firearms and unwavering loyalty are matched only by their unrelenting drive to survive and fight." />
+        <stat Name="Level" Value="30" />
+        <stat Name="Hitpoints" Value="150" />
+        <stat Name="Strength" Boost="2" />
+        <stat Name="Toughness" Boost="2" />
+        <stat Name="Willpower" Boost="2" />
+        <stat Name="HeatResistance" Value="35" />
+        <stat Name="ColdResistance" Value="35" />
+        <stat Name="ElectricResistance" Value="35" />
+        <inventoryobject Blueprint="Fullerite Flake Armor" />
+        <inventoryobject Blueprint="Long Sword5" Number="1" />
+        <inventoryobject Blueprint="@Templar Grenades" Number="3" />
+        <inventoryobject Blueprint="@GunnerKnightTemplarGuns" CellChance="100" CellFullChance="90" />
+        <skill Name="Rifles" />
+        <skill Name="Rifle_SteadyHands" />
+        <skill Name="HeavyWeapons_StrappingShoulders" />
+        <skill Name="HeavyWeapons_Tank" />
+        <skill Name="HeavyWeapons_Sweep" />
+        <part Name="CyberneticsHasRandomImplants" ImplantChance="50" ImplantTable="Cybernetics5" LicensesAtLeast="8" />
+    </object>
+    <object Name="LaurusBaseWombOfTheThousandT4Vanguard" Inherits="LaurusBaseWombOfTheThousandT2Vanguard">
+        <part Name="Render" DisplayName="Broodmother of the Eternal Forge" TileColor="&amp;y" DetailColor="W" />
+        <part Name="Description" Short="A pinnacle of genetic perfection, this Vanguard represents the highest tier of the Wombs batchborn. Enhanced physically and mentally, they embody the next step in the Wombs relentless pursuit of flawlessness." />
+        <stat Name="Level" Value="35" />
+        <stat Name="Hitpoints" Value="200" />
+        <stat Name="Strength" Boost="4" />
+        <stat Name="Toughness" Boost="3" />
+        <stat Name="Willpower" Boost="3" />
+        <stat Name="HeatResistance" Value="45" />
+        <stat Name="ColdResistance" Value="45" />
+        <stat Name="ElectricResistance" Value="45" />
+        <inventoryobject Blueprint="Long Sword7" Number="1" />
+        <inventoryobject Blueprint="Fullerite Plate Mail" />
+        <inventoryobject Blueprint="Flawless Crysteel Shield" />
+        <inventoryobject Blueprint="@Templar Grenades" Number="3" />
+        <inventoryobject Blueprint="CyberneticsCreditWedge4" />
+        <inventoryobject Chance="40" Blueprint="Ontological Anchor" Number="1" />
+        <skill Name="Shield_StaggeringBlock" />
+        <skill Name="Shield_DeftBlocking" />
+        <skill Name="Shield_SwiftBlocking" />
+        <skill Name="Shield_Slam" />
+        <skill Name="Persuasion" />
+        <skill Name="SingleWeaponFighting_WeaponExpertise" />
+        <part Name="CyberneticsHasRandomImplants" ImplantChance="80" ImplantTable="Cybernetics6" LicensesAtLeast="10" />
+    </object>
+    <object Name="LaurusBaseWombOfTheThousandT4FootSoldier" Inherits="LaurusBaseWombOfTheThousandT2FootSoldier">
+        <part Name="Render" DisplayName="Genetic Reclamation Overseer" TileColor="&amp;y" DetailColor="R" />
+        <part Name="Description" Short="A perfected version of the Batchborn soldier, this warrior is genetically modified for unparalleled strength, resilience, and combat effectiveness. Clad in full elite armor, =pronouns.subjective= marches at the forefront of the Wombs war machine." />
+        <stat Name="Level" Value="30" />
+        <stat Name="Hitpoints" Value="180" />
+        <stat Name="Strength" Boost="3" />
+        <stat Name="Toughness" Boost="2" />
+        <stat Name="Willpower" Boost="2" />
+        <stat Name="HeatResistance" Value="40" />
+        <stat Name="ColdResistance" Value="40" />
+        <stat Name="ElectricResistance" Value="40" />
+        <inventoryobject Blueprint="Long Sword6" Number="1" />
+        <inventoryobject Blueprint="Fullerite Plate Mail" />
+        <inventoryobject Blueprint="Flawless Crysteel Shield" />
+        <inventoryobject Blueprint="@Templar Grenades" Number="3" />
+        <inventoryobject Chance="20" Blueprint="Ontological Anchor" Number="1" />
+        <skill Name="Shield_StaggeringBlock" />
+        <skill Name="Shield_DeftBlocking" />
+        <skill Name="Shield_SwiftBlocking" />
+        <skill Name="Shield_Slam" />
+        <skill Name="SingleWeaponFighting_WeaponExpertise" />
+        <part Name="CyberneticsHasRandomImplants" ImplantChance="40" ImplantTable="Cybernetics5" LicensesAtLeast="8" />
+    </object>
+
+
+</objects>

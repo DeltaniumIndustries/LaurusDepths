@@ -1,0 +1,202 @@
+<objects>
+
+    <!--
+    *********************************
+       Offgrid tech furniture
+    *********************************
+  -->
+    <object Name="Exit Teleporter" Inherits="HighTechInstallation">
+        <part Name="Render" DisplayName="stairwell teleporter" RenderString="008" ColorString="&amp;K^W" TileColor="&amp;W" DetailColor="M" Occluding="true" Tile="Items/sw_teleporter_pad.bmp" />
+        <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" />
+        <part Name="CatacombsExitTeleporter" />
+        <stat Name="AV" Value="20" />
+        <stat Name="Hitpoints" Value="6000" />
+        <part Name="Description" Short="A brass hem surrounds a foam shunting pad, and the above-head fretwork is braided into the once-familiar glyphs of exit symbology." />
+        <part Name="Interesting" />
+        <tag Name="VaporObject" Value="LavaPuddle" />
+        <tag Name="Tier" Value="6" />
+        <tag Name="OverlayColor" Value="&amp;M^k" />
+        <tag Name="BaseObject" Value="*noinherit" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+        <tag Name="NoClear" />
+    </object>
+    <object Name="Catacombs Exit Teleporter" Inherits="Exit Teleporter">
+        <part Name="CatacombsExitTeleporter" TargetZones="JoppaWorld.53.3.2.0.11,JoppaWorld.53.3.2.2.11" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    </object>
+    <object Name="Crypt Exit Teleporter" Inherits="Exit Teleporter">
+        <part Name="CatacombsExitTeleporter" TargetZones="JoppaWorld.53.3.0.2.7" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    </object>
+
+    <!--
+    ************
+       Chests
+    ************
+  -->
+    <object Name="ChestBronzeIngots" Inherits="Chest">
+        <part Name="Inventory" />
+        <inventoryobject Blueprint="Bronze Ingot" Number="1d3-1" />
+        <tag Name="Tier" Value="1" />
+        <tag Name="Role" Value="Rare" />
+        <tag Name="NoSparkingQuest" />
+    </object>
+    <object Name="Chest5" Inherits="Chest">
+        <part Name="Inventory" Builder="InventoryChestJunk5" />
+        <tag Name="Tier" Value="5" />
+        <tag Name="DynamicObjectsTable:Chests" />
+        <tag Name="NoSparkingQuest" />
+        <tag Name="AggregateWith" Value="Chest5" />
+    </object>
+    <object Name="Chest6" Inherits="Chest">
+        <part Name="Inventory" Builder="InventoryChestJunk6" />
+        <tag Name="Tier" Value="6" />
+        <tag Name="DynamicObjectsTable:Chests" />
+        <tag Name="NoSparkingQuest" />
+        <tag Name="AggregateWith" Value="Chest6" />
+    </object>
+    <object Name="Chest7" Inherits="Chest">
+        <part Name="Inventory" Builder="InventoryChestJunk7" />
+        <tag Name="NoSparkingQuest" />
+        <tag Name="Tier" Value="7" />
+        <tag Name="DynamicObjectsTable:Chests" />
+        <tag Name="AggregateWith" Value="Chest7" />
+    </object>
+    <object Name="Chest8" Inherits="Chest">
+        <part Name="Inventory" Builder="InventoryChestJunk8" />
+        <tag Name="Tier" Value="8" />
+        <tag Name="DynamicObjectsTable:Chests" />
+        <tag Name="NoSparkingQuest" />
+        <tag Name="AggregateWith" Value="Chest8" />
+    </object>
+
+    <!--
+    *******************
+       Light sources
+    *******************
+  -->
+    <object Name="Tall Brazier" Inherits="MountedFurniture">
+        <part Name="Render" DisplayName="bronze brazier" RenderString="249" ColorString="&amp;W" DetailColor="W" Tile="Items/sw_lamp.bmp" RenderLayer="6" Occluding="false" />
+        <part Name="Physics" Weight="20" />
+        <part Name="LightSource" Lit="true" Radius="6" />
+        <part Name="Description" Short="Burnished bronze is burned to light-in-ceremony by hot coal." />
+        <part Name="Metal" />
+        <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TallBrazierFlames" />
+        <tag Name="Tier" Value="0" />
+        <part Name="SoundRender" Sound="sfx_torch_flame_lp"/>
+        <stag Name="LightSource" />
+        <stag Name="Furniture" />
+        <stag Name="Luxury" />
+        <tag Name="Role" Value="Hero" />
+    </object>
+
+    <!--
+    *******************
+          Other
+    *******************
+  -->
+    <!-- Village signs -->
+    <object Name="JoppaNorthSign" Inherits="Sign">
+        <part Name="Render" DisplayName="sign" Tile="Items/sw_sign_graveyard.bmp" Occluding="false" />
+        <part Name="Chat" Says="To graveyard and shrine" ShowInShortDescription="true" />
+    </object>
+    <!-- Special statues -->
+    <object Name="JoppaReshephShrine" Inherits="SultanShrine">
+        <part Name="Render" DisplayName="shrine to Resheph" RenderString="|" ColorString="&amp;y^k" Occluding="false" Tile="Terrain/tile_tombstone1.png" />
+        <part Name="Epithets" Primary=", the Last Sultan" />
+        <part Name="SultanShrine" PresetGospelByProperty="JoppaShrine" />
+        <part Name="ZoneLandmarkObject" Preposition="by" Radius="6" />
+        <tag Name="HasPregeneratedName" />
+        <tag Name="PregeneratedSultanName" Value="Resheph" />
+        <tag Name="Worshippable" />
+        <tag Name="WorshippedAs" Value="Resheph" />
+        <tag Name="WorshipFaction" Value="Resheph" />
+        <tag Name="WorshipPower" Value="3" />
+        <tag Name="WorshipColorString" Value="&amp;Y" />
+        <tag Name="WorshipDetailColor" Value="C" />
+        <tag Name="WorshipColorPool" Value="*delete" />
+        <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    </object>
+
+    <!--
+    *******************
+          Walls
+    *******************
+  -->
+    <object Name="BaseWallBrick" Inherits="Wall">
+        <part Name="Render" ColorString="&amp;r^y" TileColor="&amp;r" DetailColor="y" />
+        <tag Name="PaintedWall" Value="wall_brick" />
+        <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+        <tag Name="PaintedWallExtension" Value=".png" />
+        <tag Name="BaseObject" Value="*noinherit" />
+        <tag Name="Tier" Value="1" />
+        <part Name="Graffitied" ChanceOneIn="300" />
+    </object>
+    <object Name="BrickWall" Inherits="BaseWallBrick">
+        <part Name="Render" DisplayName="brick" RenderString="177" Occluding="true" ColorString="&amp;r^w" TileColor="&amp;r" DetailColor="w" />
+        <part Name="Physics" Weight="10000" Takeable="false" Solid="true" />
+        <part Name="Description" Short="Burnt clay ingots are laid crosswise, and a barrier is made. Each brick is marred by the variegated cuts of time, imperfections in the heat balance of the oven it was fired in, and fungi in its birthing mud." />
+        <stat Name="AV" Value="7" />
+        <stat Name="Hitpoints" Value="200" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Category_Settlement" />
+        <xtagGrammar massNoun="true" />
+        <tag Name="Tier" Value="2" />
+        <part Name="Graffitied" ChanceOneIn="300" />
+    </object>
+
+    <!--
+    *****************
+       Wall-likes
+    *****************
+  -->
+    <!-- Terrain -->
+    <object Name="Rubble" Inherits="InorganicObject">
+        <part Name="Render" DisplayName="rubble" ColorString="&amp;W" DetailColor="w" RenderString="177" Occluding="false" RenderIfDark="true" RenderLayer="7" />
+        <builder Name="RandomTile" Tiles="Tiles2/sw_rubble_1.bmp,Tiles2/sw_rubble_2.bmp,Tiles2/sw_rubble_3.bmp,Tiles2/sw_rubble_4.bmp" />
+        <part Name="Description" Short="Irregular volumes of stone are heaped together. Across its surface, points of order poke sporadically through the pile of entropy: a statue's finger, the gnomon of a sundial, a parcel of circuitboard." />
+        <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="6000" Takeable="false" Solid="true" />
+        <stat Name="AV" Value="10" />
+        <stat Name="Hitpoints" Value="5000" />
+        <tag Name="NoSparkingQuest" />
+        <tag Name="VaporObject" Value="LavaPuddle" />
+        <tag Name="ImmutableWhenUnexplored" Value="1" />
+        <tag Name="Diggable" />
+        <tag Name="Flyover" />
+        <tag Name="Wall" />
+        <tag Name="Tier" Value="0" />
+        <intproperty Name="AllowMissiles" Value="1" />
+        <xtagGrammar massNoun="true" />
+    </object>
+    <object Name="Rubble Grey" Inherits="Rubble">
+        <part Name="Render" DisplayName="rubble" ColorString="&amp;y" DetailColor="K" />
+    </object>
+    <!-- Plaques -->
+    <object Name="CryochamberPlaque" Inherits="Wall">
+        <part Name="Render" DisplayName="chrome plaque" ColorString="&amp;y" RenderString="254" Occluding="false" />
+        <part Name="Physics" FreezeTemperature="-9999" BrittleTemperature="-9999" />
+        <part Name="Chat" Says="CHAMBER UNOCCUPIED: AWAITING SPECIMEN" ShowInShortDescription="true" />
+        <part Name="SmartuseLooks" />
+        <part Name="Description" Short="The shining surface of quickchrome swims in shifting refraction patterns. As its light is focused, glyphs begin to appear." />
+        <stat Name="AV" Value="10" />
+        <stat Name="Hitpoints" Value="80" />
+        <tag Name="BodyType" Value="MetalWall" />
+        <tag Name="Tier" Value="6" />
+        <part Name="Graffitied" ChanceOneIn="300" />
+        <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_metal" />
+        <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_metal" />
+    </object>
+    <object Name="CryochamberPlaqueSpider" Inherits="CryochamberPlaque">
+        <part Name="Chat" Says="SPECIMEN: PHASE SPIDER" />
+    </object>
+    <object Name="CryochamberPlaqueRhinox" Inherits="CryochamberPlaque">
+        <part Name="Chat" Says="SPECIMEN: RHINOX" />
+    </object>
+    <object Name="CryochamberPlaqueSkybear" Inherits="CryochamberPlaque">
+        <part Name="Chat" Says="SPECIMEN: SAAD AMUS, THE SKY-BEAR, CHAMPION OF SALUM" />
+    </object>
+    <object Name="CryochamberPlaqueYempris" Inherits="CryochamberPlaque">
+        <part Name="Chat" Says="SPECIMEN: YEMPURIS PHI" />
+    </object>
+
+</objects>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+
+  <!-- Base Terrain-->
+
+  <object Name="LaurusTerrainBase" Inherits="Terrain">
+
+  </object>
+  
+  <object Name="LaurusTerrainBaseNoBiomes" Inherits="LaurusTerrainBase">
+    <tag Name="NoBiomes" Value="1" />
+  </object>
+
+  <object Name="LaurusTerrainBasePluralThe" Inherits="LaurusTerrainBaseNoBiomes">
+    <tag Name="Gender" Value="plural" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+    <xtagGrammar iArticle="the" Proper="true" />
+    <stag Name="Historical" />
+    <part Name="Physics" Solid="true" />
+  </object>
+
+
+  <!-- Static Cells -->
+  <object Name="LaurusTerrainVillageTristram" Inherits="LaurusTerrainBase">
+    <part Name="Render" DisplayName="tristram" Tile="Terrain/tile_village.png" TileColor="&amp;Y" ColorString="&amp;G^k" RenderString="006" DetailColor="r" />
+    <part Name="Description" Short="stay a while and listen..." />
+  </object>
+
+  <!-- Deathlands -->
+  <object Name="TerrainDeathlands" Inherits="Terrain">
+    <part Name="Render" DisplayName="deathlands" RenderString="204" ColorString="&amp;m^k" TileColor="&amp;M^k" DetailColor="m" Tile="Terrain/Deathlands/sw_ruins8.png" />
+    <part Name="TerrainTravel" Segments="2000" TravelClass="Survival_RuinsSurvival" />
+    <part Name="Description" Short="Only the vexing hum of the Signal interrupts the incandescent stillness." />
+    <tag Name="Gender" Value="plural" />
+    <xtagGrammar iArticle="the" />
+    <tag Name="LairOwnerTable" Value="LairOwners_Deathlands" />
+    <tag Name="Terrain" Value="Deathlands" />
+    <tag Name="RegionTier" Value="8" />
+    <part Name="RandomRenderString" Strings="179,191,192,193,194,195,196,197,217,218" />
+    <!--<part Name="RandomRenderString" Strings="199,200,201,202,203,204,205,206,207,208,209,210,211,212" />-->
+    <part Name="RandomTile" Tiles="Terrain/Deathlands/sw_ruins1.png,Terrain/Deathlands/sw_ruins2.png,Terrain/Deathlands/sw_ruins3.png,Terrain/Deathlands/sw_ruins4.png,Terrain/Deathlands/sw_ruins5.png,Terrain/Deathlands/sw_ruins6.png,Terrain/Deathlands/sw_ruins7.png,Terrain/Deathlands/sw_ruins8.png,Terrain/Deathlands/sw_ruins1.png,Terrain/Deathlands/sw_ruins2.png,Terrain/Deathlands/sw_ruins3.png" />
+  </object>
+
+  <object Name="LaurusTerrainBananaGrove" Inherits="LaurusTerrainBase">
+    <part Name="Render" DisplayName="banana grove" RenderString="244" ColorString="&amp;W^k" DetailColor="g" Tile="Terrain/sw_ruins1.png" />
+    <part Name="TerrainTravel" Segments="2000" TravelClass="Survival_JungleSurvival" />
+    <part Name="Description" Short="The grove's million laced fingers sway in gentle opulence. Verdant fronds nestle the base of the Spindle from its mountainous nook." />
+    <tag Name="DefaultWall" Value="Oolite" />
+    <tag Name="LairOwnerTable" Value="LairOwners_BananaGrove" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_worldmap_musa_1.png,Terrain/sw_worldmap_musa_2.png,Terrain/sw_worldmap_musa_3.png" />
+    <xtagGrammar massNoun="false" />
+    <tag Name="Terrain" Value="BananaGrove" />
+    <tag Name="RegionTier" Value="5" />
+  </object>
+  <object Name="LaurusTerrainTallMountains" Inherits="TerrainMountains">
+    <part Name="Render" DisplayName="tall mountains" Flags="20" RenderString="030" ColorString="&amp;Y^k" Tile="Terrain/sw_tall_mountains.png" />
+    <part Name="Description" Short="Stone rucks up in ancient furrows, heaved and broken where the world once clenched its teeth." />
+    <tag Name="DefaultWall" Value="LaurusWallGneiss" />
+    <tag Name="LairOwnerTable" Value="LaurusLairOwnersTallMountains" />
+    <tag Name="RegionTier" Value="6" />
+    <part Name="Physics" Solid="false" />
+  </object>
+
+
+  <!-- W1K -->
+  <object Name="LaurusTerrainW1kBase" Inherits="LaurusTerrainBasePluralThe">
+    <tag Name="Terrain" Value="Flowerfields" />
+    <tag Name="RegionTier" Value="7" />
+    <tag Name="LairOwnerTable" Value="LaurusLairOwnersW1kPrimaryBase" />
+  </object>
+  <object Name="LaurusTerrainW1kSurroundingMountains" Inherits="LaurusTerrainTallMountains">
+    <part Name="Render" DisplayName="occupied mountains" ColorString="&amp;y^k" />
+    <part Name="Description" Short="These hills certainly have eyes." />
+    <tag Name="DefaultWall" Value="LaurusWallChert" />
+    <tag Name="Terrain" Value="Flowerfields" />
+    <tag Name="LairOwnerTable" Value="LaurusLairOwnersW1kTallMountains" />
+    <tag Name="RegionTier" Value="7" />
+  </object>
+  <object Name="LaurusTerrainW1kInfiniteHatchery" Inherits="LaurusTerrainW1kBase">
+    <part Name="Render" DisplayName="Infinite Hatchery" Tile="terrain/sw_w1k_InfiniteHatchery.png" TileColor="&amp;Y^k" DetailColor="R" RenderString="w1k-1" ColorString="&amp;R^k" />
+    <part Name="Description" Short="A subterranean labyrinth where clones are endlessly created, tested, and discarded. Bio-pods pulse with embryonic light as flesh-weaving machines shape each new iteration." />
+    <tag Name="RegionTier" Value="8" />
+    <tag Name="OverlayColor" Value="&amp;W" />
+    <tag Name="MinimapColor" Value="g"></tag>
+  </object>
+  <object Name="LaurusTerrainW1kPitOfFlesh" Inherits="LaurusTerrainW1kBase">
+    <part Name="Render" DisplayName="Flesh Pit" Tile="terrain/sw_w1k_FleshPits.png" DetailColor="R" RenderString="w1k-2" ColorString="&amp;r^k" />
+    <part Name="Description" Short="A churning abyss of failed clones, its walls slick with organic residue. Golden vines creep along chrome walls as the mass below shifts, birthing horrors in the dark." />
+    <tag Name="AlternateTerrainName" Value="FleshPit" />
+    <tag Name="OverlayColor" Value="&amp;W" />
+    <tag Name="MinimapColor" Value="g"></tag>
+  </object>
+  <object Name="LaurusTerrainW1kTrainingGrounds" Inherits="LaurusTerrainW1kBase">
+    <part Name="Render" DisplayName="Training Grounds" Tile="terrain/sw_w1k_TrainerGrounds.png" TileColor="&amp;w^k" DetailColor="m" RenderString="w1k-3" ColorString="&amp;K^y" />
+    <part Name="Description" Short="A proving ground where the Batchborn sharpen their skills, each strike a plea for genetic ascension." />
+    <tag Name="OverlayColor" Value="&amp;W" />
+    <tag Name="MinimapColor" Value="g"></tag>
+  </object>
+
+  <!-- Corpus Commune -->
+  <object Name="LaurusTerrainCCBase" Inherits="LaurusTerrainBasePluralThe">
+    <tag Name="Terrain" Value="Saltdunes" />
+    <tag Name="RegionTier" Value="6" />
+  </object>
+  <object Name="LaurusTerrainCCGestaltPools" Inherits="LaurusTerrainCCBase">
+    <part Name="Render" DisplayName="Gestalt Pools" Tile="terrain/sw_cc_GestaltPools.png" DetailColor="C" TileColor="&amp;G^k" RenderString="030" ColorString="&amp;R^k" />
+    <part Name="Description" Short="Pools of genetic slurry where mutants dissolve and reform. The jungle around them writhes with tendrils, each ripple on the surface a whisper from the hive-mind." />
+    <tag Name="OverlayColor" Value="&amp;W" />
+    <tag Name="MinimapColor" Value="g"></tag>
+  </object>
+  <object Name="LaurusTerrainCCGeneVats" Inherits="LaurusTerrainCCBase">
+    <part Name="Render" DisplayName="Gene-Vats" Tile="terrain/sw_cc_GeneVats.png" TileColor="&amp;y^k" DetailColor="w" RenderString="247" ColorString="&amp;k^w" />
+    <part Name="Description" Short="An abandoned eater facility repurposed for transformation. The vats throb with repurposed flesh, consuming the weak and returning something changed." />
+    <tag Name="OverlayColor" Value="&amp;W" />
+    <tag Name="MinimapColor" Value="g"></tag>
+  </object>
+  <object Name="LaurusTerrainCCMindfleshCore" Inherits="LaurusTerrainCCBase">
+    <part Name="Render" DisplayName="Mindflesh Core" Tile="terrain/sw_cc_MindFleshCore.png" RenderString="239" ColorString="&amp;r" DetailColor="y" />
+    <part Name="Description" Short="The living center of the Corpus Commune, where thought and flesh entwine. Its psionic pulse distorts perception, and the ruins around it have been absorbed into its will." />
+    <tag Name="RegionTier" Value="7" />
+    <tag Name="OverlayColor" Value="&amp;W" />
+    <tag Name="MinimapColor" Value="g"></tag>
+  </object>
+
+</objects>

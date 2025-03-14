@@ -1,0 +1,37 @@
+<objects>
+    <object Name="Gamma Moth" Inherits="BaseInsect">
+        <part Name="Render" DisplayName="gamma moth" Tile="Creatures/sw_moth.bmp" ColorString="&amp;M" DetailColor="K" />
+        <part Name="Description" Short="Vast diaphanous wings painted in the furcate patterns of fractalized geometry bat the air." />
+        <stat Name="Level" Value="39" />
+        <stat Name="Hitpoints" Value="250" />
+        <stat Name="AV" Value="8" />
+        <stat Name="HeatResistance" Value="30" />
+        <stat Name="ColdResistance" Value="30" />
+        <stat Name="ElectricResistance" Value="30" />
+        <stat Name="AcidResistance" Value="30" />
+        <tag Name="Role" Value="Artillery" />
+        <mutation Name="Wings" Level="10" />
+        <inventoryobject Blueprint="LaurusBaseGammaFaceWeapon" />
+        <inventoryobject Blueprint="LaurusBaseGammaBite" />
+        <tag Name="Species" Value="moth" />
+    </object>
+    <object Name="LaurusBaseGammaBite" Inherits="Bite">
+        <part Name="MeleeWeapon" PenBonus="3" BaseDamage="4d4" Slot="Head" />
+    </object>
+    <object Name="LaurusBaseGammaFaceWeapon" Inherits="NaturalMissileWeapon">
+        <part Name="Render" DisplayName="mutating gaze" ColorString="&amp;M" DetailColor="K" Tile="items/night_vision_mutation.bmp" />
+        <part Name="Physics" Weight="12" />
+        <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;M-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
+        <part Name="Commerce" Value="750" />
+        <part Name="EnergyAmmoLoader" ChargeUse="0" ProjectileObject="LaurusBaseProjectileGamma" IsBioScannable="true" NameForStatus="GammaLensing" />
+        <part Name="AIShootCooldown" Cooldown="8-10" />
+        <tag Name="Tier" Value="8" />
+        <tag Name="UsesSlots" Value="Face" />
+    </object>
+    <object Name="LaurusBaseProjectileGamma" Inherits="TemporaryProjectile">
+        <part Name="Render" DisplayName="{{M|flash of light}}" ColorString="&amp;M" />
+        <part Name="Projectile" BasePenetration="8" BaseDamage="1d12" Attributes="Mutagenic" ColorString="&amp;M" PenetrateCreatures="true" PassByVerb="flicker" />
+        <part Name="TreatAsSolid" GazeBased="true" Hits="false" RequiresPhaseMatch="false" Message="The darkness consumes =subject.t=!" />
+        <part Name="MutateOnHit" Chance="100" IncubationTime="100" ResultTable="MutatingResults" />
+    </object>
+</objects>
