@@ -125,17 +125,17 @@ public class BlightedChasm : ZoneBuilderSandbox
         if (noiseValue >= 0.80)
         {
             if (BLIGHTED_SLUDGE_CHANCE.in100()) Z.GetCell(x, y).AddObject("Blighted Mire");
-            if (GAS_POCKET_CHANCE.in100()) Z.GetCell(x, y).AddObject("Volatile Gas Pocket");
+            if (GAS_POCKET_CHANCE.in100()) Z.GetCell(x, y).AddObject("LaurusGasBlightedMire");
         }
         else if (noiseValue >= 0.60)
         {
-            Z.GetCell(x, y).AddObject("Hollow Stalk");
-            if (TWISTED_VEGETATION_CHANCE.in100()) Z.GetCell(x, y).AddObject("Bleeding Thornbush");
+            Z.GetCell(x, y).AddObject("LaurusZTHollowStalk");
+            if (TWISTED_VEGETATION_CHANCE.in100()) Z.GetCell(x, y).AddObject("LaurusPlantBleedingThornbush");
         }
         else if (noiseValue >= 0.40)
         {
             Z.GetCell(x, y).AddObject("Chasm Floor");
-            if (COLLAPSING_TERRAIN_CHANCE.in100()) Z.GetCell(x, y).AddObject("Unstable Ground");
+            if (COLLAPSING_TERRAIN_CHANCE.in100()) Z.GetCell(x, y).AddObject("LaurusZTUnstableGround");
         }
     }
 

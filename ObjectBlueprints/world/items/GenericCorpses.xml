@@ -1,0 +1,22 @@
+<objects>
+
+    <object Name="LaurusItemCorpse" Inherits="Corpse">
+        <part Name="Description" Short="A mound of rotting flesh puts some elevation to the ground." />
+        <part Name="Physics" Weight="30" />
+        <part Name="Food" Message="The meat is tough." />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="LaurusItemCorpseSmall" Inherits="LaurusItemCorpse">
+        <part Name="Description" Short="A small mound of rotting flesh puts a bump in the ground." />
+        <part Name="Physics" Weight="5" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="LaurusItemCorpsePlant" Inherits="LaurusItemCorpse">
+        <part Name="Render" TileColor="&amp;r" DetailColor="g" ColorString="&amp;w" />
+        <part Name="Description" Short="A small mound of organic material puts a bump in the ground." />
+        <part Name="Physics" Weight="2" />
+        <tag Name="BaseObject" Value="*noinherit" />
+        <tag Name="Meat" Value="*delete"/>
+    </object>
+
+</objects>

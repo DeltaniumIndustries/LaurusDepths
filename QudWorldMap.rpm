@@ -12,6 +12,9 @@
   <cell X="5" Y="16">
     <object Name="LaurusTerrainTallMountains" />
   </cell>
+  <cell X="6" Y="16">
+    <object Name="LaurusTerrainVillageBlasted" />
+  </cell>
 
   <!-- Static Cells -->
   <cell X="2" Y="18">

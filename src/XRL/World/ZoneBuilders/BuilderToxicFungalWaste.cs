@@ -27,6 +27,11 @@ public class ToxicFungalWastes : ZoneBuilderSandbox
         "FungusPuffer2",
         "FungusPuffer3",
         "FungusPuffer4",
+        "LaurusFungusPufferVoidspore",
+        "LaurusFungusPufferBlightcap",
+        "LaurusFungusPufferBurnspore",
+        "LaurusFungusPufferMooncap",
+        "LaurusFungusPufferDreamroot"
     };
     private static readonly string[] Weeps =
 {

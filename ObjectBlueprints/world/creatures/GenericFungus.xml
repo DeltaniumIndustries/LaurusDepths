@@ -1,0 +1,66 @@
+<objects>
+
+    <object Name="LaurusFungusPufferVoidspore" Inherits="FungusPuffer">
+        <part Name="Render" Tile="Creatures/sw_mushroom.bmp" RenderIfDark="true" DisplayName="{{m|brooding voidspore}}" RenderString="231" ColorString="&amp;m" DetailColor="y" />
+        <part Name="Description" Short="The gills of the Voidspore pulse, expanding and contracting in eerie rhythm. With each breath, it releases a cloud of obsidian spores, like fragments of the starless void. The spores shimmer before swirling back to the cap, merging into a dense, void-like plasma." />
+        <mutation Name="LaurusSporePuffer" FungalGas="LaurusFungalSporeGasVoid" />
+        <tag Name="Species" Value="voidspore" />
+    </object>
+    <object Name="LaurusFungusPufferBlightcap" Inherits="FungusPuffer">
+        <part Name="Render" Tile="Creatures/sw_mushroom.bmp" RenderIfDark="true" DisplayName="{{g|brooding blightcaps}}" RenderString="231" ColorString="&amp;g" DetailColor="Y" />
+        <part Name="Description" Short="Blightcaps' gills twitch erratically, expanding and contracting like a heartbeat. As they exhale, they release a cloud of sickly yellow spores, resembling the dying light of a long-forsaken sun. The spores spiral back toward the cap and congeal into a rotting yellow plasma." />
+        <mutation Name="LaurusSporePuffer" FungalGas="LaurusFungalSporeGasBlight" />
+        <tag Name="Species" Value="blightcaps" />
+    </object>
+    <object Name="LaurusFungusPufferBurnspore" Inherits="FungusPuffer">
+        <part Name="Render" Tile="Creatures/sw_mushroom.bmp" RenderIfDark="true" DisplayName="{{o|brooding burnspore}}" RenderString="231" ColorString="&amp;R" DetailColor="O" />
+        <part Name="Description" Short="The gills of the Burnspore flare with a faint red glow, pulsing in rhythm. With each exhale, it releases a cloud of ember-like spores, hot to the touch, their glow fading into fiery motes. They return to the cap, coalescing into a shimmering, fiery plasma." />
+        <mutation Name="LaurusSporePuffer" FungalGas="LaurusFungalSporeGasBurn" />
+        <tag Name="Species" Value="burnspore" />
+    </object>
+    <object Name="LaurusFungusPufferMooncap" Inherits="FungusPuffer">
+        <part Name="Render" Tile="Creatures/sw_mushroom.bmp" RenderIfDark="true" DisplayName="{{Zetachrome|brooding mooncap}}" RenderString="231" ColorString="&amp;C" DetailColor="Y" />
+        <part Name="Description" Short="Mooncap's gills rise and fall with a strange, gravitational pull. Each breath expels a cloud of pale spores, resembling fragments of the moon's dust. The spores swirl back to the cap and congeal into a soft, silvery plasma that glows faintly in the dark." />
+        <mutation Name="LaurusSporePuffer" FungalGas="LaurusFungalSporeGasMoon" />
+        <tag Name="Species" Value="mooncap" />
+    </object>
+    <object Name="LaurusFungusPufferDreamroot" Inherits="FungusPuffer">
+        <part Name="Render" Tile="Creatures/sw_mushroom.bmp" RenderIfDark="true" DisplayName="{{Rainbow|brooding dreamroot}}" RenderString="231" ColorString="&amp;c" DetailColor="w" />
+        <part Name="Description" Short="Dreamroot's gills undulate like the surface of a disturbed pond, their patterns shifting unpredictably. With each exhalation, it releases a cloud of pale, iridescent spores that shimmer like the fleeting remnants of a forgotten dream. The spores drift back to the cap and merge into a translucent, dreamlike plasma." />
+        <mutation Name="LaurusSporePuffer" FungalGas="LaurusFungalSporeGasDream" />
+        <tag Name="Species" Value="dreamroot" />
+    </object>
+
+
+    <object Name="LaurusFungalSporeGasBase" Inherits="Gas">
+        <tag Name="Gender" Value="plural" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="LaurusFungalSporeGasVoid" Inherits="LaurusFungalSporeGasBase">
+        <part Name="Render" DisplayName="void spores" />
+        <part Name="Description" Short="Brumes of swirling obsidian spores make the air feel heavy, as if the void itself is pressing in." />
+        <part Name="GasFungalSpores" Infection="LaurusFungalInfectionVoidspore" />
+    </object>
+    <object Name="LaurusFungalSporeGasBlight" Inherits="LaurusFungalSporeGasBase">
+        <part Name="Render" DisplayName="blight spores" />
+        <part Name="Description" Short="Sickly yellow spores spiral through the air, carrying with them the stench of decay." />
+        <part Name="GasFungalSpores" Infection="LaurusFungalInfectionBlightcap" />
+    </object>
+    <object Name="LaurusFungalSporeGasBurn" Inherits="LaurusFungalSporeGasBase">
+        <part Name="Render" DisplayName="ember spores" />
+        <part Name="Description" Short="The air crackles with ember-like spores, their warmth searing the skin and the faint scent of burning embers lingering." />
+        <part Name="GasFungalSpores" Infection="LaurusFungalInfectionBurnspore" />
+    </object>
+    <object Name="LaurusFungalSporeGasMoon" Inherits="LaurusFungalSporeGasBase">
+        <part Name="Render" DisplayName="moon dust spores" />
+        <part Name="Description" Short="Soft, pale spores float through the air like fragments of forgotten dreams, their glow faint but eerie." />
+        <part Name="GasFungalSpores" Infection="LaurusFungalInfectionMooncap" />
+    </object>
+    <object Name="LaurusFungalSporeGasDream" Inherits="LaurusFungalSporeGasBase">
+        <part Name="Render" DisplayName="dream spores" />
+        <part Name="Description" Short="Iridescent spores hang in the air, like the fading traces of a long-lost memory, their glow shifting like a phantom." />
+        <part Name="GasFungalSpores" Infection="LaurusFungalInfectionDreamroot" />
+    </object>
+
+
+</objects>

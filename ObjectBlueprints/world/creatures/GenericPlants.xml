@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects>
+
+    <!-- Base Plants -->
+
+    <object Name="LaurusBasePlant" Inherits="BasePlant">
+        <part Name="Render" RenderIfDark="true" Tile="Creatures/sw_qudzu.bmp" RenderString="&amp;" TileColor="&amp;r^k" DetailColor="w" ColorString="&amp;r^w" />
+        <part Name="Brain" Hostile="false" Wanders="false" Mobile="false" Factions="Roots-100" />
+        <tag Name="BaseObject" Value="*noinherit" />
+        <part Name="PlantProperties" Rooted="false" />
+        <part Name="Corpse" CorpseChance="5" CorpseBlueprint="LaurusFoodMysteryFruit" />
+        <part Name="Impaler" ClusterSize="1d6" Damage="2d10+5" BleedDamage="1d4" />
+        <stat Name="Hitpoints" Value="10" />
+        <stat Name="Level" Value="5" />
+        <tag Name="Species" Value="root" />
+        <tag Name="NoVillageFarming" />
+        <tag Name="Role" Value="Lurker" />
+        <stag Name="Plank" Value="stave" />
+        <tag Name="DynamicObjectsTable:DesertCanyon_Creatures" />
+        <tag Name="DynamicObjectsTable:Flowerfields_Creatures" />
+        <tag Name="DynamicObjectsTable:Jungle_Creatures" />
+        <tag Name="DynamicObjectsTable:DeepJungle_Plants" />
+        <tag Name="DynamicObjectsTable:Ruins_Creatures" />
+        <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_root" />
+    </object>
+    <object Name="LaurusBasePlantWall" Inherits="LaurusBasePlant">
+        <part Name="Brain" LivesOnWalls="true" MinKillRadius="1" MaxKillRadius="1" />
+        <part Name="Corpse" CorpseChance="15" />
+        <stat Name="Hitpoints" Value="25" />
+        <stat Name="Agility" Value="25" />
+        <part Name="WallColor" AsBackground="true" />
+        <tag Name="Noswap" />
+        <tag Name="PlacementHint" Value="OnWall" />
+    </object>
+    <object Name="LaurusBasePlantHidden" Inherits="LaurusBasePlant">
+        <part Name="Hidden" Difficulty="5" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="LaurusBasePlantHiddenEasy" Inherits="LaurusBasePlantHidden">
+        <part Name="Hidden" Difficulty="10" />
+        <tag Name="Tier" Value="3" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="LaurusBasePlantHiddenMedium" Inherits="LaurusBasePlantHidden">
+        <part Name="Hidden" Difficulty="20" />
+        <tag Name="Tier" Value="4" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="LaurusBasePlantHiddenHard" Inherits="LaurusBasePlantHidden">
+        <part Name="Hidden" Difficulty="30" />
+        <tag Name="Tier" Value="5" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="LaurusBasePlantHiddenImpaler" Inherits="LaurusBasePlantHidden">
+        <part Name="Impaler" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="LaurusBasePlantHiddenImpalerEasy" Inherits="LaurusBasePlantHiddenImpaler">
+        <part Name="Hidden" Difficulty="10" />
+        <tag Name="Tier" Value="4" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="LaurusBasePlantHiddenImpalerMedium" Inherits="LaurusBasePlantHiddenImpaler">
+        <part Name="Hidden" Difficulty="20" />
+        <tag Name="Tier" Value="5" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+    <object Name="LaurusBasePlantHiddenImpalerHard" Inherits="LaurusBasePlantHiddenImpaler">
+        <part Name="Hidden" Difficulty="30" />
+        <tag Name="Tier" Value="6" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+
+
+    <!-- Implementations -->
+    <object Name="LaurusPlantBleedingThornbush" Inherits="LaurusBasePlantHiddenImpalerMedium">
+        <part Name="Render" Tile="Creatures/sw_qudzu.bmp" DisplayName="{{Y|bleeding thornbush}}" TileColor="&amp;Y" DetailColor="O" />
+        <stat Name="Hitpoints" Value="30" />
+        <stat Name="Level" Value="15" />
+        <part Name="Description" Short="Packed into rents in the shale are spinescent shoots of blooming ivory." />
+    </object>
+    <object Name="LaurusPlantSproutingPlant" Inherits="LaurusBasePlantHiddenMedium">
+        <part Name="Render" DisplayName="sprouting orb" RenderString="*" Tile="Creatures/sw_sprouting_orb.bmp" />
+        <part Name="Corpse" CorpseChance="50" CorpseBlueprint="LaurusItemCorpsePlant" />
+        <stat Name="Hitpoints" Value="25" />
+        <part Name="Description" Short="Life's blossoming ringlets were freed from their orb-womb of carbon." />
+        <stat Name="Level" Value="18" />
+        <tag Name="Noswap" />
+        <part Name="SurroundOnStep" Radius="2" SurroundObject="PlantWall" EmptyOnly="true" />
+        <stag Name="Plank" Value="thatch" />
+    </object>
+
+    
+    <object Name="LaurusPlantWallThornwhipVine" Inherits="LaurusBasePlantWall">
+        <part Name="Render" Tile="Creatures/sw_livid_creeper.bmp" RenderIfDark="true" DisplayName="{{g|thornwhip vine}}"  RenderString="&amp;" ColorString="&amp;g" TileColor="&amp;g" DetailColor="y" />
+        <part Name="Description" Short="Verdurous cirri mottled with thorns reach for the warmth of a body. They hug the air in desperation." />
+        <part Name="JiltedLoverProperties" />
+        <inventoryobject Blueprint="Lovers_Thorns" Number="1" />
+    </object>
+
+
+
+</objects>

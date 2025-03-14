@@ -1,0 +1,21 @@
+<objects>
+
+    <object Name="LaurusFluidStrongAcidBase" Inherits="Water">
+        <part Name="Render" ColorString="&amp;o" />
+        <part Name="LiquidVolume" MaxVolume="-1" InitialLiquid="LaurusFluidStrongAcid-1000" />
+        <tag Name="BaseObject" Value="*noinherit" />
+    </object>
+
+    <object Name="LaurusFluidStrongAcidDeepPool" Inherits="LaurusFluidStrongAcidBase">
+        <part Name="LiquidVolume" Volume="4000" />
+    </object>
+    <object Name="LaurusFluidStrongAcidPool" Inherits="LaurusFluidStrongAcidBase">
+        <part Name="LiquidVolume" Volume="10" StartVolume="10d10" />
+    </object>
+    <object Name="LaurusFluidStrongAcidWaterPool" Inherits="LaurusFluidStrongAcidBase">
+        <part Name="Render" ColorString="&amp;O" />
+        <part Name="LiquidVolume" Volume="10" StartVolume="10d10" InitialLiquid="LaurusFluidStrongAcid-1000,water-1000" />
+        <tag Name="NoRuinsRemove" />
+    </object>
+
+</objects>

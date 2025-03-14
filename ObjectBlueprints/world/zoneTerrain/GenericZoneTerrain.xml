@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <objects>
 
-    <!--    
+  <!--    
     1 Plants
     2 Fungi
     3 Plant-likes
@@ -10,7 +10,7 @@
     6 Up/down connection terrain   
   -->
 
-    <!--
+  <!--
 
     ************
        Plants
@@ -18,60 +18,70 @@
 
   -->
 
-    <object Name="LaurusZTBananaTree" Inherits="Tree">
-        <part Name="Render" DisplayName="banana tree" RenderString="244" Tile="Terrain/sw_tree_banana_1.bmp" ColorString="&amp;r" TileColor="&amp;g" DetailColor="W" Occluding="true" />
-        <part Name="Description" Short="Fruited hands climb the stalks of the grifter tree. When the light catches on the surface of the exposed corm, Spindle glitter throws it back to the widened grove." />
-        <part Name="Harvestable" OnSuccess="Banana" StartRipeChance="1:50" RipeColor="&amp;W" RipeTileColor="&amp;g" RipeDetailColor="W" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="G" />
-        <tag Name="HangingSupport" />
-        <builder Name="RandomTile" Tiles="Terrain/sw_tree_banana_1.bmp,Terrain/sw_tree_banana_2.bmp,Terrain/sw_tree_banana_3.bmp,Terrain/sw_tree_banana_4.bmp" />
-        <tag Name="DynamicObjectsTable:FarmablePlants" />
-        <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.2" />
-        <tag Name="DynamicObjectsTable:BananaGrove_Plants" />
-    </object>
-    <object Name="LaurusZTDreadroot" Inherits="BasePlant">
-        <part Name="Render" Tile="Creatures/sw_dreadroot.bmp" RenderIfDark="true" DisplayName="dreadroot" RenderString="231" ColorString="&amp;K" DetailColor="w" />
-        <part Name="Brain" Hostile="false" Wanders="false" Mobile="false" Factions="Roots-100" />
-        <part Name="Corpse" CorpseChance="15" CorpseBlueprint="Dreadroot Tuber" />
-        <mutation Name="FearAura" />
-        <stat Name="Hitpoints" Value="3" />
-        <part Name="Description" Short="Skin peels on the tuber belly as it hums with grounding bass, and the shoots throb in upsetting staccato." />
-        <part Name="Harvestable" OnSuccess="Dreadroot Tuber" StartRipeChance="1:10" RipeColor="&amp;w" RipeTileColor="&amp;y" RipeDetailColor="w" UnripeColor="&amp;K" UnripeTileColor="&amp;y" UnripeDetailColor="K" />
-        <stag Name="Plank" Value="mass" />
-        <tag Name="ExcludeFromHostiles" />
-        <tag Name="Role" Value="Controller" />
-        <tag Name="DynamicObjectsTable:FarmablePlants" />
-        <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.2" />
-    </object>
-    <object Name="LaurusZTWatervine" Inherits="Plant">
-        <part Name="Render" DisplayName="watervine" RenderString="244" ColorString="&amp;g" Tile="Assets_Content_Textures_Tiles_sw_watervine1.bmp" TileColor="&amp;w" DetailColor="g" Occluding="false" />
-        <part Name="Harvestable" OnSuccess="Vinewafer" OnSuccessAmount="1" StartRipeChance="1:20" RipeColor="&amp;g" RipeTileColor="&amp;w" RipeDetailColor="g" UnripeColor="&amp;K" UnripeTileColor="&amp;w" UnripeDetailColor="K" />
-        <part Name="Description" Short="Salt gathers in its furrows. It's knotted with moisture-swollen wafers in place of leaves." />
-        <part Name="Fireflies" />
-        <builder Name="RandomTile" Tiles="Assets_Content_Textures_Tiles_sw_watervine1.bmp,Assets_Content_Textures_Tiles_sw_watervine2.bmp,Assets_Content_Textures_Tiles_sw_watervine3.bmp" />
-        <tag Name="LiquidNative" Value="water" />
-        <stag Name="Plank" Value="thatch" />
-        <stag Name="Fiber" Value="rope" />
-        <stag Name="FiberMaterial" Value="vine" />
-        <tag Name="DynamicObjectsTable:FarmablePlants" />
-        <tag Name="DynamicObjectsTable:Saltmarsh_FarmablePlants" />
-        <tag Name="DynamicObjectsTable:Saltmarsh_Plants" />
-        <tag Name="PlacementIsSkippable"></tag>
-        <tag Name="ImpactSound" Value="Sounds/Foley/fly_tileMove_marsh"></tag>
-    </object>
-    <object Name="LaurusZTBrinestalk" Inherits="Plant">
-        <part Name="Render" DisplayName="brinestalk" RenderString="157" ColorString="&amp;w" Tile="assets_content_textures_tiles_tile-brinestalk.png" DetailColor="g" Occluding="true" />
-        <part Name="Description" Short="Girthy pilings of fibrous salt-rot stake out these pools of brine. They belong to no one." />
-        <stag Name="Plank" Value="bundle" />
-        <stag Name="Fiber" Value="rope" />
-        <stag Name="FiberMaterial" Value="fibre" />
-        <xtagGrammar massNoun="true" />
-        <tag Name="LiquidNative" Value="water" />
-        <tag Name="DynamicObjectsTable:Saltmarsh_Plants" />
-        <tag Name="PlacementIsSkippable" />
-    </object>
-    <!-- End plants -->
+  <object Name="LaurusZTBananaTree" Inherits="Tree">
+    <part Name="Render" DisplayName="banana tree" RenderString="244" Tile="Terrain/sw_tree_banana_1.bmp" ColorString="&amp;r" TileColor="&amp;g" DetailColor="W" Occluding="true" />
+    <part Name="Description" Short="Fruited hands climb the stalks of the grifter tree. When the light catches on the surface of the exposed corm, Spindle glitter throws it back to the widened grove." />
+    <part Name="Harvestable" OnSuccess="Banana" StartRipeChance="1:50" RipeColor="&amp;W" RipeTileColor="&amp;g" RipeDetailColor="W" UnripeColor="&amp;g" UnripeTileColor="&amp;g" UnripeDetailColor="G" />
+    <tag Name="HangingSupport" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_tree_banana_1.bmp,Terrain/sw_tree_banana_2.bmp,Terrain/sw_tree_banana_3.bmp,Terrain/sw_tree_banana_4.bmp" />
+    <tag Name="DynamicObjectsTable:FarmablePlants" />
+    <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.2" />
+    <tag Name="DynamicObjectsTable:BananaGrove_Plants" />
+  </object>
+  <object Name="LaurusZTDreadroot" Inherits="BasePlant">
+    <part Name="Render" Tile="Creatures/sw_dreadroot.bmp" RenderIfDark="true" DisplayName="dreadroot" RenderString="231" ColorString="&amp;K" DetailColor="w" />
+    <part Name="Brain" Hostile="false" Wanders="false" Mobile="false" Factions="Roots-100" />
+    <part Name="Corpse" CorpseChance="15" CorpseBlueprint="Dreadroot Tuber" />
+    <mutation Name="FearAura" />
+    <stat Name="Hitpoints" Value="3" />
+    <part Name="Description" Short="Skin peels on the tuber belly as it hums with grounding bass, and the shoots throb in upsetting staccato." />
+    <part Name="Harvestable" OnSuccess="Dreadroot Tuber" StartRipeChance="1:10" RipeColor="&amp;w" RipeTileColor="&amp;y" RipeDetailColor="w" UnripeColor="&amp;K" UnripeTileColor="&amp;y" UnripeDetailColor="K" />
+    <stag Name="Plank" Value="mass" />
+    <tag Name="ExcludeFromHostiles" />
+    <tag Name="Role" Value="Controller" />
+    <tag Name="DynamicObjectsTable:FarmablePlants" />
+    <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.2" />
+  </object>
+  <object Name="LaurusZTWatervine" Inherits="Plant">
+    <part Name="Render" DisplayName="watervine" RenderString="244" ColorString="&amp;g" Tile="Assets_Content_Textures_Tiles_sw_watervine1.bmp" TileColor="&amp;w" DetailColor="g" Occluding="false" />
+    <part Name="Harvestable" OnSuccess="Vinewafer" OnSuccessAmount="1" StartRipeChance="1:20" RipeColor="&amp;g" RipeTileColor="&amp;w" RipeDetailColor="g" UnripeColor="&amp;K" UnripeTileColor="&amp;w" UnripeDetailColor="K" />
+    <part Name="Description" Short="Salt gathers in its furrows. It's knotted with moisture-swollen wafers in place of leaves." />
+    <part Name="Fireflies" />
+    <builder Name="RandomTile" Tiles="Assets_Content_Textures_Tiles_sw_watervine1.bmp,Assets_Content_Textures_Tiles_sw_watervine2.bmp,Assets_Content_Textures_Tiles_sw_watervine3.bmp" />
+    <tag Name="LiquidNative" Value="water" />
+    <stag Name="Plank" Value="thatch" />
+    <stag Name="Fiber" Value="rope" />
+    <stag Name="FiberMaterial" Value="vine" />
+    <tag Name="DynamicObjectsTable:FarmablePlants" />
+    <tag Name="DynamicObjectsTable:Saltmarsh_FarmablePlants" />
+    <tag Name="DynamicObjectsTable:Saltmarsh_Plants" />
+    <tag Name="PlacementIsSkippable"></tag>
+    <tag Name="ImpactSound" Value="Sounds/Foley/fly_tileMove_marsh"></tag>
+  </object>
+  <object Name="LaurusZTBrinestalk" Inherits="Plant">
+    <part Name="Render" DisplayName="brinestalk" RenderString="157" ColorString="&amp;w" Tile="assets_content_textures_tiles_tile-brinestalk.png" DetailColor="g" Occluding="true" />
+    <part Name="Description" Short="Girthy pilings of fibrous salt-rot stake out these pools of brine. They belong to no one." />
+    <stag Name="Plank" Value="bundle" />
+    <stag Name="Fiber" Value="rope" />
+    <stag Name="FiberMaterial" Value="fibre" />
+    <xtagGrammar massNoun="true" />
+    <tag Name="LiquidNative" Value="water" />
+    <tag Name="DynamicObjectsTable:Saltmarsh_Plants" />
+    <tag Name="PlacementIsSkippable" />
+  </object>
+  <object Name="LaurusZTHollowStalk" Inherits="Plant">
+    <part Name="Render" DisplayName="hollow stalk" RenderString="157" ColorString="&amp;O" Tile="assets_content_textures_tiles_tile-brinestalk.png" DetailColor="o" Occluding="true" />
+    <part Name="Description" Short="There is not much to see when you look at this organic mess." />
+    <stag Name="Plank" Value="bundle" />
+    <stag Name="Fiber" Value="rope" />
+    <stag Name="FiberMaterial" Value="fibre" />
+    <xtagGrammar massNoun="true" />
+    <tag Name="LiquidNative" Value="water" />
+    <tag Name="PlacementIsSkippable" />
+  </object>
+  <!-- End plants -->
 
-    <!--
+  <!--
 
     ***********
        Fungi
@@ -79,9 +89,9 @@
 
   -->
 
-    <!-- End fungi -->
+  <!-- End fungi -->
 
-    <!--
+  <!--
 
     *****************
        Plant-likes
@@ -89,9 +99,9 @@
 
   -->
 
-    <!-- End plant-likes -->
+  <!-- End plant-likes -->
 
-    <!--
+  <!--
 
     ************
        Floors
@@ -99,46 +109,46 @@
 
   -->
 
-    <object Name="LaurusZTDirtFloor" Inherits="Floor">
-        <part Name="Render" DisplayName="packed dirt floor" RenderString="250" ColorString="&amp;w" DetailColor="w" RenderLayer="0" />
-        <part Name="RandomTileOnMove" Tiles="Terrain/sw_ground_dots1.png,Terrain/sw_ground_dots2.png,Terrain/sw_ground_dots3.png,Terrain/sw_ground_dots4.png" />
-        <tag Name="NoSparkingQuest" />
-    </object>
-    <object Name="LaurusZTDirtPath" Inherits="LaurusZTDirtFloor">
-        <part Name="Render" DisplayName="dirt path" />
-        <tag Name="NoSparkingQuest" />
-    </object>
-    <object Name="LaurusZTDirtRoad" Inherits="LaurusZTDirtPath">
-        <part Name="Render" DisplayName="dirt path" />
-        <part Name="SpawnBlocker" />
-        <tag Name="NoSparkingQuest" />
-    </object>
+  <object Name="LaurusZTDirtFloor" Inherits="Floor">
+    <part Name="Render" DisplayName="packed dirt floor" RenderString="250" ColorString="&amp;w" DetailColor="w" RenderLayer="0" />
+    <part Name="RandomTileOnMove" Tiles="Terrain/sw_ground_dots1.png,Terrain/sw_ground_dots2.png,Terrain/sw_ground_dots3.png,Terrain/sw_ground_dots4.png" />
+    <tag Name="NoSparkingQuest" />
+  </object>
+  <object Name="LaurusZTDirtPath" Inherits="LaurusZTDirtFloor">
+    <part Name="Render" DisplayName="dirt path" />
+    <tag Name="NoSparkingQuest" />
+  </object>
+  <object Name="LaurusZTDirtRoad" Inherits="LaurusZTDirtPath">
+    <part Name="Render" DisplayName="dirt path" />
+    <part Name="SpawnBlocker" />
+    <tag Name="NoSparkingQuest" />
+  </object>
 
-    <!-- End floors -->
+  <!-- End floors -->
 
-    <!--
+  <!--
 
     ****************
        Obstacles
     ****************
 
   -->
-    <object Name="LaurusZTWeb" Inherits="InorganicObject">
-        <part Name="Render" DisplayName="web" Tile="terrain/sw_web.bmp" RenderString="015" ColorString="&amp;Y" RenderLayer="3" RenderIfDark="false" />
-        <part Name="Physics" Solid="false" Takeable="false" Weight="5" Conductivity="5" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="50" VaporTemperature="300" />
-        <stat Name="Hitpoints" Value="50" />
-        <part Name="Sticky" DestroyOnBreak="true" />
-        <part Name="MentalShield" />
-        <tag Name="NoEffects" />
-        <tag Name="HotBurn" Value="20" />
-        <part Name="Description" Short="Glistening silk was spun to a capture spiral and mounted on a series of bridge threads." />
-        <tag Name="Breakable" Value="*delete"/>
-    </object>
+  <object Name="LaurusZTWeb" Inherits="InorganicObject">
+    <part Name="Render" DisplayName="web" Tile="terrain/sw_web.bmp" RenderString="015" ColorString="&amp;Y" RenderLayer="3" RenderIfDark="false" />
+    <part Name="Physics" Solid="false" Takeable="false" Weight="5" Conductivity="5" FreezeTemperature="-9999" BrittleTemperature="-9999" FlameTemperature="50" VaporTemperature="300" />
+    <stat Name="Hitpoints" Value="50" />
+    <part Name="Sticky" DestroyOnBreak="true" />
+    <part Name="MentalShield" />
+    <tag Name="NoEffects" />
+    <tag Name="HotBurn" Value="20" />
+    <part Name="Description" Short="Glistening silk was spun to a capture spiral and mounted on a series of bridge threads." />
+    <tag Name="Breakable" Value="*delete"/>
+  </object>
 
-    <!-- End obstacles -->
+  <!-- End obstacles -->
 
 
-    <!--
+  <!--
 
     ********************************
        Up/down connection terrain
@@ -146,72 +156,89 @@
 
   -->
 
-    <object Name="LaurusZTOpenShaft" Inherits="StairsDown">
-        <part Name="Physics" IsReal="false" />
-        <part Name="Render" DisplayName="deep shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
-        <part Name="StairsDown" Connected="false" PullDown="true" />
-        <part Name="StairHighlight" bEnabled="false" />
-        <part Name="Description" Short="Darkness floods up from the empty space." />
-        <removepart Name="Interesting" />
-        <tag Name="NoAutowalk" />
-        <tag Name="Gender" Value="neuter" />
-        <xtagGrammar iArticle="" />
-    </object>
-    <object Name="LaurusZTOpenShaft2" Inherits="StairsDown">
-        <part Name="Physics" IsReal="false" />
-        <part Name="Render" DisplayName="deep shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
-        <part Name="StairsDown" Connected="false" PullDown="true" Levels="2"/>
-        <part Name="StairHighlight" bEnabled="false" />
-        <part Name="Description" Short="Darkness floods up from the empty space." />
-        <removepart Name="Interesting" />
-        <tag Name="NoAutowalk" />
-        <tag Name="Gender" Value="neuter" />
-        <xtagGrammar iArticle="" />
-    </object>
+  <object Name="LaurusZTOpenShaft" Inherits="StairsDown">
+    <part Name="Physics" IsReal="false" />
+    <part Name="Render" DisplayName="deep shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
+    <part Name="StairsDown" Connected="false" PullDown="true" />
+    <part Name="StairHighlight" bEnabled="false" />
+    <part Name="Description" Short="Darkness floods up from the empty space." />
+    <removepart Name="Interesting" />
+    <tag Name="NoAutowalk" />
+    <tag Name="Gender" Value="neuter" />
+    <xtagGrammar iArticle="" />
+  </object>
+  <object Name="LaurusZTOpenShaft2" Inherits="StairsDown">
+    <part Name="Physics" IsReal="false" />
+    <part Name="Render" DisplayName="deep shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
+    <part Name="StairsDown" Connected="false" PullDown="true" Levels="2"/>
+    <part Name="StairHighlight" bEnabled="false" />
+    <part Name="Description" Short="Darkness floods up from the empty space." />
+    <removepart Name="Interesting" />
+    <tag Name="NoAutowalk" />
+    <tag Name="Gender" Value="neuter" />
+    <xtagGrammar iArticle="" />
+  </object>
 
-    <object Name="LaurusZTPit" Inherits="StairsDown">
-        <part Name="Physics" IsReal="false" />
-        <part Name="Render" DetailColor="k" DisplayName="open air" ColorString="&amp;w^k" RenderString=" " TileColor="&amp;w^k"/>
-        <part Name="StairsDown" Connected="false" PullDown="true" PullMessage="You scramble down a craggy ledge." GenericFall="true" JumpPrompt="It looks like an awfully long fall. Are you sure you want to jump?"/>
-        <removepart Name="StairHighlight" />
-        <tag Name="OverlayColor" Value="&amp;k^k" />
-        <part Name="Description" Short="Space is emptied of solid impediments." />
-        <part Name="PitMaterial"/>
-        <removepart Name="Interesting" />
-        <tag Name="NoAutowalk" />
-        <xtagGrammar iArticle="some" />
-        <tag Name="Pit" />
-        <tag Name="Gender" Value="neuter" />
-        <tag Name="PaintedWallExtension" Value=".png" />
-        <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
-    </object>
-    <object Name="LaurusZTElevatorShaft" Inherits="StairsDown">
-        <part Name="Physics" IsReal="false" />
-        <part Name="Render" DisplayName="elevator shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
-        <part Name="StairsDown" Connected="false" PullDown="true" Levels="1"/>
-        <part Name="StairHighlight" bEnabled="false" />
-        <part Name="Description" Short="A freightless tether slings down a dark and vast channel." />
-        <tag Name="Gender" Value="neuter" />
-        <tag Name="NoAutowalk" />
-        <tag Name="ExcludeFromDynamicEncounters" />
-    </object>
-    <object Name="LaurusZTPondDown" Inherits="InorganicObject">
-        <part Name="Render" DisplayName="small crack" Tile="terrain/sw_crack.bmp" RenderString="." Occluding="false" RenderIfDark="true" ColorString="&amp;y" RenderLayer="1" Visible="false" />
-        <part Name="HiddenRender" Difficulty="2" DisplayName="stone crack" Tile="terrain/sw_crack.bmp" RenderString="&gt;" ColorString="&amp;Y" RenderLayer="3" />
-        <part Name="Physics" Solid="false" Takeable="false" Weight="999999" FlameTemperature="999999" VaporTemperature="999999" />
-        <part Name="Description" Short="A cleft in the red stone opens to a waterspray of underearth." />
-        <stat Name="Hitpoints" Value="9999" />
-        <part Name="Connect" Direction="d" Type="StairsUp" />
-        <part Name="StairsDown" />
-        <part Name="MentalShield" />
-        <part Name="NoDamage" />
-        <part Name="RenderLiquidBackground" />
-        <part Name="Interesting" Order="2000" />
-        <tag Name="OverlayColor" Value="&amp;M^k" />
-        <tag Name="NoSparkingQuest" />
-        <tag Name="ExcavatoryTerrainFeature" />
-        <tag Name="ExcludeFromDynamicEncounters" />
-    </object>
-    <!-- End up/down connection terrain -->
+  <object Name="LaurusZTPit" Inherits="StairsDown">
+    <part Name="Physics" IsReal="false" />
+    <part Name="Render" DetailColor="k" DisplayName="open air" ColorString="&amp;w^k" RenderString=" " TileColor="&amp;w^k"/>
+    <part Name="StairsDown" Connected="false" PullDown="true" PullMessage="You scramble down a craggy ledge." GenericFall="true" JumpPrompt="It looks like an awfully long fall. Are you sure you want to jump?"/>
+    <removepart Name="StairHighlight" />
+    <tag Name="OverlayColor" Value="&amp;k^k" />
+    <part Name="Description" Short="Space is emptied of solid impediments." />
+    <part Name="PitMaterial"/>
+    <removepart Name="Interesting" />
+    <tag Name="NoAutowalk" />
+    <xtagGrammar iArticle="some" />
+    <tag Name="Pit" />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="PaintedWallExtension" Value=".png" />
+    <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
+  </object>
+  <object Name="LaurusZTElevatorShaft" Inherits="StairsDown">
+    <part Name="Physics" IsReal="false" />
+    <part Name="Render" DisplayName="elevator shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
+    <part Name="StairsDown" Connected="false" PullDown="true" Levels="1"/>
+    <part Name="StairHighlight" bEnabled="false" />
+    <part Name="Description" Short="A freightless tether slings down a dark and vast channel." />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="NoAutowalk" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <object Name="LaurusZTPondDown" Inherits="InorganicObject">
+    <part Name="Render" DisplayName="small crack" Tile="terrain/sw_crack.bmp" RenderString="." Occluding="false" RenderIfDark="true" ColorString="&amp;y" RenderLayer="1" Visible="false" />
+    <part Name="HiddenRender" Difficulty="2" DisplayName="stone crack" Tile="terrain/sw_crack.bmp" RenderString="&gt;" ColorString="&amp;Y" RenderLayer="3" />
+    <part Name="Physics" Solid="false" Takeable="false" Weight="999999" FlameTemperature="999999" VaporTemperature="999999" />
+    <part Name="Description" Short="A cleft in the red stone opens to a waterspray of underearth." />
+    <stat Name="Hitpoints" Value="9999" />
+    <part Name="Connect" Direction="d" Type="StairsUp" />
+    <part Name="StairsDown" />
+    <part Name="MentalShield" />
+    <part Name="NoDamage" />
+    <part Name="RenderLiquidBackground" />
+    <part Name="Interesting" Order="2000" />
+    <tag Name="OverlayColor" Value="&amp;M^k" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="ExcavatoryTerrainFeature" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+
+
+  <object Name="LaurusZTUnstableGround" Inherits="LaurusZTDirtFloor">
+    <part Name="Render" RenderString="." Occluding="false" RenderIfDark="true" ColorString="&amp;y" RenderLayer="1" Visible="false" />
+    <part Name="LaurusTerrainTileUnstable" Difficulty="5" DisplayName="unstable ground" Tile="terrain/sw_crack.bmp" RenderString="&gt;" ColorString="&amp;Y" RenderLayer="3" />
+    <part Name="Physics" Solid="false" Takeable="false" Weight="999999" FlameTemperature="999999" VaporTemperature="999999" />
+    <part Name="Description" Short="This terrain barely looks able to support its own weight... Caution should be taken." />
+    <stat Name="Hitpoints" Value="9999" />
+    <part Name="MentalShield" />
+    <part Name="NoDamage" />
+    <part Name="RenderLiquidBackground" />
+    <part Name="Interesting" Order="2000" />
+    <tag Name="OverlayColor" Value="&amp;M^k" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="ExcavatoryTerrainFeature" />
+    <tag Name="ExcludeFromDynamicEncounters" />
+  </object>
+  <!-- End up/down connection terrain -->
 
 </objects>

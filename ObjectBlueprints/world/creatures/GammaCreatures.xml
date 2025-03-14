@@ -1,5 +1,5 @@
 <objects>
-    <object Name="Gamma Moth" Inherits="BaseInsect">
+    <object Name="LaurusGammaMoth" Inherits="BaseInsect">
         <part Name="Render" DisplayName="gamma moth" Tile="Creatures/sw_moth.bmp" ColorString="&amp;M" DetailColor="K" />
         <part Name="Description" Short="Vast diaphanous wings painted in the furcate patterns of fractalized geometry bat the air." />
         <stat Name="Level" Value="39" />
@@ -19,7 +19,7 @@
         <part Name="MeleeWeapon" PenBonus="3" BaseDamage="4d4" Slot="Head" />
     </object>
     <object Name="LaurusBaseGammaFaceWeapon" Inherits="NaturalMissileWeapon">
-        <part Name="Render" DisplayName="mutating gaze" ColorString="&amp;M" DetailColor="K" Tile="items/night_vision_mutation.bmp" />
+        <part Name="Render" DisplayName="mutating gaze" ColorString="&amp;M" DetailColor="K" />
         <part Name="Physics" Weight="12" />
         <part Name="MissileWeapon" Skill="Rifle" AmmoChar="&amp;M-" ShotsPerAction="1" AmmoPerAction="1" ShotsPerAnimation="1" WeaponAccuracy="2" />
         <part Name="Commerce" Value="750" />

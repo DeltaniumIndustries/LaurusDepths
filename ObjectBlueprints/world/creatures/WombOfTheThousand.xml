@@ -6,7 +6,6 @@
         <tag Name="NonMutant" />
         <tag Name="Genotype" Value="True Kin" />
         <tag Name="HeroGenotype" Value="True Kin" />
-        <tag Name="BaseObject" Value="*noinherit" />
         <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Human Corpse" />
         <part Name="Brain" Hostile="false" Factions="LaurusFactionWombThousand-100" />
         <part Name="Description" Short="Unrefined and untested, =pronouns.subjective= bear the scars of early growth, still marked by the imperfections of the Womb's designs. =Pronouns.possessive= frame is weak, =pronouns.possessive= armor ill-fitting and rudimentary. =Pronouns.subjective= have yet to prove worth in the Wombs endless cycle of refinement, struggling to meet the expectations set by the perfected templates that precede =pronouns.subjective=" />

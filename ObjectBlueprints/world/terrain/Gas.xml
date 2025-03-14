@@ -1,0 +1,14 @@
+<objects>
+
+    <object Name="LaurusGasBlightedMire" Inherits="Gas">
+        <part Name="Render" DisplayName="corrosive blight" />
+        <part Name="Gas" GasType="AcidGas" ColorString="&amp;g^G" />
+        <part Name="GasDamaging" GasType="Acid" Noun="blight" MessageColor="&amp;g" DamageAttributes="Acid Gas" TargetPart="Physics" ExcludeTag="Item"/>
+        <part Name="Description" Short="A pungent, corrosive mist that clings to the air. Its acidic fumes slowly eat away at anything unfortunate enough to breathe it in, leaving nothing but ruin in its wake. The blight lingers, seeping into the environment and corrupting all it touches." />
+        <tag Name="GasGenerationName" Value="Corrosive Blight Generation" />
+        <tag Name="LevelEffectDescription" Value="damage" />
+        <tag Name="ActivationColorString" Value="&amp;g" />
+        <tag Name="GasGenerationAddSeeping" Value="true" />
+    </object>
+
+</objects>
