@@ -1,0 +1,77 @@
+<objects>
+
+    <!-- Base Tuber -->
+    <object Name="LaurusSnackTuberBase" Inherits="Snack">
+        <part Name="Food" />
+        <part Name="Physics" Category="Food" />
+        <tag Name="Lah" />
+    </object>
+
+    <!-- Blightroot Tuber -->
+    <object Name="LaurusSnackBlightrootTuber" Inherits="LaurusSnackTuberBase">
+        <part Name="Render" DisplayName="{{earth|blightroot tuber}}" ColorString="&amp;g" DetailColor="y" TileColor="&amp;g" Tile="Items/sw_snack_tuber4.bmp" />
+        <part Name="Description" Short="A black-veined tuber that smells faintly of decay and iron, its surface slick with dark mold." />
+        <part Name="Commerce" Value="10" />
+        <part Name="Physics" Weight="2" />
+        <part Name="PoisonResistOnEat" Strength="2d6" Duration="4d6" />
+        <part Name="DamageOnEat" Strength="2d4" />
+        <part Name="FungalInfectionChance" Chance="50" />
+    </object>
+
+    <!-- Whisperroot Tuber -->
+    <object Name="LaurusSnackWhisperrootTuber" Inherits="LaurusSnackTuberBase">
+        <part Name="Render" DisplayName="{{resonance|whisperroot tuber}}" ColorString="&amp;M" DetailColor="y" TileColor="&amp;M" Tile="Items/sw_snack_tuber3.bmp" />
+        <part Name="Description" Short="The tuber hums with a chorus of soft, slithering whispers. Its flesh shifts unnervingly beneath your fingers." />
+        <part Name="Commerce" Value="12" />
+        <part Name="Physics" Weight="2" />
+        <part Name="ConfusionOnEat" Strength="3d6" Duration="3d4" />
+    </object>
+
+    <!-- Bloodbulb Tuber -->
+    <object Name="LaurusSnackBloodbulbTuber" Inherits="LaurusSnackTuberBase">
+        <part Name="Render" DisplayName="{{glotrot|bloodbulb tuber}}" ColorString="&amp;R" DetailColor="y" TileColor="&amp;r" Tile="Items/sw_snack_tuber1.bmp" />
+        <part Name="Description" Short="The tuber drips with dark crimson sap that smells faintly of rust." />
+        <part Name="Commerce" Value="18" />
+        <part Name="Physics" Weight="2" />
+        <part Name="BleedOnEat" Strength="2d6" Duration="4d6" />
+    </object>
+
+    <!-- Moonroot Tuber -->
+    <object Name="LaurusSnackMoonrootTuber" Inherits="LaurusSnackTuberBase">
+        <part Name="Render" DisplayName="{{moon|moonroot tuber}}" ColorString="&amp;C" DetailColor="c" TileColor="&amp;Y" Tile="Items/sw_snack_tuber5.bmp" />
+        <part Name="Description" Short="The tuber hums softly and glows with pale moonlight. Its flesh is cold and slightly sweet." />
+        <part Name="Commerce" Value="25" />
+        <part Name="Physics" Weight="3" />
+        <part Name="NightVisionOnEat" Duration="5d6" />
+    </object>
+
+    <!-- Emberroot Tuber -->
+    <object Name="LaurusSnackEmberrootTuber" Inherits="LaurusSnackTuberBase">
+        <part Name="Render" DisplayName="{{dark fiery|emberroot tuber}}" ColorString="&amp;O" DetailColor="O" TileColor="&amp;R" Tile="Items/sw_snack_tuber4.bmp" />
+        <part Name="Description" Short="The tuber pulses with heat and smells faintly of scorched wood." />
+        <part Name="Commerce" Value="30" />
+        <part Name="Physics" Weight="4" />
+        <part Name="FireResistOnEat" Duration="6d6" />
+    </object>
+
+    <!-- Ironthorn Tuber -->
+    <object Name="LaurusSnackIronthornTuber" Inherits="LaurusSnackTuberBase">
+        <part Name="Render" DisplayName="{{ghostly|ironthorn tuber}}" ColorString="&amp;G" DetailColor="w" TileColor="&amp;b" Tile="Items/sw_snack_tuber2.bmp" />
+        <part Name="Description" Short="A dark green tuber studded with sharp, metallic thorns. Its inner flesh is fibrous and metallic-tasting." />
+        <part Name="Commerce" Value="35" />
+        <part Name="Physics" Weight="4" />
+        <part Name="ArmorBuffOnEat" Strength="3d6" Duration="5d6" />
+        <part Name="BleedChanceOnEat" Chance="50" Damage="2d8" />
+    </object>
+
+    <!-- Dreamroot Tuber -->
+    <object Name="LaurusSnackDreamrootTuber" Inherits="LaurusSnackTuberBase">
+        <part Name="Render" DisplayName="{{rainbow|dreamroot tuber}}" ColorString="&amp;M" DetailColor="m" TileColor="&amp;W" Tile="Items/sw_snack_tuber5.bmp" />
+        <part Name="Description" Short="A lavender-fleshed tuber that hums faintly when held. Its surface shifts with swirling patterns of light." />
+        <part Name="Commerce" Value="40" />
+        <part Name="Physics" Weight="3" />
+        <part Name="PsychicClairvoyanceOnEat" Duration="5d8" />
+        <part Name="AttractPsychicEnemies" Chance="30" Duration="3d6" />
+    </object>
+
+</objects>

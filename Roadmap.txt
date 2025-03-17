@@ -86,3 +86,54 @@ Themes & Gameplay Feel
     Scaling with progression, so early encounters feel manageable, but late-game encounters become nightmarish.
     Eldritch horror, where the player risks losing their own identity if they interact with the Commune too much.
     Invasive and viral, enemies merge into new, unpredictable forms mid-battle, forcing the player to constantly rethink their approach.
+
+
+
+1. Whisperroot Tuber
+
+    Description: A knotted, pale tuber covered in fine, hair-like roots that seem to pulse faintly in the dark. When held to the ear, it emits a soft, unintelligible whisper.
+    Effect:
+        Eating it temporarily increases Willpower and Ego but reduces Toughness.
+        May cause hallucinations where the player hears ancient, forgotten voices.
+
+2. Bloodbulb Tuber
+
+    Description: A dark crimson tuber that leaks a viscous red sap when broken. Its skin pulses with a steady rhythm, like a heartbeat.
+    Effect:
+        Eating it restores a moderate amount of health but causes temporary confusion.
+        Can be cooked into a potent healing paste.
+
+3. Moonroot Tuber
+
+    Description: A pale, silver-flecked tuber that glows softly under moonlight. Its flesh is icy to the touch and releases a faint scent of ozone.
+    Effect:
+        Eating it grants a temporary boost to Agility and Night Vision.
+        May cause temporary paralysis if consumed raw.
+
+4. Blightroot Tuber
+
+    Description: A black-veined tuber that smells faintly of rot and iron. Its surface is covered in patches of dark mold.
+    Effect:
+        Eating it reduces hit points but grants temporary poison resistance and increased strength.
+        High chance of causing fungal infection if not cooked.
+
+5. Dreamroot Tuber
+
+    Description: A lavender-fleshed tuber that hums faintly when held. Its surface shifts with swirling patterns of light.
+    Effect:
+        Eating it induces lucid dreaming, allowing the player to recover from mental debuffs and explore memory fragments.
+        May attract psychic enemies while dreaming.
+
+6. Ironthorn Tuber
+
+    Description: A dark green tuber studded with sharp, metallic thorns. Its inner flesh is fibrous and metallic-tasting.
+    Effect:
+        Eating it grants increased armor value for a short time.
+        High chance of causing internal bleeding if not prepared properly.
+
+7. Emberroot Tuber
+
+    Description: A bright orange tuber that radiates warmth. Its flesh burns to the touch but smells sweet, like roasted fruit.
+    Effect:
+        Eating it grants temporary fire resistance and a small boost to fire-based attacks.
+        Causes mild burns if eaten raw.

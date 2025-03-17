@@ -2,22 +2,9 @@
 
     <object Name="LaurusFoodMysteryFruit" Inherits="Snack">
         <part Name="Render" DisplayName="{{c|strange fruit}}" Tile="Items/lovers_blossom.bmp" ColorString="&amp;g" DetailColor="y" />
-        <part Name="Description" Short="A stalk of red celery is floured in the abraded dust of centuries." />
+        <part Name="Description" Short="A fleshy, iridescent fruit that shimmers with an otherworldly glow, its taste unknown but enticing." />
         <part Name="Commerce" Value="80" />
         <part Name="Physics" Category="Food" Weight="1" />
-    </object>
-
-    <object Name="Qudzu Stem" Inherits="Snack">
-        <part Name="Render" DisplayName="{{r|qudzu stem}}" Tile="Items/sw_stem.bmp" ColorString="&amp;r" DetailColor="w" />
-        <part Name="Description" Short="A stalk of red celery is floured in the abraded dust of centuries." />
-        <part Name="Commerce" Value="10" />
-    </object>
-    <object Name="Lover's Blossom" Inherits="Snack">
-        <part Name="Food" />
-        <part Name="Render" Tile="Items/lovers_blossom.bmp" DisplayName="{{R|lover's blossom}}" ColorString="&amp;R" TileColor="&amp;r" DetailColor="R" />
-        <part Name="Description" Short="The heart of the jilted lover burns under embered petals, pinched to anguish in citrine anthers and laid on a weeping bed of sepal jade." />
-        <part Name="Commerce" Value="20" />
-        <part Name="Physics" Category="Food" Weight="0" />
     </object>
 
 </objects>

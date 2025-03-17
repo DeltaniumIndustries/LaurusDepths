@@ -1,0 +1,20 @@
+<objects>
+
+    <object Name="LaurusTonicEnhancedSalve" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|bloodbulb ointment}} injector" TileColor="&amp;o" DetailColor="w"/>
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Duration: 10 rounds
+You recover 2.5 hit points per level (minimum 5) each round." AltForGenotype="True Kin" GenotypeAlt="Duration: 5 rounds
+You recover 7.5 hit points per level (minimum 10) each round." />
+        <part Name="TinkerItem" Bits="04" Ingredient="LaurusSnackBloodbulbTuber" />
+        <part Name="PreservableItem" Result="LaurusPreservableCongealedBloodbulbOintment" Number="2" />
+        <tag Name="Gift" Value="*noinherit" />
+        <tag Name="Tier" Value="3" />
+        <tag Name="TechTier" Value="5" />
+        <tag Name="ChooseToPreserve" />
+        <tag Name="DynamicObjectsTable:Tonics_NonRare" />
+        <part Name="Commerce" Value="115" />
+    </object>
+
+</objects>

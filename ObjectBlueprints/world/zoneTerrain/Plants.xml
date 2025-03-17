@@ -1,0 +1,83 @@
+<objects>
+
+    <!-- Base Plant -->
+    <object Name="LaurusBaseTuberPlant" Inherits="BasePlant">
+        <part Name="Brain" Hostile="false" Wanders="false" Mobile="false" Factions="Roots-100" />
+        <stag Name="Plank" Value="mass" />
+        <tag Name="ExcludeFromHostiles" />
+        <tag Name="Role" Value="Controller" />
+        <tag Name="DynamicObjectsTable:FarmablePlants" />
+        <part Name="Harvestable" RipeColor="&amp;k" UnripeColor="&amp;K" />
+    </object>
+
+    <!-- Blightroot -->
+    <object Name="LaurusPlantTuberBlightroot" Inherits="LaurusBaseTuberPlant">
+        <part Name="Render" Tile="Creatures/sw_plant1.png" RenderIfDark="true" DisplayName="blightroot" RenderString="236" ColorString="&amp;K" TileColor="&amp;G" DetailColor="y" />
+        <part Name="Corpse" CorpseChance="45" CorpseBlueprint="LaurusSnackBlightrootTuber" />
+        <part Name="Description" Short="Black-veined stalks drip with dark rot, curling inward as spores drift lazily through the air." />
+        <part Name="Harvestable" OnSuccess="LaurusSnackBlightrootTuber" StartRipeChance="1:5" RipeTileColor="&amp;G" RipeDetailColor="y" UnripeTileColor="&amp;g" UnripeDetailColor="y" />
+        <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.8" />
+        <stat Name="Hitpoints" Value="5" />
+    </object>
+
+    <!-- Whisperroot -->
+    <object Name="LaurusPlantTuberWhisperroot" Inherits="LaurusBaseTuberPlant">
+        <part Name="Render" Tile="Creatures/sw_plant2.png" RenderIfDark="true" DisplayName="whisperroot" RenderString="232" ColorString="&amp;m" TileColor="&amp;M" DetailColor="y" />
+        <part Name="Corpse" CorpseChance="40" CorpseBlueprint="LaurusSnackWhisperrootTuber" />
+        <part Name="Description" Short="Its tendrils curl and uncurl, whispering secrets in a voice too ancient to understand." />
+        <part Name="Harvestable" OnSuccess="LaurusSnackWhisperrootTuber" StartRipeChance="1:5" RipeTileColor="&amp;M" RipeDetailColor="y" UnripeTileColor="&amp;m" UnripeDetailColor="y" />
+        <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.7" />
+        <stat Name="Hitpoints" Value="10" />
+    </object>
+
+    <!-- Bloodbulb -->
+    <object Name="LaurusPlantTuberBloodbulb" Inherits="LaurusBaseTuberPlant">
+        <part Name="Render" Tile="Creatures/sw_bloodbulb.png" RenderIfDark="true" DisplayName="bloodbulb" RenderString="233" ColorString="&amp;r" TileColor="&amp;R" DetailColor="W" />
+        <part Name="Corpse" CorpseChance="35" CorpseBlueprint="LaurusSnackBloodbulbTuber" />
+        <part Name="Description" Short="Red veins pulse through the fleshy stalks, oozing a sticky crimson sap." />
+        <part Name="Harvestable" OnSuccess="LaurusSnackBloodbulbTuber" StartRipeChance="1:5" RipeTileColor="&amp;R" RipeDetailColor="W" UnripeTileColor="&amp;o" UnripeDetailColor="w" />
+        <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.6" />
+        <stat Name="Hitpoints" Value="16" />
+    </object>
+
+    <!-- Moonroot -->
+    <object Name="LaurusPlantTuberMoonroot" Inherits="LaurusBaseTuberPlant">
+        <part Name="Render" Tile="Creatures/sw_moonroot.png" RenderIfDark="true" DisplayName="moonroot" RenderString="234" ColorString="&amp;c" TileColor="&amp;Y" DetailColor="C" />
+        <part Name="Corpse" CorpseChance="30" CorpseBlueprint="LaurusSnackMoonrootTuber" />
+        <part Name="Description" Short="The stalks shimmer with cold silver light, drawing in the shadows around them." />
+        <part Name="Harvestable" OnSuccess="LaurusSnackMoonrootTuber" StartRipeChance="1:10" RipeTileColor="&amp;Y" RipeDetailColor="C" UnripeTileColor="&amp;y" UnripeDetailColor="b" />
+        <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.5" />
+        <stat Name="Hitpoints" Value="24" />
+    </object>
+
+    <!-- Emberroot -->
+    <object Name="LaurusPlantTuberEmberroot" Inherits="LaurusBaseTuberPlant">
+        <part Name="Render" Tile="Creatures/sw_plant3.png" RenderIfDark="true" DisplayName="emberroot" RenderString="235" ColorString="&amp;o" TileColor="&amp;O" DetailColor="Y" />
+        <part Name="Corpse" CorpseChance="25" CorpseBlueprint="LaurusSnackEmberrootTuber" />
+        <part Name="Description" Short="A burning heat radiates from the stalks, and faint ember trails drift in the air." />
+        <part Name="Harvestable" OnSuccess="LaurusSnackEmberrootTuber" StartRipeChance="1:12" RipeTileColor="&amp;O" RipeDetailColor="Y" UnripeTileColor="&amp;w" UnripeDetailColor="k" />
+        <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.4" />
+        <stat Name="Hitpoints" Value="36" />
+    </object>
+
+    <!-- Ironthorn -->
+    <object Name="LaurusPlantTuberIronthorn" Inherits="LaurusBaseTuberPlant">
+        <part Name="Render" Tile="Creatures/sw_ironthorn.png" RenderIfDark="true" DisplayName="ironthorn" RenderString="238" ColorString="&amp;g" TileColor="&amp;B" DetailColor="W" />
+        <part Name="Corpse" CorpseChance="15" CorpseBlueprint="LaurusSnackIronthornTuber" />
+        <part Name="Description" Short="Its sharp, metallic thorns jut outward, making a low grinding sound as they grow." />
+        <part Name="Harvestable" OnSuccess="LaurusSnackIronthornTuber" StartRipeChance="1:15" RipeTileColor="&amp;B" RipeDetailColor="W" UnripeTileColor="&amp;c" UnripeDetailColor="o" />
+        <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.3" />
+        <stat Name="Hitpoints" Value="48" />
+    </object>
+
+    <!-- Dreamroot -->
+    <object Name="LaurusPlantTuberDreamroot" Inherits="LaurusBaseTuberPlant">
+        <part Name="Render" Tile="Creatures/sw_dreamroot.png" RenderIfDark="true" DisplayName="dreamroot" RenderString="237" ColorString="&amp;w" TileColor="&amp;M" DetailColor="W" />
+        <part Name="Corpse" CorpseChance="5" CorpseBlueprint="LaurusSnackDreamrootTuber" />
+        <part Name="Description" Short="A cluster of pale lavender stalks hums faintly, shifting in the air as if dreaming." />
+        <part Name="Harvestable" OnSuccess="LaurusSnackDreamrootTuber" StartRipeChance="1:20" RipeTileColor="&amp;M" RipeDetailColor="W" UnripeTileColor="&amp;m" UnripeDetailColor="w" />
+        <tag Name="DynamicObjectsTable:FarmablePlants:Weight" Value="0.1" />
+        <stat Name="Hitpoints" Value="8" />
+    </object>
+
+</objects>

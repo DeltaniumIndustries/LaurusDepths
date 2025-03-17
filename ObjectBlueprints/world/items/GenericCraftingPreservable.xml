@@ -1,0 +1,11 @@
+<objects>
+
+    <object Name="LaurusPreservableCongealedBloodbulbOintment" Inherits="Preservable">
+        <part Name="Render" DisplayName="congealed {{lah|Bloodbulb Ointment}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="Y" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp" />
+        <part Name="Commerce" Value="75" />
+        <part Name="Description" Short="Extracted from its injector, thickened in the acrid air, and bottled for culinary use." />
+        <part Name="PreparedCookingIngredient" type="regenLowtier" charges="5" />
+        <tag Name="DynamicObjectsTable:Ruins_Ingredients" />
+    </object>
+
+</objects>
