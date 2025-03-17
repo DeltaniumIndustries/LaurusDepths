@@ -137,3 +137,78 @@ Themes & Gameplay Feel
     Effect:
         Eating it grants temporary fire resistance and a small boost to fire-based attacks.
         Causes mild burns if eaten raw.
+
+        🧪 New Tonics
+1. Psychocatalytic Infusion (Tier 4)
+
+    +50% mental mutation cooldown recovery for 50 turns.
+    +3 Ego for the duration.
+    After effect: Psychic Burn (-2 Ego, +10% cooldown time) for 30 turns.
+
+2. Ferrothirst Injector (Tier 3)
+
+    +4 Strength and +2 AV for 20 turns.
+    After effect: -2 Strength for 10 turns.
+
+3. Cytoplasmic Recoherer (Tier 5)
+
+    Restore 30% HP instantly.
+    Gain Phase Reflex (50% chance to avoid attacks) for 5 turns.
+    After effect: Spasmodic Weeping (10% chance to take 1d3 damage) for 20 turns.
+
+4. Mnemogenic Tonic (Tier 4)
+
+    +2 Intelligence and recover 50% of mental mutation cooldowns.
+    After effect: Lose 1d6 Willpower for 30 turns.
+
+5. Ironblood Injector (Tier 3)
+
+    Gain Bleed Immunity and +2 AV for 15 turns.
+    After effect: Lose 10% max HP for 20 turns.
+
+🧪 Higher-Tier Tonics
+6. Greater Shade Injector (Tier 5)
+
+    Gain Invisibility for 20 turns.
+    +2 Agility while invisible.
+    25% chance of gaining Phantom Limb mutation.
+
+7. Prime Ubernostrum Injector (Tier 6)
+
+    Fully heals and cures all negative effects.
+    +10% max HP for 50 turns.
+    After effect: -2 Toughness for 20 turns.
+
+8. Joppa Elixir (Tier 4)
+
+    Restores 20% HP and +2 AV for 20 turns.
+    +25% disease resistance.
+    After effect: Take 1d4 damage.
+
+9. Combustive Serum (Tier 5)
+
+    Gain Fire Immunity and +50% fire damage for 20 turns.
+    After effect: Overheat (take 1d3 damage/turn) for 10 turns.
+
+10. Synaptic Augmenter (Tier 6)
+
+    +3 Intelligence and +3 Willpower for 40 turns.
+    After effect: -2 Intelligence and -2 Willpower for 20 turns.
+
+🧪 Experimental Tonics
+11. Cloneheart Injector (Tier 5)
+
+    Summon a clone (copies all mutations and stats) for 10 turns.
+    After effect: Lose 20% max HP and suffer Exhaustion (-2 Strength and Agility) for 20 turns.
+
+12. Null Tonic (Tier 4)
+
+    Cancels all positive and negative status effects.
+    +1 Toughness and +2 AV for 30 turns.
+    After effect: Take 10 damage.
+
+13. Vitametric Serum (Tier 6)
+
+    +5 Strength, +5 Agility, +5 Intelligence for 20 turns.
+    +50% movement speed.
+    After effect: System Collapse (stun for 5 turns).

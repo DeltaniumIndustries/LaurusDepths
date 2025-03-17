@@ -1,5 +1,6 @@
 <objects>
 
+    <!-- Tier 3 -->
     <object Name="LaurusTonicEnhancedSalve" Inherits="Tonic">
         <part Name="Render" DisplayName="{{beylah|bloodbulb ointment}} injector" TileColor="&amp;o" DetailColor="w"/>
         <part Name="Salve_Tonic_Applicator" />
@@ -16,5 +17,140 @@ You recover 7.5 hit points per level (minimum 10) each round." />
         <tag Name="DynamicObjectsTable:Tonics_NonRare" />
         <part Name="Commerce" Value="115" />
     </object>
+    <object Name="LaurusTonicIronbloodInjector" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|ironblood injector}}" TileColor="&amp;o" DetailColor="w" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Gain Bleed Immunity and +2 AV for 15 turns." AltForGenotype="True Kin" GenotypeAlt="After effect: Lose 10% max HP for 20 turns." />
+        <tag Name="Tier" Value="3" />
+        <tag Name="TechTier" Value="4" />
+        <part Name="Commerce" Value="130" />
+    </object>
+    <object Name="LaurusTonicFerrothirstInjector" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|ferrothirst injector}}" TileColor="&amp;r" DetailColor="w" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Duration: 20 rounds
++4 Strength and +2 AV." AltForGenotype="True Kin" GenotypeAlt="After effect: Lose 2 Strength for 10 turns." />
+        <tag Name="Tier" Value="3" />
+        <tag Name="TechTier" Value="4" />
+        <tag Name="DynamicObjectsTable:Tonics_NonRare" />
+        <part Name="Commerce" Value="120" />
+    </object>
+
+
+    <!-- Tier 4 -->
+    <object Name="LaurusTonicPsychocatalyticInfusion" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|psychocatalytic infusion}}" TileColor="&amp;m" DetailColor="W" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Duration: 50 rounds
++50% mental mutation cooldown recovery.
++3 Ego for the duration." AltForGenotype="True Kin" GenotypeAlt="After effect: Psychic Burn (-2 Ego, +10% cooldown time) for 30 turns." />
+        <tag Name="Tier" Value="4" />
+        <tag Name="TechTier" Value="5" />
+        <tag Name="DynamicObjectsTable:Tonics_NonRare" />
+        <part Name="Commerce" Value="150" />
+    </object>
+    <object Name="LaurusTonicMnemogenic" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|mnemogenic tonic}}" TileColor="&amp;b" DetailColor="W" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="+2 Intelligence and recover 50% of mental mutation cooldowns." AltForGenotype="True Kin" GenotypeAlt="After effect: Lose 1d6 Willpower for 30 turns." />
+        <tag Name="Tier" Value="4" />
+        <tag Name="TechTier" Value="5" />
+        <part Name="Commerce" Value="160" />
+    </object>
+    <object Name="LaurusTonicJoppaElixir" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|joppa elixir}}" TileColor="&amp;B" DetailColor="W" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Restore 20% HP and +2 AV for 20 turns." AltForGenotype="True Kin" GenotypeAlt="After effect: Take 1d4 damage." />
+        <tag Name="Tier" Value="4" />
+        <tag Name="TechTier" Value="5" />
+        <part Name="Commerce" Value="140" />
+    </object>
+    <object Name="LaurusTonicNull" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|null tonic}}" TileColor="&amp;K" DetailColor="W" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Cancels all positive and negative status effects.  
++1 Toughness and +2 AV for 30 turns." AltForGenotype="True Kin" GenotypeAlt="After effect: Take 10 damage." />
+        <tag Name="Tier" Value="4" />
+        <tag Name="TechTier" Value="5" />
+        <part Name="Commerce" Value="170" />
+    </object>
+
+    <!-- Tier 5 -->
+    <object Name="LaurusTonicCytoplasmicRecoherer" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|cytoplasmic recoherer}}" TileColor="&amp;c" DetailColor="y" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Instantly restore 30% HP.
+Gain Phase Reflex (50% chance to avoid attacks) for 5 turns." AltForGenotype="True Kin" GenotypeAlt="After effect: Spasmodic Weeping (10% chance to take 1d3 damage) for 20 turns." />
+        <tag Name="Tier" Value="5" />
+        <tag Name="TechTier" Value="6" />
+        <part Name="Commerce" Value="200" />
+    </object>
+    <object Name="LaurusTonicGreaterShade" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|greater shade injector}}" TileColor="&amp;K" DetailColor="y" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Gain Invisibility for 20 turns.
++2 Agility while invisible." AltForGenotype="True Kin" GenotypeAlt="25% chance of gaining Phantom Limb mutation." />
+        <tag Name="Tier" Value="5" />
+        <tag Name="TechTier" Value="6" />
+        <part Name="Commerce" Value="180" />
+    </object>
+    <object Name="LaurusTonicCloneheart" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|cloneheart injector}}" TileColor="&amp;R" DetailColor="y" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Summon a clone (copies all mutations and stats) for 10 turns." AltForGenotype="True Kin" GenotypeAlt="After effect: Lose 20% max HP and suffer Exhaustion (-2 Strength and Agility) for 20 turns." />
+        <tag Name="Tier" Value="5" />
+        <tag Name="TechTier" Value="6" />
+        <part Name="Commerce" Value="280" />
+    </object>
+    <object Name="LaurusTonicCombustiveSerum" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|combustive serum}}" TileColor="&amp;r" DetailColor="y" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Gain Fire Immunity and +50% fire damage for 20 turns." AltForGenotype="True Kin" GenotypeAlt="After effect: Overheat (take 1d3 damage/turn) for 10 turns." />
+        <tag Name="Tier" Value="5" />
+        <tag Name="TechTier" Value="6" />
+        <part Name="Commerce" Value="190" />
+    </object>
+    <!-- Tier 6 -->
+    <object Name="LaurusTonicPrimeUbernostrum" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|prime ubernostrum injector}}" TileColor="&amp;Y" DetailColor="Y" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="Fully heals and cures all negative effects.
++10% max HP for 50 turns." AltForGenotype="True Kin" GenotypeAlt="After effect: -2 Toughness for 20 turns." />
+        <tag Name="Tier" Value="6" />
+        <tag Name="TechTier" Value="7" />
+        <part Name="Commerce" Value="300" />
+    </object>
+    <object Name="LaurusTonicSynapticAugmenter" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|synaptic augmenter}}" TileColor="&amp;m" DetailColor="Y" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="+3 Intelligence and +3 Willpower for 40 turns." AltForGenotype="True Kin" GenotypeAlt="After effect: -2 Intelligence and -2 Willpower for 20 turns." />
+        <tag Name="Tier" Value="6" />
+        <tag Name="TechTier" Value="7" />
+        <part Name="Commerce" Value="250" />
+    </object>
+    <object Name="LaurusTonicVitametricSerum" Inherits="Tonic">
+        <part Name="Render" DisplayName="{{beylah|vitametric serum}}" TileColor="&amp;G" DetailColor="Y" />
+        <part Name="Salve_Tonic_Applicator" />
+        <part Name="AIHealingTonicUse" />
+        <part Name="RulesDescription" Text="+5 Strength, +5 Agility, +5 Intelligence for 20 turns.  
++50% movement speed." AltForGenotype="True Kin" GenotypeAlt="After effect: System Collapse (stun for 5 turns)." />
+        <tag Name="Tier" Value="6" />
+        <tag Name="TechTier" Value="7" />
+        <part Name="Commerce" Value="320" />
+    </object>
+
+    <!-- Tier 7 -->
 
 </objects>
