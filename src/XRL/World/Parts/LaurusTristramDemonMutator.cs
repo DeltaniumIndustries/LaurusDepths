@@ -23,7 +23,7 @@ namespace XRL.World.Parts
             GameObject demonHost = ParentObject;
             if (DEBUG || RandomUtils.NextInt(1, MutationChanceOneInX) == MutationChanceOneInX)
             {
-                L.Info($"[LaurusTristramDemonMutator] {demonHost.DisplayName} has been spawned.");
+                LL.Info($"[LaurusTristramDemonMutator] {demonHost.DisplayName} has been spawned.", LogCategory.Debug);
                 int mutationsApplied = ApplyMutations(demonHost);
                 if (mutationsApplied > 0)
                 {
@@ -31,12 +31,12 @@ namespace XRL.World.Parts
                 }
                 else
                 {
-                    L.Info($"[LaurusTristramDemonMutator] {demonHost.DisplayName} did not mutate.");
+                    LL.Info($"[LaurusTristramDemonMutator] {demonHost.DisplayName} did not mutate.", LogCategory.Debug);
                 }
             }
             if (ParentObject.RemovePart("LaurusTristramDemonMutator"))
             {
-                L.Info($"[LaurusTristramDemonMutator] Removed Part from {demonHost.DisplayName}.");
+                LL.Info($"[LaurusTristramDemonMutator] Removed Part from {demonHost.DisplayName}.", LogCategory.Debug);
             }
 
 
@@ -54,10 +54,10 @@ namespace XRL.World.Parts
             {
                 mutationsToAdd = RandomUtils.NextIntWeighted(RandomUtils.NextIntWeighted(1, 3, 1), 8, RandomUtils.NextIntWeighted(3, 8, 4));
             }
-            L.Info($"[LaurusTristramDemonMutator] {demonHost.DisplayName} attempting {mutationsToAdd} mutations.");
+            LL.Info($"[LaurusTristramDemonMutator] {demonHost.DisplayName} attempting {mutationsToAdd} mutations.", LogCategory.Debug);
             if (demonHost.ApplyEffect(new TouchedByChaos(mutationsToAdd, ResultTable)))
             {
-                L.Info($"[LaurusTristramDemonMutator] Mutation {mutationsToAdd}/{mutationsToAdd} applied to {demonHost.DisplayName}.");
+                LL.Info($"[LaurusTristramDemonMutator] Mutation {mutationsToAdd}/{mutationsToAdd} applied to {demonHost.DisplayName}.", LogCategory.Debug);
             }
 
             return mutationsToAdd;
@@ -73,7 +73,7 @@ namespace XRL.World.Parts
             demonHost.SetForegroundColor(randomForeground);
             demonHost.SetDetailColor(randomDetail);
 
-            L.Info($"[LaurusTristramDemonMutator] {oldName} mutated into {demonHost.DisplayName} - Foreground: {randomForeground}, Detail: {randomDetail}.");
+            LL.Info($"[LaurusTristramDemonMutator] {oldName} mutated into {demonHost.DisplayName} - Foreground: {randomForeground}, Detail: {randomDetail}.", LogCategory.Debug);
         }
     }
 }

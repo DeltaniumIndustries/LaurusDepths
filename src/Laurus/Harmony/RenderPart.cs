@@ -7,9 +7,9 @@ public static class Patch_Render_ProcessRenderString
 {
         private static void LogLocal(string s)
     {
-        if (ConfigHandler.LOGGING_HARMONY_RENDER)
+        if (DepthsConfigHandler.LOGGING_HARMONY_RENDER)
         {
-            L.Info("[Harmony] "+s);
+            LL.Info("[Harmony] "+s, LogCategory.Harmony);
         }
     }
 

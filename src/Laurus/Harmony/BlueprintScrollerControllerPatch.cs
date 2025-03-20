@@ -8,9 +8,9 @@ public static class BlueprintScrollerControllerPatch
 
     private static void LogLocal(string s)
     {
-        if (ConfigHandler.LOGGING_HARMONY_BPSC)
+        if (DepthsConfigHandler.LOGGING_HARMONY_BPSC)
         {
-            L.Info("[Harmony] "+s);
+            LL.Info("[Harmony] "+s, LogCategory.Harmony);
         }
     }
     [HarmonyPrefix, HarmonyPatch("ResetCaches")]

@@ -12,7 +12,7 @@ using XRL.World.ZoneBuilders.Utility;
 #nullable disable
 namespace XRL.World.ZoneBuilders
 {
-  public class SlimePools
+  public class LaurusTestSlimePools
   {
     public bool BuildZone(Zone Z)
     {

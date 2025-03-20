@@ -26,28 +26,28 @@ namespace XRL.World.Effects
             // Prevent players from receiving this effect
             if (Object.IsPlayer())
             {
-                L.Info($"[InstantMutating] Skipping effect: {Object.DisplayName} is a player.");
+                LL.Info($"[InstantMutating] Skipping effect: {Object.DisplayName} is a player.", LogCategory.Debug);
                 return false;
             }
 
             // Check if the object is eligible
             if (!Object.IsMutant() && !Object.IsTrueKin())
             {
-                L.Info($"[InstantMutating] Skipping effect: {Object.DisplayName} is not a mutant or true kin.");
+                LL.Info($"[InstantMutating] Skipping effect: {Object.DisplayName} is not a mutant or true kin.", LogCategory.Debug);
                 return false;
             }
             if (Object.HasEffect<Mutating>())
             {
-                L.Info($"[InstantMutating] Skipping effect: {Object.DisplayName} already has a mutation effect.");
+                LL.Info($"[InstantMutating] Skipping effect: {Object.DisplayName} already has a mutation effect.", LogCategory.Debug);
                 return false;
             }
             if (!Object.FireEvent("ApplyMutating"))
             {
-                L.Info($"[InstantMutating] Skipping effect: {Object.DisplayName} rejected ApplyMutating event.");
+                LL.Info($"[InstantMutating] Skipping effect: {Object.DisplayName} rejected ApplyMutating event.", LogCategory.Debug);
                 return false;
             }
 
-            L.Info($"[InstantMutating] Applying {MutationCount} mutations to {Object.DisplayName}");
+            LL.Info($"[InstantMutating] Applying {MutationCount} mutations to {Object.DisplayName}", LogCategory.Debug);
 
             Object.PlayWorldSound("Sounds/StatusEffects/sfx_statusEffect_neutral-weirdVitality");
 
@@ -73,7 +73,7 @@ namespace XRL.World.Effects
                     MutationEntry newMutation = MutationsAPI.FindRandomMutationFor(Object, e => !e.IsDefect());
                     if (newMutation != null)
                     {
-                        L.Info($"[InstantMutating] {Object.DisplayName} gains mutation: {newMutation.DisplayName}");
+                        LL.Info($"[InstantMutating] {Object.DisplayName} gains mutation: {newMutation.DisplayName}", LogCategory.Debug);
                         Object.PlayWorldSound("Sounds/Misc/sfx_characterMod_mutation_positive");
                         MutationsAPI.ApplyMutationTo(Object, newMutation);
                     }
@@ -83,7 +83,7 @@ namespace XRL.World.Effects
                     MutationEntry newDefect = MutationsAPI.FindRandomMutationFor(Object, e => e.IsDefect(), allowMultipleDefects: true);
                     if (newDefect != null)
                     {
-                        L.Info($"[InstantMutating] {Object.DisplayName} gains defect: {newDefect.DisplayName}");
+                        LL.Info($"[InstantMutating] {Object.DisplayName} gains defect: {newDefect.DisplayName}", LogCategory.Debug);
                         Object.PlayWorldSound("Sounds/Misc/sfx_characterMod_mutation_negative");
                         MutationsAPI.ApplyMutationTo(Object, newDefect);
                     }
