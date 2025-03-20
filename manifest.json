@@ -1,10 +1,10 @@
 {
 	"id": "LaurusDepths",
 	"loadorder": 1,
-	"title": "Laurus Depths",
+	"title": "{{filthy|Laurus Depths}}",
 	"description": "Adds new types of cells, ruins, encounters, etc.",
 	"tags": "silly,random,items",
 	"version": "1.2.1",
-	"author": "{{glotrot|LunarLaurus}}",
+	"author": "{{rainbow|LunarLaurus}}",
 	"previewImage": "preview.png"
 }

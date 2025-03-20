@@ -27,20 +27,6 @@
     <part Name="Description" Short="Investigate." />
   </object>
 
-  <!-- Deathlands -->
-  <object Name="TerrainDeathlands" Inherits="Terrain">
-    <part Name="Render" DisplayName="deathlands" RenderString="204" ColorString="&amp;m^k" TileColor="&amp;M^k" DetailColor="m" Tile="Terrain/Deathlands/sw_ruins8.png" />
-    <part Name="TerrainTravel" Segments="2000" TravelClass="Survival_RuinsSurvival" />
-    <part Name="Description" Short="Only the vexing hum of the Signal interrupts the incandescent stillness." />
-    <tag Name="Gender" Value="plural" />
-    <xtagGrammar iArticle="the" />
-    <tag Name="LairOwnerTable" Value="LairOwners_Deathlands" />
-    <tag Name="Terrain" Value="Deathlands" />
-    <tag Name="RegionTier" Value="8" />
-    <part Name="RandomRenderString" Strings="179,191,192,193,194,195,196,197,217,218" />
-    <!--<part Name="RandomRenderString" Strings="199,200,201,202,203,204,205,206,207,208,209,210,211,212" />-->
-    <part Name="RandomTile" Tiles="Terrain/Deathlands/sw_ruins1.png,Terrain/Deathlands/sw_ruins2.png,Terrain/Deathlands/sw_ruins3.png,Terrain/Deathlands/sw_ruins4.png,Terrain/Deathlands/sw_ruins5.png,Terrain/Deathlands/sw_ruins6.png,Terrain/Deathlands/sw_ruins7.png,Terrain/Deathlands/sw_ruins8.png,Terrain/Deathlands/sw_ruins1.png,Terrain/Deathlands/sw_ruins2.png,Terrain/Deathlands/sw_ruins3.png" />
-  </object>
 
   <object Name="LaurusTerrainBananaGrove" Inherits="LaurusTerrainBase">
     <part Name="Render" DisplayName="banana grove" RenderString="244" ColorString="&amp;W^k" DetailColor="g" Tile="Terrain/sw_ruins1.png" />
