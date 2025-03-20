@@ -22,10 +22,6 @@
 
 
   <!-- Static Cells -->
-  <object Name="LaurusTerrainVillageTristram" Inherits="LaurusTerrainBase">
-    <part Name="Render" DisplayName="Tristram" Tile="Terrain/tile_village.png" TileColor="&amp;Y" ColorString="&amp;G^k" RenderString="006" DetailColor="r" />
-    <part Name="Description" Short="stay a while and listen..." />
-  </object>
   <object Name="LaurusTerrainVillageBlasted" Inherits="LaurusTerrainBase">
     <part Name="Render" DisplayName="Anomaly" Tile="Terrain/tile_village.png" TileColor="&amp;r" ColorString="&amp;G^k" RenderString="006" DetailColor="o" />
     <part Name="Description" Short="Investigate." />

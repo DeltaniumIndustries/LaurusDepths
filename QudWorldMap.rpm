@@ -16,11 +16,6 @@
     <object Name="LaurusTerrainVillageBlasted" />
   </cell>
 
-  <!-- Static Cells -->
-  <cell X="2" Y="18">
-    <object Name="LaurusTerrainVillageTristram" />
-  </cell>
-
   <!-- W1K -->
   <cell X="40" Y="0">
     <object Name="LaurusTerrainW1kTrainingGrounds"></object>
