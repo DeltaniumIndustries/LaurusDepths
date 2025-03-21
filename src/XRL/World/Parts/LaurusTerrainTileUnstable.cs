@@ -1,6 +1,5 @@
 using System;
 using XRL.Rules;
-using XRL.World;
 using XRL.World.Capabilities;
 
 #nullable disable

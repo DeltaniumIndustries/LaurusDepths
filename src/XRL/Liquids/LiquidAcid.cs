@@ -9,7 +9,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using XRL.Collections;
-using XRL.Core;
 using XRL.Rules;
 using XRL.World;
 using XRL.World.Effects;

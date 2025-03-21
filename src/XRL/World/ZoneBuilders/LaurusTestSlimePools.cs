@@ -16,10 +16,10 @@ namespace XRL.World.ZoneBuilders
   {
     public bool BuildZone(Zone Z)
     {
-      List<NoiseMapNode> ExtraNodes = new List<NoiseMapNode>();
+      List<NoiseMapNode> ExtraNodes = new();
       foreach (ZoneConnection zoneConnection in XRLCore.Core.Game.ZoneManager.GetZoneConnections(Z.ZoneID))
         ExtraNodes.Add(new NoiseMapNode(zoneConnection.X, zoneConnection.Y));
-      NoiseMap noiseMap = new NoiseMap(80, 25, 10, 3, 3, 6, 20, 20, 4, 3, 0, 1, ExtraNodes);
+      NoiseMap noiseMap = new(80, 25, 10, 3, 3, 6, 20, 20, 4, 3, 0, 1, ExtraNodes);
       int num = -1;
       for (int key = 0; key < noiseMap.nAreas; ++key)
       {

@@ -1,8 +1,6 @@
 using System;
 using System.Collections.Generic;
-using XRL.Rules;
 using XRL.UI;
-using XRL.World;
 
 namespace XRL.World.Parts
 {
